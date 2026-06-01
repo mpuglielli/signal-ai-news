@@ -30,13 +30,11 @@
   <div class="masthead-stripe"></div>
 </header>
 
-<!-- ── HERO / COVER ──────────────────────────────────────────────── -->
+<!-- ── HERO / COVER — pure typography, no image ─────────────────── -->
 <section class="cover" id="cover">
   <div class="cover-grid">
-    <!-- Feature story — large -->
     <article class="cover-feature" id="cover-feature">
       <div class="cover-feature-label">FEATURED</div>
-      <div class="cover-feature-image" id="cover-image"></div>
       <div class="cover-feature-body">
         <div class="article-source" id="cover-source"></div>
         <h1 class="cover-headline" id="cover-headline">Loading the latest intelligence…</h1>
@@ -44,14 +42,10 @@
         <a class="cover-cta" id="cover-link" href="#" target="_blank" rel="noopener">Read Story →</a>
       </div>
     </article>
-
-    <!-- Secondary stories — right column -->
     <div class="cover-secondary" id="cover-secondary">
       <!-- populated by JS -->
     </div>
   </div>
-
-  <!-- Issue number / date stamp — Swiss poster element -->
   <div class="cover-stamp">
     <span class="stamp-issue" id="stamp-issue">№ 001</span>
     <span class="stamp-date" id="stamp-date"></span>
@@ -67,8 +61,6 @@
 
 <!-- ── MAIN CONTENT ──────────────────────────────────────────────── -->
 <main class="content" id="main-content">
-
-  <!-- Section header — Swiss grid style -->
   <div class="section-header">
     <div class="section-rule"></div>
     <span class="section-num">01</span>
@@ -80,23 +72,17 @@
       <button class="filter-btn" data-cat="thought-leadership">Perspectives</button>
     </div>
   </div>
-
-  <!-- Masonry-ish editorial grid -->
   <div class="articles-grid" id="articles-grid">
-    <!-- placeholders while loading -->
-    <div class="article-card skeleton"></div>
-    <div class="article-card skeleton"></div>
-    <div class="article-card skeleton"></div>
-    <div class="article-card skeleton"></div>
-    <div class="article-card skeleton"></div>
-    <div class="article-card skeleton"></div>
+    <div class="article-card skeleton" style="grid-column:span 5"></div>
+    <div class="article-card skeleton" style="grid-column:span 4"></div>
+    <div class="article-card skeleton" style="grid-column:span 3"></div>
+    <div class="article-card skeleton" style="grid-column:span 4"></div>
+    <div class="article-card skeleton" style="grid-column:span 3"></div>
+    <div class="article-card skeleton" style="grid-column:span 5"></div>
   </div>
-
-  <!-- Load more -->
   <div class="load-more-wrap">
     <button class="load-more-btn" id="load-more">Load More Stories</button>
   </div>
-
 </main>
 
 <!-- ── DIVIDER QUOTE ─────────────────────────────────────────────── -->
@@ -117,7 +103,9 @@
     <span class="section-num">02</span>
     <h2 class="section-title">AI Category Intelligence</h2>
     <div class="g2-badge">
-      <span class="g2-badge-logo">G2</span>
+      <span class="g2-badge-logo">
+        <img src="/g2-logo.svg" alt="G2" width="20" height="20" />
+      </span>
       <span class="g2-badge-label">Live Market Data</span>
     </div>
   </div>
@@ -169,7 +157,7 @@
     </div>
   </div>
   <div class="footer-bar">
-    <span>© 2025 G2.com</span>
+    <span>© 2026 G2.com</span>
     <span id="last-updated-footer"></span>
   </div>
 </footer>

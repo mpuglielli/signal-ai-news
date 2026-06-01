@@ -2,14 +2,13 @@
    SIGNAL — Frontend App
    ═══════════════════════════════════════════════════ */
 
-const API = ''; // same-origin; change to http://localhost:3000 for dev
-
+const API = '';
 let allArticles = [];
 let offset = 0;
 const PAGE_SIZE = 16;
 let currentCategory = 'all';
 
-// ── Utilities ──────────────────────────────────────────────────────
+// ── Utilities ─────────────────────────────────────────────────────
 
 function relativeTime(dateStr) {
   const diff = Date.now() - new Date(dateStr).getTime();
@@ -22,21 +21,12 @@ function relativeTime(dateStr) {
 }
 
 function issueNumber() {
-  // Deterministic issue number from week count since Jan 2025, Mon+Thu = 2/week
-  const epoch = new Date('2025-01-06'); // first Monday
+  const epoch = new Date('2025-01-06');
   const now = new Date();
   const days = Math.floor((now - epoch) / 86400000);
   const weeks = Math.floor(days / 7);
-  const dayOfWeek = now.getDay(); // 0=Sun,1=Mon,...
-  const issueSuffix = (dayOfWeek >= 4) ? 1 : 0; // Thu onwards = second issue
+  const issueSuffix = now.getDay() >= 4 ? 1 : 0;
   return String(weeks * 2 + issueSuffix + 1).padStart(3, '0');
-}
-
-function cardType(index, article) {
-  if (index % 7 === 0) return 'type-text';   // dark typographic
-  if (index % 11 === 5) return 'type-accent'; // red accent
-  if (article.image) return 'type-image';
-  return 'type-text';
 }
 
 function safeText(str) {
@@ -45,40 +35,46 @@ function safeText(str) {
   return d.innerHTML;
 }
 
-// ── Card builder ───────────────────────────────────────────────────
+// Map category to CSS class for coloured tag
+function categoryClass(cat) {
+  if (cat === 'general') return 'general';
+  if (cat === 'saas') return 'saas';
+  return 'thought-leadership';
+}
+
+// ── Card builder — NO images, big type ───────────────────────────
+
+function cardType(index) {
+  if (index % 9 === 5) return 'type-accent';  // soft yellow tint
+  if (index % 6 === 0) return 'type-text';    // subtle navy tint
+  return '';
+}
 
 function buildCard(article, index, overrideType = null) {
-  const type = overrideType || cardType(index, article);
+  const type = overrideType !== null ? overrideType : cardType(index);
   const card = document.createElement('article');
-  card.className = `article-card ${type}`;
+  card.className = `article-card${type ? ' ' + type : ''}`;
   card.addEventListener('click', () => window.open(article.url, '_blank', 'noopener'));
 
-  const imageHtml = (type === 'type-image' && article.image)
-    ? `<div class="card-image" style="background-image:url('${article.image}')"></div>`
-    : '';
-
-  const bodyOpen  = (type === 'type-image') ? `<div class="card-body">` : '';
-  const bodyClose = (type === 'type-image') ? `</div>` : '';
+  const idxStr = String(index + 1).padStart(2, '0');
 
   card.innerHTML = `
-    ${imageHtml}
-    ${bodyOpen}
-      <div class="card-source-row">
-        <span class="article-source">${safeText(article.source)}</span>
-        <span class="card-tag">${safeText(article.category)}</span>
-      </div>
-      <h3 class="card-headline">${safeText(article.title)}</h3>
-      <p class="card-summary">${safeText(article.summary)}</p>
-      <div class="card-footer">
-        <span class="card-date">${relativeTime(article.publishedAt)}</span>
-        <span class="card-read">Read →</span>
-      </div>
-    ${bodyClose}
+    <span class="card-index">${idxStr}</span>
+    <div class="card-source-row">
+      <span class="article-source">${safeText(article.source)}</span>
+      <span class="card-tag ${categoryClass(article.category)}">${safeText(article.category.replace(/-/g, ' '))}</span>
+    </div>
+    <h3 class="card-headline">${safeText(article.title)}</h3>
+    <p class="card-summary">${safeText(article.summary)}</p>
+    <div class="card-footer">
+      <span class="card-date">${relativeTime(article.publishedAt)}</span>
+      <span class="card-read">Read →</span>
+    </div>
   `;
   return card;
 }
 
-// ── Cover / Hero ───────────────────────────────────────────────────
+// ── Cover — pure typography, no image ────────────────────────────
 
 function renderCover(featured) {
   if (!featured.length) return;
@@ -86,20 +82,11 @@ function renderCover(featured) {
   const hero = featured[0];
   const rest = featured.slice(1, 5);
 
-  // Feature
   document.getElementById('cover-source').textContent = hero.source;
   document.getElementById('cover-headline').textContent = hero.title;
   document.getElementById('cover-deck').textContent = hero.summary;
   document.getElementById('cover-link').href = hero.url;
 
-  const imgEl = document.getElementById('cover-image');
-  if (hero.image) {
-    imgEl.style.backgroundImage = `url('${hero.image}')`;
-  } else {
-    imgEl.style.background = 'var(--gray-800)';
-  }
-
-  // Secondary cards
   const sec = document.getElementById('cover-secondary');
   sec.innerHTML = '';
   rest.forEach((a) => {
@@ -114,14 +101,12 @@ function renderCover(featured) {
     sec.appendChild(card);
   });
 
-  // Stamp
-  const num = issueNumber();
-  document.getElementById('stamp-issue').textContent = `№ ${num}`;
+  document.getElementById('stamp-issue').textContent = `№ ${issueNumber()}`;
   document.getElementById('stamp-date').textContent =
     new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
 }
 
-// ── Masthead edition label ─────────────────────────────────────────
+// ── Masthead ──────────────────────────────────────────────────────
 
 function setEditionLabel(lastUpdated) {
   const el = document.getElementById('edition-label');
@@ -140,7 +125,6 @@ function buildTicker(articles) {
   const items = articles.slice(0, 20).map((a) =>
     `<span class="ticker-item">${safeText(a.title)}</span><span class="ticker-label"> · SIGNAL · </span>`
   ).join('');
-  // Duplicate for seamless loop
   track.innerHTML = items + items;
 }
 
@@ -149,28 +133,20 @@ function buildTicker(articles) {
 function renderGrid(articles, append = false) {
   const grid = document.getElementById('articles-grid');
   if (!append) grid.innerHTML = '';
-
   articles.forEach((a, i) => {
     const card = buildCard(a, append ? grid.children.length + i : i);
     grid.appendChild(card);
   });
 }
 
-// ── Perspectives section ──────────────────────────────────────────
+// ── Perspectives ──────────────────────────────────────────────────
 
 function renderPerspectives(articles) {
   const row = document.getElementById('perspectives-row');
   row.innerHTML = '';
-  const items = articles
-    .filter((a) => a.category === 'thought-leadership')
-    .slice(0, 3);
-
-  if (!items.length) {
-    document.querySelector('.perspectives-section').style.display = 'none';
-    return;
-  }
-
-  items.forEach((a, i) => {
+  const items = articles.filter((a) => a.category === 'thought-leadership').slice(0, 3);
+  if (!items.length) { document.querySelector('.perspectives-section').style.display = 'none'; return; }
+  items.forEach((a) => {
     const card = document.createElement('article');
     card.className = 'perspective-card';
     card.innerHTML = `
@@ -187,29 +163,20 @@ function renderPerspectives(articles) {
   });
 }
 
-// ── B2B SaaS magazine layout ──────────────────────────────────────
+// ── B2B SaaS section ──────────────────────────────────────────────
 
 function renderSaas(articles) {
   const grid = document.getElementById('saas-grid');
   grid.innerHTML = '';
-
-  const items = articles
-    .filter((a) => a.category === 'saas')
-    .slice(0, 6);
-
-  if (!items.length) {
-    document.querySelector('.saas-section').style.display = 'none';
-    return;
-  }
-
+  const items = articles.filter((a) => a.category === 'saas').slice(0, 6);
+  if (!items.length) { document.querySelector('.saas-section').style.display = 'none'; return; }
   items.forEach((a, i) => {
-    const type = i === 0 ? 'type-image' : (i === 2 ? 'type-text' : null);
-    const card = buildCard(a, i, type);
+    const card = buildCard(a, i, i === 0 ? 'type-accent' : '');
     grid.appendChild(card);
   });
 }
 
-// ── Filter buttons ────────────────────────────────────────────────
+// ── Filters ───────────────────────────────────────────────────────
 
 function setupFilters() {
   document.querySelectorAll('.filter-btn').forEach((btn) => {
@@ -218,24 +185,20 @@ function setupFilters() {
       btn.classList.add('active');
       currentCategory = btn.dataset.cat;
       offset = 0;
-
       const filtered = currentCategory === 'all'
         ? allArticles
         : allArticles.filter((a) => a.category === currentCategory || a.tags.includes(currentCategory));
-
       renderGrid(filtered.slice(0, PAGE_SIZE));
       offset = PAGE_SIZE;
     });
   });
 
-  // Nav links
   document.querySelectorAll('.nav-link').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      const cat = link.dataset.category;
       document.querySelectorAll('.nav-link').forEach((l) => l.classList.remove('active'));
       link.classList.add('active');
-      const matchingBtn = document.querySelector(`.filter-btn[data-cat="${cat}"]`);
+      const matchingBtn = document.querySelector(`.filter-btn[data-cat="${link.dataset.category}"]`);
       if (matchingBtn) matchingBtn.click();
       document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
     });
@@ -249,7 +212,6 @@ function setupLoadMore() {
     const filtered = currentCategory === 'all'
       ? allArticles
       : allArticles.filter((a) => a.category === currentCategory || a.tags.includes(currentCategory));
-
     const next = filtered.slice(offset, offset + PAGE_SIZE);
     if (!next.length) {
       document.getElementById('load-more').textContent = 'All caught up';
@@ -265,35 +227,28 @@ function setupLoadMore() {
 
 function setFooterDate(lastUpdated) {
   const el = document.getElementById('last-updated-footer');
-  if (lastUpdated) {
-    el.textContent = `Last updated: ${new Date(lastUpdated).toLocaleString()}`;
-  }
+  if (lastUpdated) el.textContent = `Last updated: ${new Date(lastUpdated).toLocaleString()}`;
 }
 
 // ── G2 Category Intelligence ──────────────────────────────────────
 
 function starsHtml(rating) {
-  const full = Math.floor(rating);
-  const hasHalf = rating % 1 >= 0.5;
   let html = '';
   for (let i = 0; i < 5; i++) {
-    if (i < full) html += `<span class="g2-star"></span>`;
-    else if (i === full && hasHalf) html += `<span class="g2-star half"></span>`;
-    else html += `<span class="g2-star empty"></span>`;
+    html += `<span class="g2-star${i >= Math.round(rating) ? ' empty' : ''}"></span>`;
   }
   return `<div class="g2-stars">${html}</div>`;
 }
 
 function formatReviews(n) {
-  if (n >= 1000) return `${(n / 1000).toFixed(1)}k reviews`;
-  return `${n} reviews`;
+  return n >= 1000 ? `${(n / 1000).toFixed(1)}k reviews` : `${n} reviews`;
 }
 
 function buildG2Card(cat, index) {
   const card = document.createElement('div');
   card.className = 'g2-card';
-
-  const productsHtml = cat.top_products.slice(0, index === 0 ? 4 : 3).map((p) => `
+  const maxProducts = index === 0 ? 4 : 3;
+  const productsHtml = (cat.top_products || []).slice(0, maxProducts).map((p) => `
     <a class="g2-product-item" href="${p.g2_url}" target="_blank" rel="noopener">
       ${starsHtml(p.stars)}
       <span class="g2-product-name">${safeText(p.name)}</span>
@@ -308,7 +263,7 @@ function buildG2Card(cat, index) {
       <span class="g2-signal ${cat.signal}">${safeText(cat.signal_label)}</span>
     </div>
     <p class="g2-card-desc">${safeText(cat.description)}</p>
-    <div class="g2-card-products">${productsHtml}</div>
+    <div class="g2-card-products">${productsHtml || '<span style="font-family:var(--font-mono);font-size:11px;color:var(--muted)">Emerging — data coming soon</span>'}</div>
     <div class="g2-card-footer">
       <span class="g2-card-count">${cat.product_count_label}</span>
       <a class="g2-view-link" href="${cat.g2_url}" target="_blank" rel="noopener">View on G2 →</a>
@@ -324,29 +279,24 @@ async function renderG2Section() {
     const res = await fetch(`${API}/api/g2/categories`);
     const data = await res.json();
     grid.innerHTML = '';
-    (data.categories || []).forEach((cat, i) => {
-      grid.appendChild(buildG2Card(cat, i));
-    });
+    (data.categories || []).forEach((cat, i) => grid.appendChild(buildG2Card(cat, i)));
   } catch (err) {
     console.warn('[g2] Failed to load categories:', err);
     if (grid) grid.style.display = 'none';
   }
 }
 
-// ── Main init ─────────────────────────────────────────────────────
+// ── Init ──────────────────────────────────────────────────────────
 
 async function init() {
   setupFilters();
   setupLoadMore();
-
   try {
     const [featuredRes, articlesRes] = await Promise.all([
       fetch(`${API}/api/featured?n=5`).then((r) => r.json()),
       fetch(`${API}/api/articles?limit=80`).then((r) => r.json()),
     ]);
-
     allArticles = articlesRes.articles || [];
-
     renderCover(featuredRes.articles || []);
     buildTicker(allArticles);
     renderGrid(allArticles.slice(0, PAGE_SIZE));
@@ -356,11 +306,10 @@ async function init() {
     renderG2Section();
     setEditionLabel(articlesRes.lastUpdated);
     setFooterDate(articlesRes.lastUpdated);
-
   } catch (err) {
     console.error('[app] Failed to load articles:', err);
     document.getElementById('articles-grid').innerHTML =
-      '<p style="grid-column:span 12;padding:40px;color:var(--gray-400);font-family:var(--font-mono);font-size:13px;">Could not connect to the content server. Make sure the server is running: <code>node server.js</code></p>';
+      '<p style="grid-column:span 12;padding:40px;color:var(--muted);font-family:var(--font-mono);font-size:13px;">Server offline — run <code>node server.js</code></p>';
   }
 }
 
