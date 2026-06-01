@@ -11,20 +11,47 @@ const parser = new Parser({
 let articleCache = [];
 let lastUpdated = null;
 
+// Returns true only if the URL points to a specific article (has a meaningful path)
+function isArticleUrl(url) {
+  if (!url || !url.startsWith('http')) return false;
+  try {
+    const { pathname } = new URL(url);
+    // Must have a path beyond just '/', '/feed', '/rss', '/news', '/blog'
+    const shallow = /^\/?((feed|rss|blog|news|articles?)\/?)?$/i.test(pathname);
+    return pathname.length > 1 && !shallow;
+  } catch {
+    return false;
+  }
+}
+
+// Best available direct URL from an RSS item
+function extractUrl(item) {
+  const candidates = [item.link, item.origlink, item.guid];
+  for (const url of candidates) {
+    if (isArticleUrl(url)) return url;
+  }
+  return item.link || ''; // fallback even if shallow — better than nothing
+}
+
 async function fetchFeed(feed) {
   try {
     const parsed = await parser.parseURL(feed.url);
-    return (parsed.items || []).slice(0, 8).map((item) => ({
-      id: Buffer.from(item.link || item.guid || '').toString('base64').slice(0, 16),
-      title: item.title || '',
-      summary: stripHtml(item.contentSnippet || item.content || item.summary || '').slice(0, 500),
-      url: item.link || item.guid || '',
-      image: extractImage(item),
-      publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),
-      source: feed.name,
-      category: feed.category,
-      tags: feed.tags,
-    }));
+    return (parsed.items || []).slice(0, 8)
+      .map((item) => {
+        const url = extractUrl(item);
+        return {
+          id: Buffer.from(url || item.guid || '').toString('base64').slice(0, 16),
+          title: item.title || '',
+          summary: stripHtml(item.contentSnippet || item.content || item.summary || '').slice(0, 500),
+          url,
+          image: extractImage(item),
+          publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),
+          source: feed.name,
+          category: feed.category,
+          tags: feed.tags,
+        };
+      })
+      .filter((a) => a.url && a.title); // drop items with no usable URL or title
   } catch (err) {
     console.warn(`[aggregator] Failed to fetch ${feed.name}: ${err.message}`);
     return [];
