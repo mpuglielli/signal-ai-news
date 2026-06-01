@@ -43,10 +43,11 @@ app.get('/api/health', (req, res) => {
   res.json({ ok: true, time: new Date().toISOString() });
 });
 
-// ── Scheduling — Monday & Thursday at 7:00 AM CT ─────────────────
-// Cron: "0 13 * * 1,4" = 07:00 CT (UTC-6) on Mon (1) and Thu (4)
-cron.schedule('0 13 * * 1,4', async () => {
-  console.log('[cron] Scheduled refresh triggered');
+// ── Scheduling — Monday & Thursday at 9:00 AM EST ────────────────
+// Cron: "0 14 * * 1,4" = 09:00 EST (UTC-5) on Mon (1) and Thu (4)
+// Note: Render runs on UTC. 14:00 UTC = 9:00 AM EST / 10:00 AM EDT
+cron.schedule('0 14 * * 1,4', async () => {
+  console.log('[cron] Scheduled content refresh triggered (Mon/Thu 9am EST)');
   await refreshAll();
 });
 
