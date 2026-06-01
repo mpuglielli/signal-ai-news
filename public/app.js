@@ -42,6 +42,17 @@ function categoryClass(cat) {
   return 'thought-leadership';
 }
 
+// Sources known to be paywalled
+const PAYWALL_SOURCES = new Set([
+  'stratechery', 'the pragmatic engineer', 'mit technology review',
+  'bloomberg', 'the information', 'wall street journal', 'wsj',
+  'financial times', 'ft', 'the atlantic',
+]);
+
+function isPaywalled(source) {
+  return PAYWALL_SOURCES.has((source || '').toLowerCase().trim());
+}
+
 // ── Card builder — NO images, big type ───────────────────────────
 
 function cardType(index) {
@@ -57,12 +68,16 @@ function buildCard(article, index, overrideType = null) {
   card.addEventListener('click', () => window.open(article.url, '_blank', 'noopener'));
 
   const idxStr = String(index + 1).padStart(2, '0');
+  const paywallTag = isPaywalled(article.source)
+    ? `<span class="card-tag-paywall" title="This source may require a subscription">Paywall</span>`
+    : '';
 
   card.innerHTML = `
     <span class="card-index">${idxStr}</span>
     <div class="card-source-row">
       <span class="article-source">${safeText(article.source)}</span>
       <span class="card-tag ${categoryClass(article.category)}">${safeText(article.category.replace(/-/g, ' '))}</span>
+      ${paywallTag}
     </div>
     <h3 class="card-headline">${safeText(article.title)}</h3>
     <p class="card-summary">${safeText(article.summary)}</p>
@@ -272,14 +287,70 @@ function buildG2Card(cat, index) {
   return card;
 }
 
+function renderG2Summary(categories) {
+  const el = document.getElementById('g2-summary');
+  if (!el) return;
+
+  const totalCats = categories.length;
+  // Sum up product counts from labels like "35+ products" → extract number
+  const totalProductsMin = categories.reduce((sum, c) => {
+    const n = parseInt((c.product_count_label || '').replace(/[^0-9]/g, ''), 10) || 0;
+    return sum + n;
+  }, 0);
+
+  const hot     = categories.filter(c => c.signal === 'hot');
+  const growing = categories.filter(c => c.signal === 'growing');
+  const newCats = categories.filter(c => c.signal_label === 'New Category');
+
+  const hotLabel     = hot.map(c => c.name).join(', ') || '—';
+  const growingLabel = growing.map(c => c.name).join(', ') || '—';
+  const newLabel     = newCats.length
+    ? newCats.map(c => c.name).join(', ')
+    : 'No new categories this cycle';
+
+  el.innerHTML = `
+    <div class="g2-summary-stat">
+      <span class="g2-summary-label">AI Categories Tracked</span>
+      <span class="g2-summary-value">${totalCats}</span>
+      <span class="g2-summary-sub">Across G2's software marketplace, covering the full AI stack</span>
+    </div>
+    <div class="g2-summary-stat">
+      <span class="g2-summary-label">Products Indexed</span>
+      <span class="g2-summary-value">${totalProductsMin.toLocaleString()}+</span>
+      <span class="g2-summary-sub">Reviewed AI products mapped to category and buyer intent data</span>
+    </div>
+    <div class="g2-summary-stat">
+      <span class="g2-summary-label">Data Freshness</span>
+      <span class="g2-summary-value" style="font-size:clamp(18px,2vw,28px);letter-spacing:-0.01em">Bi-Weekly</span>
+      <span class="g2-summary-sub">Refreshed every 1st &amp; 15th via live G2 API — next update June 15</span>
+    </div>
+    <div class="g2-summary-narrative">
+      <div class="g2-narrative-item">
+        <div class="g2-narrative-label">🔥 Hottest right now</div>
+        <div class="g2-narrative-text"><strong>${safeText(hotLabel)}</strong> — highest buyer intent signals and fastest-growing product listings on G2 this cycle.</div>
+      </div>
+      <div class="g2-narrative-item">
+        <div class="g2-narrative-label">📈 Growing categories</div>
+        <div class="g2-narrative-text"><strong>${safeText(growingLabel)}</strong> — sustained review velocity and enterprise buyer activity increasing quarter-over-quarter.</div>
+      </div>
+      <div class="g2-narrative-item">
+        <div class="g2-narrative-label">🆕 New this cycle</div>
+        <div class="g2-narrative-text">${safeText(newLabel)}${newCats.length ? ' — a newly established G2 category, reflecting emerging buyer demand.' : '.'}</div>
+      </div>
+    </div>
+  `;
+}
+
 async function renderG2Section() {
   const grid = document.getElementById('g2-grid');
   if (!grid) return;
   try {
     const res = await fetch(`${API}/api/g2/categories`);
     const data = await res.json();
+    const cats = data.categories || [];
+    renderG2Summary(cats);
     grid.innerHTML = '';
-    (data.categories || []).forEach((cat, i) => grid.appendChild(buildG2Card(cat, i)));
+    cats.forEach((cat, i) => grid.appendChild(buildG2Card(cat, i)));
   } catch (err) {
     console.warn('[g2] Failed to load categories:', err);
     if (grid) grid.style.display = 'none';

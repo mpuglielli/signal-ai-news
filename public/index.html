@@ -11,26 +11,17 @@
 </head>
 <body>
 
-<!-- ── MASTHEAD ─────────────────────────────────────────────────── -->
+<!-- ── MASTHEAD — no nav ─────────────────────────────────────────── -->
 <header class="masthead">
   <div class="masthead-inner">
-    <div class="masthead-meta">
-      <span class="edition-label" id="edition-label">Loading…</span>
-    </div>
-    <div class="masthead-title">
-      <a href="/" class="wordmark">SIGNAL</a>
-    </div>
-    <nav class="masthead-nav">
-      <a href="#general" class="nav-link active" data-category="all">All</a>
-      <a href="#general" class="nav-link" data-category="general">AI News</a>
-      <a href="#saas" class="nav-link" data-category="saas">B2B SaaS</a>
-      <a href="#thought-leadership" class="nav-link" data-category="thought-leadership">Perspectives</a>
-    </nav>
+    <span class="edition-label" id="edition-label">Loading…</span>
+    <a href="/" class="wordmark">SIGNAL</a>
+    <span class="masthead-tagline">AI Intelligence for B2B SaaS</span>
   </div>
   <div class="masthead-stripe"></div>
 </header>
 
-<!-- ── HERO / COVER — pure typography, no image ─────────────────── -->
+<!-- ── HERO / COVER ──────────────────────────────────────────────── -->
 <section class="cover" id="cover">
   <div class="cover-grid">
     <article class="cover-feature" id="cover-feature">
@@ -42,9 +33,7 @@
         <a class="cover-cta" id="cover-link" href="#" target="_blank" rel="noopener">Read Story →</a>
       </div>
     </article>
-    <div class="cover-secondary" id="cover-secondary">
-      <!-- populated by JS -->
-    </div>
+    <div class="cover-secondary" id="cover-secondary"></div>
   </div>
   <div class="cover-stamp">
     <span class="stamp-issue" id="stamp-issue">№ 001</span>
@@ -62,13 +51,11 @@
 <!-- ── MAIN CONTENT ──────────────────────────────────────────────── -->
 <main class="content" id="main-content">
   <div class="section-header">
-    <div class="section-rule"></div>
-    <span class="section-num">01</span>
     <h2 class="section-title">Latest Intelligence</h2>
     <div class="section-filter" id="section-filter">
-      <button class="filter-btn active" data-cat="all">All</button>
-      <button class="filter-btn" data-cat="general">AI</button>
-      <button class="filter-btn" data-cat="saas">SaaS</button>
+      <button class="filter-btn active" data-cat="all">All Stories</button>
+      <button class="filter-btn" data-cat="general">AI News</button>
+      <button class="filter-btn" data-cat="saas">B2B SaaS</button>
       <button class="filter-btn" data-cat="thought-leadership">Perspectives</button>
     </div>
   </div>
@@ -99,47 +86,38 @@
 <!-- ── G2 AI CATEGORY INTELLIGENCE ───────────────────────────────── -->
 <section class="g2-section" id="g2-section">
   <div class="section-header">
-    <div class="section-rule red"></div>
-    <span class="section-num">02</span>
-    <h2 class="section-title">AI Category Intelligence</h2>
+    <h2 class="section-title">G2 AI Category Intelligence</h2>
     <div class="g2-badge">
-      <span class="g2-badge-logo">
-        <img src="/g2-logo.svg" alt="G2" width="20" height="20" />
-      </span>
+      <img src="/g2-logo.svg" alt="G2" width="22" height="22" />
       <span class="g2-badge-label">Live Market Data</span>
     </div>
   </div>
-  <p class="g2-intro">How AI software categories are moving on G2 — the world's largest software marketplace. Updated from live review and intent data.</p>
-  <div class="g2-grid" id="g2-grid">
+
+  <!-- Text-based summary — what's new, volume, trends -->
+  <div class="g2-summary" id="g2-summary">
     <!-- populated by JS -->
   </div>
+
+  <div class="g2-grid" id="g2-grid"></div>
   <a class="g2-cta-link" href="https://www.g2.com/categories/artificial-intelligence" target="_blank" rel="noopener">
     Explore all AI categories on G2 →
   </a>
 </section>
 
-<!-- ── THOUGHT LEADERSHIP ROW ────────────────────────────────────── -->
+<!-- ── THOUGHT LEADERSHIP ────────────────────────────────────────── -->
 <section class="perspectives-section" id="perspectives-section">
   <div class="section-header">
-    <div class="section-rule"></div>
-    <span class="section-num">03</span>
     <h2 class="section-title">Perspectives</h2>
   </div>
-  <div class="perspectives-row" id="perspectives-row">
-    <!-- populated by JS -->
-  </div>
+  <div class="perspectives-row" id="perspectives-row"></div>
 </section>
 
-<!-- ── B2B SAAS SPOTLIGHT ─────────────────────────────────────────── -->
+<!-- ── B2B SAAS + AI ─────────────────────────────────────────────── -->
 <section class="saas-section" id="saas-section">
   <div class="section-header">
-    <div class="section-rule red"></div>
-    <span class="section-num">04</span>
     <h2 class="section-title">B2B SaaS + AI</h2>
   </div>
-  <div class="saas-magazine-layout" id="saas-grid">
-    <!-- populated by JS -->
-  </div>
+  <div class="saas-magazine-layout" id="saas-grid"></div>
 </section>
 
 <!-- ── FOOTER ─────────────────────────────────────────────────────── -->
