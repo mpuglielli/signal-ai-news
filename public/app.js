@@ -270,6 +270,69 @@ function setFooterDate(lastUpdated) {
   }
 }
 
+// ── G2 Category Intelligence ──────────────────────────────────────
+
+function starsHtml(rating) {
+  const full = Math.floor(rating);
+  const hasHalf = rating % 1 >= 0.5;
+  let html = '';
+  for (let i = 0; i < 5; i++) {
+    if (i < full) html += `<span class="g2-star"></span>`;
+    else if (i === full && hasHalf) html += `<span class="g2-star half"></span>`;
+    else html += `<span class="g2-star empty"></span>`;
+  }
+  return `<div class="g2-stars">${html}</div>`;
+}
+
+function formatReviews(n) {
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k reviews`;
+  return `${n} reviews`;
+}
+
+function buildG2Card(cat, index) {
+  const card = document.createElement('div');
+  card.className = 'g2-card';
+
+  const productsHtml = cat.top_products.slice(0, index === 0 ? 4 : 3).map((p) => `
+    <a class="g2-product-item" href="${p.g2_url}" target="_blank" rel="noopener">
+      ${starsHtml(p.stars)}
+      <span class="g2-product-name">${safeText(p.name)}</span>
+      <span class="g2-product-rating">${p.stars}</span>
+      <span class="g2-product-reviews">${formatReviews(p.reviews)}</span>
+    </a>
+  `).join('');
+
+  card.innerHTML = `
+    <div class="g2-card-header">
+      <h3 class="g2-card-name">${safeText(cat.name)}</h3>
+      <span class="g2-signal ${cat.signal}">${safeText(cat.signal_label)}</span>
+    </div>
+    <p class="g2-card-desc">${safeText(cat.description)}</p>
+    <div class="g2-card-products">${productsHtml}</div>
+    <div class="g2-card-footer">
+      <span class="g2-card-count">${cat.product_count_label}</span>
+      <a class="g2-view-link" href="${cat.g2_url}" target="_blank" rel="noopener">View on G2 →</a>
+    </div>
+  `;
+  return card;
+}
+
+async function renderG2Section() {
+  const grid = document.getElementById('g2-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch(`${API}/api/g2/categories`);
+    const data = await res.json();
+    grid.innerHTML = '';
+    (data.categories || []).forEach((cat, i) => {
+      grid.appendChild(buildG2Card(cat, i));
+    });
+  } catch (err) {
+    console.warn('[g2] Failed to load categories:', err);
+    if (grid) grid.style.display = 'none';
+  }
+}
+
 // ── Main init ─────────────────────────────────────────────────────
 
 async function init() {
@@ -290,6 +353,7 @@ async function init() {
     offset = PAGE_SIZE;
     renderPerspectives(allArticles);
     renderSaas(allArticles);
+    renderG2Section();
     setEditionLabel(articlesRes.lastUpdated);
     setFooterDate(articlesRes.lastUpdated);
 

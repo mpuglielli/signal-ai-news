@@ -4,6 +4,7 @@ const cors = require('cors');
 const cron = require('node-cron');
 const path = require('path');
 const { refreshAll, getArticles, getFeatured } = require('./aggregator');
+const g2Categories = require('./g2-categories');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -30,6 +31,11 @@ app.get('/api/featured', (req, res) => {
 app.post('/api/refresh', async (req, res) => {
   await refreshAll();
   res.json({ ok: true, message: 'Feeds refreshed' });
+});
+
+// G2 AI category intelligence
+app.get('/api/g2/categories', (req, res) => {
+  res.json({ categories: g2Categories, source: 'G2.com', fetchedAt: new Date().toISOString() });
 });
 
 // Health check
