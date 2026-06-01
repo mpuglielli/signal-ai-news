@@ -38,6 +38,11 @@ app.get('/api/g2/categories', (req, res) => {
   res.json({ categories: g2Categories, source: 'G2.com', fetchedAt: new Date().toISOString() });
 });
 
+// Digest page — clean URL
+app.get('/digest', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'digest.html'));
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ ok: true, time: new Date().toISOString() });
