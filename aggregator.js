@@ -17,7 +17,7 @@ async function fetchFeed(feed) {
     return (parsed.items || []).slice(0, 8).map((item) => ({
       id: Buffer.from(item.link || item.guid || '').toString('base64').slice(0, 16),
       title: item.title || '',
-      summary: stripHtml(item.contentSnippet || item.content || item.summary || '').slice(0, 280),
+      summary: stripHtml(item.contentSnippet || item.content || item.summary || '').slice(0, 500),
       url: item.link || item.guid || '',
       image: extractImage(item),
       publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),

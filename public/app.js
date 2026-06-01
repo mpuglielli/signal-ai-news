@@ -53,11 +53,20 @@ function isPaywalled(source) {
   return PAYWALL_SOURCES.has((source || '').toLowerCase().trim());
 }
 
-// ── Card builder — NO images, big type ───────────────────────────
+// ── Read time estimate ────────────────────────────────────────────
+
+function readTime(summary) {
+  const words = (summary || '').trim().split(/\s+/).filter(Boolean).length;
+  // Summary ≈ 15% of full article; 220 wpm reading speed
+  const mins = Math.max(1, Math.round((words / 0.15) / 220));
+  return `${Math.min(mins, 15)} min read`;
+}
+
+// ── Card builder — NO images, NO index number ─────────────────────
 
 function cardType(index) {
-  if (index % 9 === 5) return 'type-accent';  // soft yellow tint
-  if (index % 6 === 0) return 'type-text';    // subtle navy tint
+  if (index % 9 === 5) return 'type-accent';
+  if (index % 6 === 0) return 'type-text';
   return '';
 }
 
@@ -67,13 +76,11 @@ function buildCard(article, index, overrideType = null) {
   card.className = `article-card${type ? ' ' + type : ''}`;
   card.addEventListener('click', () => window.open(article.url, '_blank', 'noopener'));
 
-  const idxStr = String(index + 1).padStart(2, '0');
   const paywallTag = isPaywalled(article.source)
     ? `<span class="card-tag-paywall" title="This source may require a subscription">Paywall</span>`
     : '';
 
   card.innerHTML = `
-    <span class="card-index">${idxStr}</span>
     <div class="card-source-row">
       <span class="article-source">${safeText(article.source)}</span>
       <span class="card-tag ${categoryClass(article.category)}">${safeText(article.category.replace(/-/g, ' '))}</span>
@@ -83,6 +90,7 @@ function buildCard(article, index, overrideType = null) {
     <p class="card-summary">${safeText(article.summary)}</p>
     <div class="card-footer">
       <span class="card-date">${relativeTime(article.publishedAt)}</span>
+      <span class="card-read-time">${readTime(article.summary)}</span>
       <span class="card-read">Read →</span>
     </div>
   `;
@@ -138,7 +146,7 @@ function setEditionLabel(lastUpdated) {
 function buildTicker(articles) {
   const track = document.getElementById('ticker-track');
   const items = articles.slice(0, 20).map((a) =>
-    `<span class="ticker-item">${safeText(a.title)}</span><span class="ticker-label"> · SIGNAL · </span>`
+    `<span class="ticker-item">${safeText(a.title)}</span><span class="ticker-label"> · SIG2NAL · </span>`
   ).join('');
   track.innerHTML = items + items;
 }
@@ -154,41 +162,26 @@ function renderGrid(articles, append = false) {
   });
 }
 
-// ── Perspectives ──────────────────────────────────────────────────
+// ── Perspectives — same articles-grid as Latest Intelligence ──────
 
 function renderPerspectives(articles) {
-  const row = document.getElementById('perspectives-row');
-  row.innerHTML = '';
-  const items = articles.filter((a) => a.category === 'thought-leadership').slice(0, 3);
-  if (!items.length) { document.querySelector('.perspectives-section').style.display = 'none'; return; }
-  items.forEach((a) => {
-    const card = document.createElement('article');
-    card.className = 'perspective-card';
-    card.innerHTML = `
-      <span class="article-source">${safeText(a.source)}</span>
-      <h3 class="card-headline">${safeText(a.title)}</h3>
-      <p class="card-summary">${safeText(a.summary)}</p>
-      <div class="card-footer">
-        <span class="card-date">${relativeTime(a.publishedAt)}</span>
-        <span class="card-read">Read →</span>
-      </div>
-    `;
-    card.addEventListener('click', () => window.open(a.url, '_blank', 'noopener'));
-    row.appendChild(card);
-  });
+  const grid = document.getElementById('perspectives-row');
+  if (!grid) return;
+  const items = articles.filter((a) => a.category === 'thought-leadership').slice(0, 8);
+  if (!items.length) { document.getElementById('perspectives-section').style.display = 'none'; return; }
+  grid.innerHTML = '';
+  items.forEach((a, i) => grid.appendChild(buildCard(a, i)));
 }
 
-// ── B2B SaaS section ──────────────────────────────────────────────
+// ── B2B SaaS — same articles-grid as Latest Intelligence ──────────
 
 function renderSaas(articles) {
   const grid = document.getElementById('saas-grid');
+  if (!grid) return;
+  const items = articles.filter((a) => a.category === 'saas').slice(0, 8);
+  if (!items.length) { document.getElementById('saas-section').style.display = 'none'; return; }
   grid.innerHTML = '';
-  const items = articles.filter((a) => a.category === 'saas').slice(0, 6);
-  if (!items.length) { document.querySelector('.saas-section').style.display = 'none'; return; }
-  items.forEach((a, i) => {
-    const card = buildCard(a, i, i === 0 ? 'type-accent' : '');
-    grid.appendChild(card);
-  });
+  items.forEach((a, i) => grid.appendChild(buildCard(a, i)));
 }
 
 // ── Filters ───────────────────────────────────────────────────────
@@ -326,15 +319,15 @@ function renderG2Summary(categories) {
     </div>
     <div class="g2-summary-narrative">
       <div class="g2-narrative-item">
-        <div class="g2-narrative-label">🔥 Hottest right now</div>
+        <div class="g2-narrative-label">Hottest right now</div>
         <div class="g2-narrative-text"><strong>${safeText(hotLabel)}</strong> — highest buyer intent signals and fastest-growing product listings on G2 this cycle.</div>
       </div>
       <div class="g2-narrative-item">
-        <div class="g2-narrative-label">📈 Growing categories</div>
+        <div class="g2-narrative-label">Growing categories</div>
         <div class="g2-narrative-text"><strong>${safeText(growingLabel)}</strong> — sustained review velocity and enterprise buyer activity increasing quarter-over-quarter.</div>
       </div>
       <div class="g2-narrative-item">
-        <div class="g2-narrative-label">🆕 New this cycle</div>
+        <div class="g2-narrative-label">New this cycle</div>
         <div class="g2-narrative-text">${safeText(newLabel)}${newCats.length ? ' — a newly established G2 category, reflecting emerging buyer demand.' : '.'}</div>
       </div>
     </div>
