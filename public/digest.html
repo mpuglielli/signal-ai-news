@@ -112,10 +112,80 @@
     }
     .essay-placeholder-text { font-size: 14px; color: var(--muted); line-height: 1.7; }
 
+    /* ── Essay history ─────────────────────────────────────────── */
+    .essay-history {
+      margin-top: 80px; padding-top: 32px;
+      border-top: 2px solid var(--navy);
+    }
+    .essay-history-header {
+      display: flex; align-items: baseline; gap: 20px; margin-bottom: 32px;
+    }
+    .essay-history-title {
+      font-family: var(--font-sans); font-weight: 700;
+      font-size: clamp(18px, 2vw, 24px); color: var(--navy); letter-spacing: -0.01em;
+    }
+    .essay-history-sub {
+      font-family: var(--font-mono); font-size: 10px;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+    }
+    .essay-history-list { display: flex; flex-direction: column; gap: 0; }
+
+    .history-item {
+      display: grid; grid-template-columns: 140px 1fr auto;
+      gap: 24px; align-items: start; padding: 24px 0;
+      border-bottom: 1px solid var(--rule); cursor: pointer;
+      transition: background 0.12s;
+    }
+    .history-item:first-child { border-top: 1px solid var(--rule); }
+    .history-item:hover { background: var(--subtle); margin: 0 -24px; padding-left: 24px; padding-right: 24px; }
+    .history-item.active { background: rgba(6,40,70,0.04); }
+
+    .history-date {
+      font-family: var(--font-mono); font-size: 11px; font-weight: 700;
+      color: var(--navy); letter-spacing: 0.05em; padding-top: 3px;
+    }
+    .history-date-sub { font-size: 10px; font-weight: 400; color: var(--muted); display: block; margin-top: 2px; }
+
+    .history-excerpt {
+      font-family: var(--font-serif); font-size: clamp(15px, 1.4vw, 18px);
+      font-weight: 700; line-height: 1.3; color: var(--navy);
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .history-meta {
+      font-family: var(--font-mono); font-size: 10px; color: var(--muted);
+      text-align: right; white-space: nowrap; padding-top: 4px;
+    }
+
+    /* Expanded history essay inline */
+    .history-essay-expand {
+      grid-column: 1 / -1; display: none;
+      padding: 24px 0 8px; border-top: 1px dashed var(--rule); margin-top: 8px;
+    }
+    .history-essay-expand.open { display: block; }
+    .history-essay-body {
+      font-size: 15px; line-height: 1.75; color: var(--ink);
+    }
+    .history-essay-body p { margin-bottom: 1.4em; }
+    .history-footnotes { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--rule); }
+    .history-footnotes-label {
+      font-family: var(--font-mono); font-size: 9px;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+    }
+    .history-fn-item {
+      font-size: 12px; color: var(--muted); line-height: 1.5; margin-bottom: 6px;
+      display: grid; grid-template-columns: 24px 1fr; gap: 6px;
+    }
+    .history-fn-num { font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--coral); }
+    .history-fn-link { color: var(--navy); font-weight: 600; border-bottom: 1px solid var(--rule); }
+    .history-fn-link:hover { color: var(--coral); }
+    .history-fn-src { font-family: var(--font-mono); font-size: 10px; color: var(--muted); margin-left: 4px; }
+
     @media (max-width: 640px) {
       .essay-byline { flex-direction: column; }
       .essay-byline-meta { text-align: left; }
       .essay-body p:first-child::first-letter { font-size: 3em; }
+      .history-item { grid-template-columns: 1fr; gap: 8px; }
+      .history-meta { text-align: left; }
     }
   </style>
 </head>
@@ -166,6 +236,15 @@
   <div class="essay-footnotes" id="essay-footnotes" style="display:none">
     <div class="essay-footnotes-title">Sources</div>
     <div class="footnote-list" id="footnote-list"></div>
+  </div>
+
+  <!-- Essay history — populated by JS -->
+  <div class="essay-history" id="essay-history" style="display:none">
+    <div class="essay-history-header">
+      <span class="essay-history-title">Previous Editions</span>
+      <span class="essay-history-sub">Every essay written by Claude, preserved in order</span>
+    </div>
+    <div class="essay-history-list" id="essay-history-list"></div>
   </div>
 </div>
 
