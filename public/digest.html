@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIG2NAL — TL;DR Digest</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Digest-specific styles ─────────────────────────────────── */
+    .digest-header {
+      max-width: var(--max-w); margin: 0 auto;
+      padding: calc(var(--gap) * 2) var(--gap) var(--gap);
+      border-bottom: 2px solid var(--navy);
+      display: flex; align-items: flex-end; justify-content: space-between; gap: var(--gap);
+    }
+    .digest-header-left { display: flex; flex-direction: column; gap: 8px; }
+    .digest-kicker {
+      font-family: var(--font-mono); font-size: 10px;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral);
+    }
+    .digest-title {
+      font-family: var(--font-serif); font-size: clamp(40px, 6vw, 80px);
+      font-weight: 900; font-style: italic; line-height: 0.95;
+      color: var(--navy); letter-spacing: -0.02em;
+    }
+    .digest-subtitle {
+      font-size: 15px; color: var(--muted); line-height: 1.6; max-width: 48ch; margin-top: 12px;
+    }
+    .digest-meta {
+      text-align: right; font-family: var(--font-mono);
+      font-size: 10px; letter-spacing: 0.1em; color: var(--muted);
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .digest-meta strong { display: block; font-size: 13px; color: var(--navy); margin-bottom: 4px; }
+
+    /* ── Category sections ─────────────────────────────────────── */
+    .digest-content {
+      max-width: var(--max-w); margin: 0 auto;
+      padding: calc(var(--gap) * 2) var(--gap) calc(var(--gap) * 4);
+    }
+    .digest-section { margin-bottom: calc(var(--gap) * 3); }
+    .digest-section-label {
+      font-family: var(--font-mono); font-size: 9px;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: calc(var(--gap) * 1.5);
+      display: flex; align-items: center; gap: 16px;
+    }
+    .digest-section-label::after {
+      content: ''; flex: 1; height: 1px; background: var(--rule);
+    }
+    .digest-label-chip {
+      padding: 3px 10px; border-radius: 2px; font-size: 9px; font-weight: 700;
+    }
+    .digest-label-chip.general           { background: var(--blue-bg);   color: var(--blue-text); }
+    .digest-label-chip.saas              { background: var(--teal-bg);   color: var(--teal-text); }
+    .digest-label-chip.thought-leadership{ background: var(--purple-bg); color: var(--purple-text); }
+
+    /* ── Article rows ──────────────────────────────────────────── */
+    .digest-articles { display: flex; flex-direction: column; gap: 0; }
+
+    .digest-article {
+      display: grid; grid-template-columns: 1fr 280px;
+      gap: var(--gap); padding: 28px 0; border-bottom: 1px solid var(--rule);
+      cursor: pointer; transition: background 0.12s;
+    }
+    .digest-article:hover { background: var(--subtle); margin: 0 calc(-1 * var(--gap)); padding-left: var(--gap); padding-right: var(--gap); }
+    .digest-article:first-child { border-top: 1px solid var(--rule); }
+
+    .digest-article-main { display: flex; flex-direction: column; gap: 10px; }
+    .digest-article-source { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--coral); }
+    .digest-article-headline {
+      font-family: var(--font-serif); font-size: clamp(18px, 1.8vw, 26px);
+      font-weight: 700; line-height: 1.2; color: var(--navy); letter-spacing: -0.01em;
+    }
+    .digest-article-summary {
+      font-size: 14px; line-height: 1.7; color: var(--muted);
+    }
+    .digest-article-tags { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 4px; }
+    .digest-paywall { font-family: var(--font-mono); font-size: 9px; font-weight: 700; padding: 3px 7px; background: var(--yellow-bg); color: var(--yellow-text); border-radius: 2px; }
+
+    .digest-article-aside {
+      display: flex; flex-direction: column; justify-content: space-between;
+      align-items: flex-end; gap: 12px; padding-top: 4px;
+    }
+    .digest-article-read-time { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+    .digest-article-link {
+      font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--coral);
+      border-bottom: 1px solid var(--coral); padding-bottom: 1px;
+      text-decoration: none; align-self: flex-end;
+    }
+    .digest-article-link:hover { opacity: 0.7; }
+    .digest-article-date { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-align: right; }
+
+    /* ── Empty / loading states ────────────────────────────────── */
+    .digest-loading {
+      text-align: center; padding: 80px var(--gap);
+      font-family: var(--font-mono); font-size: 12px;
+      letter-spacing: 0.1em; color: var(--muted);
+    }
+    .digest-count {
+      font-family: var(--font-mono); font-size: 10px; color: var(--muted); margin-top: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .digest-header { flex-direction: column; align-items: flex-start; }
+      .digest-meta { text-align: left; }
+      .digest-article { grid-template-columns: 1fr; }
+      .digest-article-aside { flex-direction: row; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── MASTHEAD ─────────────────────────────────────────────────── -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <span class="edition-label">TL;DR Digest</span>
+    <a href="/" class="wordmark">SI<span class="wordmark-g2">G2</span>NAL</a>
+    <a href="/" class="masthead-digest-cta">← Back to full site</a>
+  </div>
+  <div class="masthead-stripe"></div>
+</header>
+
+<!-- ── DIGEST HEADER ─────────────────────────────────────────────── -->
+<div class="digest-header">
+  <div class="digest-header-left">
+    <span class="digest-kicker">For people who don't want to read</span>
+    <h1 class="digest-title">Everything that<br>matters, summarized.</h1>
+    <p class="digest-subtitle">All the AI and B2B SaaS news from this edition — headlines and summaries, no clicks required.</p>
+  </div>
+  <div class="digest-meta">
+    <strong id="digest-date">Loading…</strong>
+    <span id="digest-article-count"></span>
+    <span>Updated Mon &amp; Thu · 9am EST</span>
+  </div>
+</div>
+
+<!-- ── DIGEST CONTENT ─────────────────────────────────────────────── -->
+<div class="digest-content" id="digest-content">
+  <div class="digest-loading" id="digest-loading">Pulling the latest intelligence…</div>
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-wordmark">SI<span class="wordmark-g2">G2</span>NAL</div>
+    <div class="footer-meta">
+      <p>AI intelligence for B2B SaaS professionals.</p>
+      <p>Updated every Monday &amp; Thursday.</p>
+      <p class="footer-powered">Powered by <a href="https://g2.com" target="_blank" rel="noopener">G2</a></p>
+    </div>
+    <div class="footer-sources">
+      <p class="footer-sources-label">Sources include:</p>
+      <p>TechCrunch · The Verge · Wired · VentureBeat · MIT Tech Review · OpenAI · Anthropic · a16z · Sequoia · Stratechery + more</p>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span>© 2026 G2.com</span>
+    <a href="/" style="color:var(--coral-bg)">← Read the full edition</a>
+  </div>
+</footer>
+
+<script src="/digest.js"></script>
+</body>
+</html>

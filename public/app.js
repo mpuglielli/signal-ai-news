@@ -147,6 +147,7 @@ function buildTicker(articles) {
   const track = document.getElementById('ticker-track');
   const items = articles.slice(0, 20).map((a) =>
     `<span class="ticker-item">${safeText(a.title)}</span><span class="ticker-label"> · SIG2NAL · </span>`
+  // Note: ticker uses plain text — G2 orange only applies in the wordmark SVG context
   ).join('');
   track.innerHTML = items + items;
 }

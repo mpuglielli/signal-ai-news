@@ -69,7 +69,15 @@ button { cursor: pointer; font-family: inherit; }
   font-size: clamp(20px, 2.5vw, 26px); letter-spacing: 0.25em;
   text-transform: uppercase; color: var(--navy); display: block; text-align: center;
 }
-.wordmark-2 { color: var(--coral); }
+.wordmark-g2 { color: var(--coral); }
+
+.masthead-digest-cta {
+  font-family: var(--font-mono); font-size: 10px;
+  font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--muted); text-align: right; transition: color 0.15s;
+  white-space: nowrap;
+}
+.masthead-digest-cta:hover { color: var(--coral); }
 .masthead-tagline {
   font-family: var(--font-mono); font-size: 10px;
   letter-spacing: 0.12em; text-transform: uppercase;
@@ -457,7 +465,7 @@ button { cursor: pointer; font-family: inherit; }
   font-family: var(--font-sans); font-weight: 700;
   font-size: 26px; letter-spacing: 0.25em; color: var(--white);
 }
-.footer-wordmark .wordmark-2 { color: var(--coral-bg); }
+.footer-wordmark .wordmark-g2 { color: var(--coral-bg); }
 .footer-meta p, .footer-sources p { font-size: 13px; line-height: 1.8; color: rgba(253,250,245,0.5); }
 .footer-sources-label {
   color: rgba(253,250,245,0.75) !important; font-family: var(--font-mono);
