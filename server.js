@@ -1,20 +1,15 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const cron = require('node-cron');
 const path = require('path');
 const fs = require('fs');
 const { refreshAll, getArticles, getFeatured } = require('./aggregator');
 const g2Categories = require('./g2-categories');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 const ESSAYS_FILE = path.join(__dirname, 'essays.json');
 
 // ── Essay persistence ─────────────────────────────────────────────
-// Load from essays.json on boot; write back on each new submission.
-// essays array: newest first.
-
 function loadEssays() {
   try {
     if (fs.existsSync(ESSAYS_FILE)) {
@@ -33,7 +28,8 @@ function saveEssays(essays) {
   try {
     fs.writeFileSync(ESSAYS_FILE, JSON.stringify(essays, null, 2), 'utf8');
   } catch (err) {
-    console.warn('[essays] Could not write essays.json:', err.message);
+    // On Vercel, filesystem is read-only except /tmp — essays are committed to git by scheduled task
+    console.warn('[essays] Could not write essays.json (ok on Vercel — scheduled task commits to git)');
   }
 }
 
@@ -68,21 +64,17 @@ app.get('/digest', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'digest.html'));
 });
 
-// Latest essay only
 app.get('/api/digest-essay', (req, res) => {
   res.json(essays[0] || { essay: null, citations: [], generatedAt: null });
 });
 
-// All essays — newest first (for history)
 app.get('/api/digest-essays', (req, res) => {
   res.json({ essays, total: essays.length });
 });
 
-// Store a new essay (called by scheduled task)
 app.post('/api/digest-essay', (req, res) => {
   const { essay, citations, wordCount, generatedAt } = req.body;
   if (!essay) return res.status(400).json({ error: 'essay field required' });
-
   const entry = {
     id: (generatedAt || new Date().toISOString()).slice(0, 10),
     generatedAt: generatedAt || new Date().toISOString(),
@@ -90,8 +82,6 @@ app.post('/api/digest-essay', (req, res) => {
     essay,
     citations: citations || [],
   };
-
-  // Prepend newest, avoid exact duplicate IDs
   essays = [entry, ...essays.filter(e => e.id !== entry.id)];
   saveEssays(essays);
   console.log(`[essays] New essay saved (${entry.wordCount} words, ${essays.length} total)`);
@@ -102,16 +92,18 @@ app.get('/api/health', (req, res) => {
   res.json({ ok: true, time: new Date().toISOString() });
 });
 
-// ── Scheduling — Monday & Thursday at 9:00 AM EST ────────────────
-cron.schedule('0 14 * * 1,4', async () => {
-  console.log('[cron] Scheduled content refresh triggered (Mon/Thu 9am EST)');
-  await refreshAll();
-});
+// ── Boot: fetch articles on startup ──────────────────────────────
+// On Vercel, this runs once per cold start.
+// On Render/local, it runs once on server start.
+// Scheduling is handled externally by the Cowork scheduled task (Mon/Thu 9am EST).
+refreshAll().catch(err => console.warn('[startup] refreshAll failed:', err.message));
 
-// ── Boot ──────────────────────────────────────────────────────────
-(async () => {
-  await refreshAll();
+// ── Local dev: listen directly. Vercel: export the app. ──────────
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
-    console.log(`\n🟢  G2 AI News running at http://localhost:${PORT}\n`);
+    console.log(`\n🟢  SIG2NAL running at http://localhost:${PORT}\n`);
   });
-})();
+}
+
+module.exports = app;
