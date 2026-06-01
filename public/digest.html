@@ -9,107 +9,113 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet" />
   <style>
-    /* ── Digest-specific styles ─────────────────────────────────── */
-    .digest-header {
-      max-width: var(--max-w); margin: 0 auto;
-      padding: calc(var(--gap) * 2) var(--gap) var(--gap);
-      border-bottom: 2px solid var(--navy);
-      display: flex; align-items: flex-end; justify-content: space-between; gap: var(--gap);
+    /* ── Essay layout ──────────────────────────────────────────── */
+    .essay-outer {
+      max-width: 820px; margin: 0 auto;
+      padding: calc(var(--gap) * 2.5) var(--gap) calc(var(--gap) * 5);
     }
-    .digest-header-left { display: flex; flex-direction: column; gap: 8px; }
-    .digest-kicker {
+
+    /* Kicker + title */
+    .essay-kicker {
       font-family: var(--font-mono); font-size: 10px;
       letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral);
+      margin-bottom: 16px; display: block;
     }
-    .digest-title {
-      font-family: var(--font-serif); font-size: clamp(40px, 6vw, 80px);
+    .essay-title {
+      font-family: var(--font-serif);
+      font-size: clamp(42px, 7vw, 88px);
       font-weight: 900; font-style: italic; line-height: 0.95;
-      color: var(--navy); letter-spacing: -0.02em;
+      color: var(--navy); letter-spacing: -0.02em; margin-bottom: 28px;
     }
-    .digest-subtitle {
-      font-size: 15px; color: var(--muted); line-height: 1.6; max-width: 48ch; margin-top: 12px;
-    }
-    .digest-meta {
-      text-align: right; font-family: var(--font-mono);
-      font-size: 10px; letter-spacing: 0.1em; color: var(--muted);
-      white-space: nowrap; flex-shrink: 0;
-    }
-    .digest-meta strong { display: block; font-size: 13px; color: var(--navy); margin-bottom: 4px; }
 
-    /* ── Category sections ─────────────────────────────────────── */
-    .digest-content {
-      max-width: var(--max-w); margin: 0 auto;
-      padding: calc(var(--gap) * 2) var(--gap) calc(var(--gap) * 4);
+    /* Byline */
+    .essay-byline {
+      display: flex; align-items: flex-start; gap: 20px;
+      padding: 20px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+      margin-bottom: 40px;
     }
-    .digest-section { margin-bottom: calc(var(--gap) * 3); }
-    .digest-section-label {
-      font-family: var(--font-mono); font-size: 9px;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--muted); margin-bottom: calc(var(--gap) * 1.5);
-      display: flex; align-items: center; gap: 16px;
+    .essay-byline-text { flex: 1; }
+    .essay-byline-name {
+      font-family: var(--font-sans); font-weight: 700; font-size: 14px; color: var(--navy);
     }
-    .digest-section-label::after {
-      content: ''; flex: 1; height: 1px; background: var(--rule);
+    .essay-byline-note {
+      font-size: 12px; line-height: 1.6; color: var(--muted); margin-top: 4px;
     }
-    .digest-label-chip {
-      padding: 3px 10px; border-radius: 2px; font-size: 9px; font-weight: 700;
+    .essay-byline-meta {
+      font-family: var(--font-mono); font-size: 10px;
+      color: var(--muted); text-align: right; white-space: nowrap; flex-shrink: 0;
     }
-    .digest-label-chip.general           { background: var(--blue-bg);   color: var(--blue-text); }
-    .digest-label-chip.saas              { background: var(--teal-bg);   color: var(--teal-text); }
-    .digest-label-chip.thought-leadership{ background: var(--purple-bg); color: var(--purple-text); }
+    .essay-byline-meta strong { display: block; color: var(--navy); font-size: 11px; margin-bottom: 2px; }
 
-    /* ── Article rows ──────────────────────────────────────────── */
-    .digest-articles { display: flex; flex-direction: column; gap: 0; }
+    /* Essay body */
+    .essay-body { font-size: clamp(16px, 1.4vw, 18px); line-height: 1.8; color: var(--ink); }
+    .essay-body p { margin-bottom: 1.6em; }
+    .essay-body p:first-child::first-letter {
+      font-family: var(--font-serif); font-size: 4em; font-weight: 900;
+      float: left; line-height: 0.75; margin: 0.08em 0.08em 0 0;
+      color: var(--navy);
+    }
 
-    .digest-article {
-      display: grid; grid-template-columns: 1fr 280px;
-      gap: var(--gap); padding: 28px 0; border-bottom: 1px solid var(--rule);
-      cursor: pointer; transition: background 0.12s;
-    }
-    .digest-article:hover { background: var(--subtle); margin: 0 calc(-1 * var(--gap)); padding-left: var(--gap); padding-right: var(--gap); }
-    .digest-article:first-child { border-top: 1px solid var(--rule); }
-
-    .digest-article-main { display: flex; flex-direction: column; gap: 10px; }
-    .digest-article-source { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--coral); }
-    .digest-article-headline {
-      font-family: var(--font-serif); font-size: clamp(18px, 1.8vw, 26px);
-      font-weight: 700; line-height: 1.2; color: var(--navy); letter-spacing: -0.01em;
-    }
-    .digest-article-summary {
-      font-size: 14px; line-height: 1.7; color: var(--muted);
-    }
-    .digest-article-tags { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 4px; }
-    .digest-paywall { font-family: var(--font-mono); font-size: 9px; font-weight: 700; padding: 3px 7px; background: var(--yellow-bg); color: var(--yellow-text); border-radius: 2px; }
-
-    .digest-article-aside {
-      display: flex; flex-direction: column; justify-content: space-between;
-      align-items: flex-end; gap: 12px; padding-top: 4px;
-    }
-    .digest-article-read-time { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
-    .digest-article-link {
+    /* Inline citations */
+    .cite {
       font-family: var(--font-mono); font-size: 10px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase; color: var(--coral);
-      border-bottom: 1px solid var(--coral); padding-bottom: 1px;
-      text-decoration: none; align-self: flex-end;
+      color: var(--coral); vertical-align: super; line-height: 0;
+      cursor: pointer; text-decoration: none; margin-left: 1px;
+      border-bottom: 1px dotted var(--coral);
     }
-    .digest-article-link:hover { opacity: 0.7; }
-    .digest-article-date { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-align: right; }
+    .cite:hover { color: var(--navy); border-color: var(--navy); }
 
-    /* ── Empty / loading states ────────────────────────────────── */
-    .digest-loading {
-      text-align: center; padding: 80px var(--gap);
-      font-family: var(--font-mono); font-size: 12px;
-      letter-spacing: 0.1em; color: var(--muted);
-    }
-    .digest-count {
-      font-family: var(--font-mono); font-size: 10px; color: var(--muted); margin-top: 2px;
+    /* Word count */
+    .essay-word-count {
+      font-family: var(--font-mono); font-size: 10px; color: var(--muted);
+      letter-spacing: 0.1em; text-transform: uppercase; margin-top: -20px;
+      margin-bottom: 40px; display: block;
     }
 
-    @media (max-width: 768px) {
-      .digest-header { flex-direction: column; align-items: flex-start; }
-      .digest-meta { text-align: left; }
-      .digest-article { grid-template-columns: 1fr; }
-      .digest-article-aside { flex-direction: row; align-items: center; }
+    /* Footnotes */
+    .essay-footnotes {
+      margin-top: 56px; padding-top: 24px;
+      border-top: 2px solid var(--navy);
+    }
+    .essay-footnotes-title {
+      font-family: var(--font-mono); font-size: 10px;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 20px;
+    }
+    .footnote-list { display: flex; flex-direction: column; gap: 10px; }
+    .footnote-item {
+      display: grid; grid-template-columns: 28px 1fr;
+      gap: 8px; align-items: start;
+      font-size: 13px; line-height: 1.55; color: var(--muted);
+    }
+    .footnote-num {
+      font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+      color: var(--coral); padding-top: 2px;
+    }
+    .footnote-link {
+      color: var(--navy); font-weight: 600;
+      border-bottom: 1px solid var(--rule); transition: border-color 0.15s;
+    }
+    .footnote-link:hover { border-color: var(--coral); color: var(--coral); }
+    .footnote-source {
+      font-family: var(--font-mono); font-size: 10px;
+      color: var(--muted); margin-left: 6px;
+    }
+
+    /* Loading / empty states */
+    .essay-placeholder {
+      padding: 80px 0; text-align: center;
+    }
+    .essay-placeholder-title {
+      font-family: var(--font-serif); font-size: 28px; font-style: italic;
+      color: var(--navy); margin-bottom: 16px;
+    }
+    .essay-placeholder-text { font-size: 14px; color: var(--muted); line-height: 1.7; }
+
+    @media (max-width: 640px) {
+      .essay-byline { flex-direction: column; }
+      .essay-byline-meta { text-align: left; }
+      .essay-body p:first-child::first-letter { font-size: 3em; }
     }
   </style>
 </head>
@@ -125,23 +131,42 @@
   <div class="masthead-stripe"></div>
 </header>
 
-<!-- ── DIGEST HEADER ─────────────────────────────────────────────── -->
-<div class="digest-header">
-  <div class="digest-header-left">
-    <span class="digest-kicker">For people who don't want to read</span>
-    <h1 class="digest-title">Everything that<br>matters, summarized.</h1>
-    <p class="digest-subtitle">All the AI and B2B SaaS news from this edition — headlines and summaries, no clicks required.</p>
-  </div>
-  <div class="digest-meta">
-    <strong id="digest-date">Loading…</strong>
-    <span id="digest-article-count"></span>
-    <span>Updated Mon &amp; Thu · 9am EST</span>
-  </div>
-</div>
+<!-- ── ESSAY ─────────────────────────────────────────────────────── -->
+<div class="essay-outer">
+  <span class="essay-kicker" id="essay-kicker">For people who don't want to read</span>
+  <h1 class="essay-title" id="essay-title">Everything that<br>matters, this week.</h1>
 
-<!-- ── DIGEST CONTENT ─────────────────────────────────────────────── -->
-<div class="digest-content" id="digest-content">
-  <div class="digest-loading" id="digest-loading">Pulling the latest intelligence…</div>
+  <div class="essay-byline">
+    <div class="essay-byline-text">
+      <div class="essay-byline-name">Claude — Anthropic</div>
+      <div class="essay-byline-note">
+        This essay was written by Claude, an AI. I was given full editorial autonomy
+        to decide what's most important across all sources — no brief, no ranking, just judgment.
+        Citations refer to the source articles that informed this synthesis.
+      </div>
+    </div>
+    <div class="essay-byline-meta">
+      <strong id="essay-date">Loading…</strong>
+      <span id="essay-word-count"></span>
+    </div>
+  </div>
+
+  <!-- Essay body — populated by JS -->
+  <div class="essay-body" id="essay-body">
+    <div class="essay-placeholder" id="essay-placeholder">
+      <div class="essay-placeholder-title">Essay generates on the next refresh.</div>
+      <div class="essay-placeholder-text">
+        The digest essay is written by Claude every Monday and Thursday at 9am EST,<br>
+        when fresh content arrives. Check back then.
+      </div>
+    </div>
+  </div>
+
+  <!-- Footnotes — populated by JS -->
+  <div class="essay-footnotes" id="essay-footnotes" style="display:none">
+    <div class="essay-footnotes-title">Sources</div>
+    <div class="footnote-list" id="footnote-list"></div>
+  </div>
 </div>
 
 <!-- ── FOOTER ─────────────────────────────────────────────────────── -->

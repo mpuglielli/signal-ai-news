@@ -1,130 +1,92 @@
 /* ═══════════════════════════════════════════════════
-   SIG2NAL — Digest Page
-   Pulls all articles, groups by category, shows full summaries
+   SIG2NAL — Digest / Essay Page
+   Fetches AI-written essay from /api/digest-essay
+   and renders it with inline citations + footnotes
    ═══════════════════════════════════════════════════ */
 
 const API = '';
 
-const PAYWALL_SOURCES = new Set([
-  'stratechery', 'the pragmatic engineer', 'mit technology review',
-  'bloomberg', 'the information', 'wall street journal', 'wsj',
-  'financial times', 'ft', 'the atlantic',
-]);
-
-const CATEGORY_LABELS = {
-  'general':            { label: 'AI News',        cls: 'general' },
-  'saas':               { label: 'B2B SaaS',       cls: 'saas' },
-  'thought-leadership': { label: 'Perspectives',   cls: 'thought-leadership' },
-};
-
-const CATEGORY_ORDER = ['general', 'saas', 'thought-leadership'];
-
-function safeText(str) {
-  const d = document.createElement('div');
-  d.textContent = str;
-  return d.innerHTML;
+function relativeDate(isoStr) {
+  if (!isoStr) return '';
+  return new Date(isoStr).toLocaleDateString('en-US', {
+    weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+  });
 }
 
-function relativeTime(dateStr) {
-  const diff = Date.now() - new Date(dateStr).getTime();
-  const hrs = Math.floor(diff / 36e5);
-  if (hrs < 1) return 'Just now';
-  if (hrs < 24) return `${hrs}h ago`;
-  const days = Math.floor(hrs / 24);
-  if (days < 7) return `${days}d ago`;
-  return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+// Convert [N] markers in essay text to superscript cite links
+function parseCitations(text) {
+  return text.replace(/\[(\d+)\]/g, (_, n) =>
+    `<a class="cite" href="#fn${n}" id="ref${n}">[${n}]</a>`
+  );
 }
 
-function readTime(summary) {
-  const words = (summary || '').trim().split(/\s+/).filter(Boolean).length;
-  return `${Math.max(1, Math.min(Math.round((words / 0.15) / 220), 15))} min read`;
+// Split essay text into paragraphs and wrap in <p> tags
+function renderParagraphs(text) {
+  return text
+    .split(/\n\n+/)
+    .filter(p => p.trim())
+    .map(p => `<p>${parseCitations(p.trim())}</p>`)
+    .join('');
 }
 
-function isPaywalled(source) {
-  return PAYWALL_SOURCES.has((source || '').toLowerCase().trim());
-}
-
-function buildArticleRow(article) {
-  const paywallBadge = isPaywalled(article.source)
-    ? `<span class="digest-paywall">Paywall</span>` : '';
-
-  const row = document.createElement('div');
-  row.className = 'digest-article';
-  row.addEventListener('click', () => window.open(article.url, '_blank', 'noopener'));
-
-  row.innerHTML = `
-    <div class="digest-article-main">
-      <span class="digest-article-source">${safeText(article.source)}</span>
-      <h3 class="digest-article-headline">${safeText(article.title)}</h3>
-      <p class="digest-article-summary">${safeText(article.summary)}</p>
-      <div class="digest-article-tags">${paywallBadge}</div>
+function renderFootnotes(citations) {
+  return citations.map(c => `
+    <div class="footnote-item" id="fn${c.num}">
+      <span class="footnote-num">[${c.num}]</span>
+      <span>
+        <a class="footnote-link" href="${c.url}" target="_blank" rel="noopener">${c.title}</a>
+        <span class="footnote-source">— ${c.source}</span>
+      </span>
     </div>
-    <div class="digest-article-aside">
-      <div>
-        <div class="digest-article-date">${relativeTime(article.publishedAt)}</div>
-        <div class="digest-article-read-time">${readTime(article.summary)}</div>
-      </div>
-      <a class="digest-article-link" href="${article.url}" target="_blank" rel="noopener"
-         onclick="event.stopPropagation()">Read original →</a>
-    </div>
-  `;
-  return row;
-}
-
-function buildSection(category, articles) {
-  const meta = CATEGORY_LABELS[category] || { label: category, cls: 'general' };
-  const section = document.createElement('div');
-  section.className = 'digest-section';
-
-  section.innerHTML = `
-    <div class="digest-section-label">
-      <span class="digest-label-chip ${meta.cls}">${meta.label}</span>
-      <span>${articles.length} ${articles.length === 1 ? 'story' : 'stories'}</span>
-    </div>
-    <div class="digest-articles" id="section-${category}"></div>
-  `;
-
-  const list = section.querySelector(`#section-${category}`);
-  articles.forEach(a => list.appendChild(buildArticleRow(a)));
-  return section;
+  `).join('');
 }
 
 async function init() {
-  // Set date
-  document.getElementById('digest-date').textContent =
-    new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  document.getElementById('essay-date').textContent =
+    new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
   try {
-    const res = await fetch(`${API}/api/articles?limit=100`);
+    const res = await fetch(`${API}/api/digest-essay`);
     const data = await res.json();
-    const articles = data.articles || [];
 
-    document.getElementById('digest-article-count').textContent =
-      `${articles.length} articles`;
+    if (!data.essay) {
+      // No essay yet — placeholder already shown in HTML
+      return;
+    }
 
-    // Group by category
-    const grouped = {};
-    CATEGORY_ORDER.forEach(c => { grouped[c] = []; });
-    articles.forEach(a => {
-      const cat = grouped[a.category] !== undefined ? a.category : 'general';
-      if (grouped[cat]) grouped[cat].push(a);
+    // Update date from when essay was actually generated
+    document.getElementById('essay-date').textContent = relativeDate(data.generatedAt);
+
+    if (data.wordCount) {
+      document.getElementById('essay-word-count').textContent = `${data.wordCount} words`;
+    }
+
+    // Render essay body
+    const body = document.getElementById('essay-body');
+    body.innerHTML = renderParagraphs(data.essay);
+
+    // Render footnotes
+    if (data.citations && data.citations.length) {
+      const footnotesEl = document.getElementById('essay-footnotes');
+      document.getElementById('footnote-list').innerHTML = renderFootnotes(data.citations);
+      footnotesEl.style.display = '';
+    }
+
+    // Smooth scroll for citation clicks
+    document.querySelectorAll('.cite').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.getElementById(link.getAttribute('href').slice(1));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
     });
-
-    // Render
-    const container = document.getElementById('digest-content');
-    container.innerHTML = '';
-
-    CATEGORY_ORDER.forEach(cat => {
-      if (grouped[cat] && grouped[cat].length) {
-        container.appendChild(buildSection(cat, grouped[cat]));
-      }
-    });
-
-    document.getElementById('digest-loading')?.remove();
 
   } catch (err) {
-    document.getElementById('digest-loading').textContent =
-      'Could not load articles — is the server running?';
+    console.error('[digest]', err);
+    document.getElementById('essay-placeholder').innerHTML = `
+      <div class="essay-placeholder-title">Could not load essay.</div>
+      <div class="essay-placeholder-text">Check that the server is running.</div>
+    `;
   }
 }
 
