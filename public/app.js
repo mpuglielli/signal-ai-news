@@ -54,12 +54,36 @@ function isPaywalled(source) {
 }
 
 // ── Read time estimate ────────────────────────────────────────────
+// RSS summaries are 30–80 words — a poor proxy for article length.
+// We improve accuracy by calibrating the multiplier based on source type:
+//   Long-form (analysis, deep-dives): ~1,500–3,000 word articles
+//   News briefs (TechCrunch, VentureBeat, press releases): ~400–700 words
 
-function readTime(summary) {
-  const words = (summary || '').trim().split(/\s+/).filter(Boolean).length;
-  // Summary ≈ 15% of full article; 220 wpm reading speed
-  const mins = Math.max(1, Math.round((words / 0.15) / 220));
-  return `${Math.min(mins, 15)} min read`;
+const LONG_FORM_SOURCES = new Set([
+  'stratechery', 'benedict evans', 'the pragmatic engineer',
+  'mit technology review', 'wired ai', 'wired',
+  'a16z', 'sequoia capital', 'the algorithmic bridge', 'ai snake oil',
+]);
+
+function readTime(summary, source, category) {
+  const words = Math.max(25, (summary || '').trim().split(/\s+/).filter(Boolean).length);
+  const src = (source || '').toLowerCase();
+
+  const isLongForm = category === 'thought-leadership' ||
+    [...LONG_FORM_SOURCES].some(s => src.includes(s));
+
+  // Multiplier: how many times longer is the full article vs the summary?
+  // Long-form summaries ≈ 3–6% of article → use 30×
+  // News summaries ≈ 8–15% of article → use 12×
+  const multiplier = isLongForm ? 30 : 12;
+  const estimatedWords = words * multiplier;
+  const rawMins = estimatedWords / 220; // 220 wpm average
+
+  const mins = isLongForm
+    ? Math.max(5, Math.round(rawMins))   // floor 5 min for long-form
+    : Math.max(2, Math.round(rawMins));  // floor 2 min for news
+
+  return `${Math.min(mins, 20)} min read`;
 }
 
 // ── Card builder — NO images, NO index number ─────────────────────
@@ -90,7 +114,7 @@ function buildCard(article, index, overrideType = null) {
     <p class="card-summary">${safeText(article.summary)}</p>
     <div class="card-footer">
       <span class="card-date">${relativeTime(article.publishedAt)}</span>
-      <span class="card-read-time">${readTime(article.summary)}</span>
+      <span class="card-read-time">${readTime(article.summary, article.source, article.category)}</span>
       <span class="card-read">Read →</span>
     </div>
   `;
