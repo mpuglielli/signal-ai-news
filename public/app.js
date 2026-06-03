@@ -452,13 +452,28 @@ async function renderG2Section() {
 
 // ── Init ──────────────────────────────────────────────────────────
 
+async function fetchWithRetry(url, attempts = 3, delayMs = 8000) {
+  for (let i = 0; i < attempts; i++) {
+    const data = await fetch(url).then(r => r.json());
+    if ((data.articles?.length || 0) > 0 || (data.total || 0) > 0) return data;
+    if (i < attempts - 1) {
+      // Server cold-started — show message and retry
+      document.getElementById('articles-grid').innerHTML =
+        '<p style="grid-column:span 12;padding:40px 0;color:var(--muted);font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Waking up feeds… retrying in a moment.</p>';
+      await new Promise(r => setTimeout(r, delayMs));
+    }
+  }
+  return { articles: [], total: 0 };
+}
+
 async function init() {
   setupFilters();
   setupLoadMore();
   try {
+    // Wake the server first, then fetch in parallel
     const [featuredRes, articlesRes] = await Promise.all([
       fetch(`${API}/api/featured?n=5`).then((r) => r.json()),
-      fetch(`${API}/api/articles?limit=80`).then((r) => r.json()),
+      fetchWithRetry(`${API}/api/articles?limit=80`),
     ]);
     allArticles = articlesRes.articles || [];
 

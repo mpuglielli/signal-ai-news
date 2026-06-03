@@ -1,4 +1,6 @@
 const Parser = require('rss-parser');
+const fs = require('fs');
+const path = require('path');
 const feeds = require('./feeds');
 
 const parser = new Parser({
@@ -6,9 +8,35 @@ const parser = new Parser({
   headers: { 'User-Agent': 'G2-AI-News/1.0 (+https://g2.com)' },
 });
 
-// In-memory store — replace with a JSON file or DB for persistence
-let articleCache = [];
-let lastUpdated = null;
+const CACHE_FILE = path.join(__dirname, 'articles-cache.json');
+
+// Load persisted article cache from disk — survives cold starts on Vercel
+function loadCachedArticles() {
+  try {
+    if (fs.existsSync(CACHE_FILE)) {
+      const raw = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+      console.log(`[aggregator] Loaded ${raw.articles?.length || 0} articles from cache file.`);
+      return raw;
+    }
+  } catch (err) {
+    console.warn('[aggregator] Could not load articles-cache.json:', err.message);
+  }
+  return null;
+}
+
+function saveCachedArticles(articles, lastUpdated) {
+  try {
+    fs.writeFileSync(CACHE_FILE, JSON.stringify({ articles, lastUpdated }, null, 2), 'utf8');
+  } catch (err) {
+    // Vercel filesystem is read-only outside /tmp — not a hard failure
+    console.warn('[aggregator] Could not write articles-cache.json (ok on Vercel — scheduled task commits it)');
+  }
+}
+
+// Seed from file immediately so first request is never empty
+const seedCache = loadCachedArticles();
+let articleCache = seedCache?.articles || [];
+let lastUpdated = seedCache?.lastUpdated || null;
 
 // Returns true if the URL is a specific article path (not just a homepage or bare domain)
 function isArticleUrl(url) {
@@ -99,6 +127,10 @@ async function refreshAll() {
 
   lastUpdated = new Date().toISOString();
   console.log(`[aggregator] Cached ${articleCache.length} articles.`);
+
+  // Persist to disk so next cold start serves real content immediately
+  saveCachedArticles(articleCache, lastUpdated);
+
   return articleCache;
 }
 
