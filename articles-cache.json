@@ -1,6 +1,49 @@
 {
   "articles": [
     {
+      "id": "aHR0cHM6Ly90ZWNo",
+      "title": "Alphabet’s record-breaking $85B raise for Google’s AI business is a helluva good signal",
+      "summary": "If Alphabet's record-breaking, $85 billion stock sale signals investor appetite for AI-related offerings, we can see that investors are ready to chow.",
+      "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/",
+      "image": null,
+      "publishedAt": "Wed, 03 Jun 2026 19:38:32 +0000",
+      "source": "TechCrunch AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90ZWNo",
+      "title": "Google’s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon",
+      "summary": "Dreambeans is a curated list of AI-illustrated \"stories\" culled from the personal data in your Google account.",
+      "url": "https://techcrunch.com/2026/06/03/googles-dreambeans-its-weirdest-named-ai-tool-to-date-will-turn-your-life-into-a-cartoon/",
+      "image": null,
+      "publishedAt": "Wed, 03 Jun 2026 19:07:42 +0000",
+      "source": "TechCrunch AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "OnRamp Caps Pivotal Quarter with Industry Recognition, AI Innovation, and Continued Growth",
+      "summary": "Company earns G2 Leader recognition, joins the Mass AI Coalition, launches agentic AI capabilities, and secures a spot on Inc. ... Godard Abel, co- ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.prnewswire.com/news-releases/onramp-caps-pivotal-quarter-with-industry-recognition-ai-innovation-and-continued-growth-302789198.html&ct=ga&cd=CAIyGmMyNmRiMGZmYWFiMGNjMWM6Y29tOmVuOlVT&usg=AOvVaw04YJBT97D0J3Gidu6kE_Wz",
+      "image": null,
+      "publishedAt": "2026-06-03T19:02:05.000Z",
+      "source": "Godard Abel",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "g2",
+        "saas"
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly9uZXdz",
       "title": "Kubernetes and retiring at the top with Kelsey Hightower",
       "summary": "Kelsey Hightower reflects on his journey from self-taught technician to Google Distinguished Engineer, sharing lessons on open source, Kubernetes, AI, and building technology that serves people.",
@@ -61,7 +104,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Is Software Really Dead? Here&#39;s Why Agentic <b>AI</b> Won&#39;t Kill It - MarketWise",
+      "title": "Is Software Really Dead? Here&#39;s Why Agentic AI Won&#39;t Kill It - MarketWise",
       "summary": "The “cloud” refers to software and data stored on someone else's computers and servers. Salesforce CEO Marc Benioff pioneered the SaaS model. He ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://marketwise.com/investing/death-of-software-exaggerated-why-agentic-ai-wont-kill-it/&ct=ga&cd=CAIyGmM1N2U3ODA1OThiMGJmZTA6Y29tOmVuOlVT&usg=AOvVaw2pKP3hTYwYJRyBoAW9ZgUQ",
       "image": null,
@@ -105,7 +148,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft Declares <b>AI</b> Independence With In-House Models",
+      "title": "Microsoft Declares AI Independence With In-House Models",
       "summary": "On the 2nd, local time, Satya Nadella, MS CEO, announces the next-generation quantum computing chip 'Majorana 2' at Microsoft's annual developer ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.chosun.com/english/industry-en/2026/06/04/G46SVUAVF5CCVJLNHGFORSUMUI/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2E5JRa01HkNASqIUBpfru0",
       "image": null,
@@ -120,7 +163,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "As Microsoft seeks to be <b>AI&#39;s</b> center of gravity, CEO <b>Satya Nadella</b> makes the case in San Francisco",
+      "title": "As Microsoft seeks to be AI&#39;s center of gravity, CEO Satya Nadella makes the case in San Francisco",
       "summary": "Microsoft seeks to be AI's center of gravity again. CEO Satya Nadella is in San Francisco to make the case. Sebastian Herrera. By.",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://fortune.com/2026/06/02/microsoft-moves-to-remain-ais-center-of-gravity/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw0Z18pQCVMu2e_jWJ1f5fEO",
       "image": null,
@@ -135,7 +178,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Anthropic, Snowflake expand partnership to integrate Claude <b>AI</b> with <b>enterprise</b> data platforms",
+      "title": "Anthropic, Snowflake expand partnership to integrate Claude AI with enterprise data platforms",
       "summary": "Anthropic, Snowflake expand partnership to integrate Claude AI with enterprise data platforms ... Satya Nadella says era of operating systems and apps ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.storyboard18.com/digital/anthropic-snowflake-expand-partnership-to-integrate-claude-ai-with-enterprise-data-platforms-100081.htm&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3AulfJ-nIZW0bpFA2Go6sO",
       "image": null,
@@ -164,7 +207,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft Unveils <b>AI</b> Models, Breaks from OpenAI",
+      "title": "Microsoft Unveils AI Models, Breaks from OpenAI",
       "summary": "MS's release of its own AI models is expected to impact the pricing of enterprise AI services. ... Satya Nadella, MS CEO, called it \"the dream machine.\" ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.chosun.com/english/industry-en/2026/06/03/524VSEQGBJCNHDAA2YZI3ZR6MQ/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw06sR-LybzmFOELWkxGLDeW",
       "image": null,
@@ -193,7 +236,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft Build 2026 Kicks Off Today: Live Updates on Copilot <b>AI</b> and Dev Tools - CNET",
+      "title": "Microsoft Build 2026 Kicks Off Today: Live Updates on Copilot AI and Dev Tools - CNET",
       "summary": "Satya Nadella's keynote was chock full of AI and computing. This is the ... enterprises. \"Instead of humans producing outputs, it's machines ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.cnet.com/news-live/microsoft-build-2026-news-ai-copilot/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3a4uMNR_6JlOOimrVM2noh",
       "image": null,
@@ -208,7 +251,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "How will <b>AI</b> sycophancy change us? Early signs are not encouraging | Arwa Mahdawi",
+      "title": "How will AI sycophancy change us? Early signs are not encouraging | Arwa Mahdawi",
       "summary": "“CEOs are uniquely prone to AI psychosis,” Aaron Levie, a co-founder of the enterprise cloud company Box, declared on X last month. His reasoning ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.theguardian.com/commentisfree/2026/jun/02/ai-sycophancy-risk-to-society-grasp-reality&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw3Upub7y2kTqYCOZS99sURB",
       "image": null,
@@ -223,7 +266,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "NVIDIA Partners With Microsoft on Unified Stack for Agentic <b>AI</b> Deployment, From Windows ...",
+      "title": "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment, From Windows ...",
       "summary": "At Microsoft Build, NVIDIA founder and CEO Jensen Huang joined Microsoft chairman and CEO Satya Nadella's keynote via livestream from Taipei to ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3UgVjnjtphEoW6dcnCg1ow",
       "image": null,
@@ -238,7 +281,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft Turns OpenClaw Into an <b>Enterprise AI</b> Agent With Scout - Decrypt",
+      "title": "Microsoft Turns OpenClaw Into an Enterprise AI Agent With Scout - Decrypt",
       "summary": "Microsoft CEO Satya Nadella opened Build 2026's keynote at Fort Mason Center in San Francisco telling 2,500 developers that agents are \"the new ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://decrypt.co/369781/microsoft-scout-openclaw-enterprise-ai-agent&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1kHLzClHeRwkol1JvetIlE",
       "image": null,
@@ -253,7 +296,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "<b>Satya Nadella</b> Says An <b>AI</b> Data Center Uses As Much Water As One Restaurant - YouTube",
+      "title": "Satya Nadella Says An AI Data Center Uses As Much Water As One Restaurant - YouTube",
       "summary": "... enterprise tech, semiconductors, and India's role in the ... BREAKING: Satya Nadella Says An AI Data Center Uses As Much Water As One Restaurant.",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dkcw2iIk7v94&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw0tuN4BeTppR4oyPqds9EAU",
       "image": null,
@@ -312,7 +355,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "From Activist Pressure to <b>AI</b> Fit: Why These 3 Software Stocks Could Be Gone by Year-End",
+      "title": "From Activist Pressure to AI Fit: Why These 3 Software Stocks Could Be Gone by Year-End",
       "summary": "CEO Aaron Levie sold only 791 shares in the recent vesting cycle, suggesting confidence. Analysts have a consensus target price of $32.50. 1 ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://247wallst.com/investing/2026/06/03/from-activist-pressure-to-ai-fit-why-these-3-software-stocks-could-be-gone-by-year-end/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw2SpEgV_oQvp6eVaAsF2rD1",
       "image": null,
@@ -327,7 +370,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "From Activist Pressure to <b>AI</b> Fit: Why These 3 Software Stocks Could Be Gone by Year-End",
+      "title": "From Activist Pressure to AI Fit: Why These 3 Software Stocks Could Be Gone by Year-End",
       "summary": "AI-relevant platform fit for hyperscaler or larger SaaS roadmaps; Margin ... Marc Benioff has run Salesforce (NYSE: CRM | CRM Price Prediction) ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://247wallst.com/investing/2026/06/03/from-activist-pressure-to-ai-fit-why-these-3-software-stocks-could-be-gone-by-year-end/&ct=ga&cd=CAIyGmM1N2U3ODA1OThiMGJmZTA6Y29tOmVuOlVT&usg=AOvVaw2SpEgV_oQvp6eVaAsF2rD1",
       "image": null,
@@ -371,7 +414,7 @@
     },
     {
       "id": "aHR0cHM6Ly9odWdn",
-      "title": "Direct Preference Optimization Beyond Chatbots",
+      "title": "Direct Preference Optimization Beyond Chatbots",
       "summary": "",
       "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
       "image": null,
@@ -400,7 +443,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Databricks Announces 2026 Data + <b>AI</b> Summit Keynote Lineup and Programming for the ...",
+      "title": "Databricks Announces 2026 Data + AI Summit Keynote Lineup and Programming for the ...",
       "summary": "30000+ attendees expected to gather in San Francisco to hear keynotes from Databricks co‑founders Ali Ghodsi, Matei Zaharia, ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.databricks.com/company/newsroom/press-releases/databricks-announces-2026-data-ai-summit-keynote-lineup-and&ct=ga&cd=CAIyGmEyNDIyNTE2ZDVmMjc1ODI6Y29tOmVuOlVT&usg=AOvVaw0SjCkXatna20GJm3PTWYmS",
       "image": null,
@@ -411,6 +454,21 @@
         "voices",
         "enterprise",
         "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "INFUSE and G2 Joint Study Finds Demand Programs Aligned with Buyer Signals Deliver 93 ...",
+      "summary": "... Tim Sanders, Chief Innovation Officer at G2. \"They have moved from reference to inference. Instead of weeks of research, they are using ChatGPT to ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.newswire.com/news/infuse-and-g2-joint-study-finds-demand-programs-aligned-with-buyer-signals&ct=ga&cd=CAIyGjA1MWQ4M2RkODgxMWY5Yzk6Y29tOmVuOlVT&usg=AOvVaw3UzACpHoCLLs0x1_lJCnTn",
+      "image": null,
+      "publishedAt": "2026-06-03T10:02:14.000Z",
+      "source": "Tim Sanders",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "g2",
+        "saas"
       ]
     },
     {
@@ -548,7 +606,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "HubSpot (HUBS) CTO <b>Dharmesh Shah</b> has 577 shares withheld for RSU taxes - Stock Titan",
+      "title": "HubSpot (HUBS) CTO Dharmesh Shah has 577 shares withheld for RSU taxes - Stock Titan",
       "summary": "Rhea-AI Filing Summary ... HubSpot Inc.'s Chief Technology Officer and director Dharmesh Shah reported a routine tax-related share disposition. On 2026- ...",
       "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.stocktitan.net/sec-filings/HUBS/form-4-hubspot-inc-insider-trading-activity-7e8a67bb5685.html&ct=ga&cd=CAIyGjE4ODMwYjgzZjBlMThhYjc6Y29tOmVuOlVT&usg=AOvVaw1pIj4uXOQlLlZK5zgo2W0f",
       "image": null,
@@ -559,20 +617,6 @@
         "voices",
         "saas",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNo",
-      "title": "Uber caps employee AI spending after blowing through budget in 4 months",
-      "summary": "Uber's cutback has occurred after the company had reportedly encouraged staff to use AI as much as possible.",
-      "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
-      "image": null,
-      "publishedAt": "Tue, 02 Jun 2026 19:11:48 +0000",
-      "source": "TechCrunch AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry"
       ]
     },
     {
@@ -587,20 +631,6 @@
       "tags": [
         "ai",
         "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90ZWNo",
-      "title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
-      "summary": "Microsoft on Tuesday took the wraps off Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open source framework for spinning up AI evaluations.",
-      "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
-      "image": null,
-      "publishedAt": "Tue, 02 Jun 2026 19:02:21 +0000",
-      "source": "TechCrunch AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry"
       ]
     },
     {
@@ -1927,6 +1957,6 @@
       ]
     }
   ],
-  "total": 131,
-  "lastUpdated": "2026-06-03T18:09:33.764Z"
+  "total": 133,
+  "lastUpdated": "2026-06-03T20:12:01.600Z"
 }
