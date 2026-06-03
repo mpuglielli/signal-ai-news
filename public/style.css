@@ -454,6 +454,41 @@ button { cursor: pointer; font-family: inherit; }
 
 /* perspectives and saas now use .articles-grid — no special CSS needed */
 
+/* ─── VOICES SECTION ────────────────────────────────────────────── */
+.voices-sub {
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  margin-left: auto;
+}
+
+/* Roster — horizontal strip of person chips */
+.voices-roster {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-bottom: calc(var(--gap) * 1.5);
+}
+
+.voice-chip {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 16px; border: 1px solid var(--rule);
+  background: var(--white); cursor: pointer; transition: all 0.15s;
+  text-decoration: none; color: inherit;
+}
+.voice-chip:hover { border-color: var(--navy); background: var(--subtle); }
+.voice-chip.active { border-color: var(--coral); background: rgba(201,64,37,0.05); }
+
+.voice-chip-name {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
+  color: var(--navy); white-space: nowrap;
+}
+.voice-chip-title {
+  font-family: var(--font-mono); font-size: 9px;
+  letter-spacing: 0.08em; color: var(--muted); white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .voices-sub { display: none; }
+}
+
 /* ─── FOOTER ───────────────────────────────────────────────────── */
 .site-footer { background: var(--navy); color: var(--white); }
 .footer-inner {

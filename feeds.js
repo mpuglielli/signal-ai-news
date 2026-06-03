@@ -125,4 +125,77 @@ module.exports = [
     category: 'thought-leadership',
     tags: ['ai', 'critical', 'research'],
   },
+
+  // ── Voices — 10 B2B AI thought leaders via Google Alerts RSS ─────
+  // Articles where these leaders are quoted or featured in press
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/11420644825276395031',
+    name: 'Aaron Levie',
+    category: 'thought-leadership',
+    tags: ['voices', 'enterprise', 'ai'],
+    person: { title: 'CEO, Box', linkedin: 'https://www.linkedin.com/in/aaronlevie/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/15630360149096602030',
+    name: 'Satya Nadella',
+    category: 'thought-leadership',
+    tags: ['voices', 'enterprise', 'ai'],
+    person: { title: 'CEO, Microsoft', linkedin: 'https://www.linkedin.com/in/satyanadella/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/5553979773547800491',
+    name: 'Marc Benioff',
+    category: 'thought-leadership',
+    tags: ['voices', 'saas', 'ai'],
+    person: { title: 'CEO, Salesforce', linkedin: 'https://www.linkedin.com/in/marcbenioff/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/15456967284342296964',
+    name: 'Dharmesh Shah',
+    category: 'thought-leadership',
+    tags: ['voices', 'saas', 'ai'],
+    person: { title: 'CTO & Co-founder, HubSpot', linkedin: 'https://www.linkedin.com/in/dharmesh/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/5728254484166161457',
+    name: 'Ali Ghodsi',
+    category: 'thought-leadership',
+    tags: ['voices', 'enterprise', 'ai'],
+    person: { title: 'CEO, Databricks', linkedin: 'https://www.linkedin.com/in/alighodsi/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/1418450802563166410',
+    name: 'Martin Casado',
+    category: 'thought-leadership',
+    tags: ['voices', 'venture', 'ai'],
+    person: { title: 'General Partner, a16z', linkedin: 'https://www.linkedin.com/in/martincasado/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/17770858355634662557',
+    name: 'Sarah Guo',
+    category: 'thought-leadership',
+    tags: ['voices', 'venture', 'ai'],
+    person: { title: 'Founder, Conviction', linkedin: 'https://www.linkedin.com/in/sarahguo/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/18172800094687101202',
+    name: 'Jason Lemkin',
+    category: 'thought-leadership',
+    tags: ['voices', 'saas', 'ai'],
+    person: { title: 'Founder, SaaStr', linkedin: 'https://www.linkedin.com/in/jasonmlemkin/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/11724807712939128951',
+    name: 'Tomasz Tunguz',
+    category: 'thought-leadership',
+    tags: ['voices', 'venture', 'saas'],
+    person: { title: 'General Partner, Theory Ventures', linkedin: 'https://www.linkedin.com/in/tomasztunguz/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/4054056827332510215',
+    name: 'Jared Spataro',
+    category: 'thought-leadership',
+    tags: ['voices', 'enterprise', 'ai'],
+    person: { title: 'CVP AI at Work, Microsoft', linkedin: 'https://www.linkedin.com/in/jaredspataro/' },
+  },
 ];

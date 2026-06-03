@@ -187,6 +187,81 @@ function renderGrid(articles, append = false) {
   });
 }
 
+// ── Voices — thought leader chips + their articles ────────────────
+
+const VOICES = [
+  { name: 'Aaron Levie',    title: 'CEO, Box',                    linkedin: 'https://www.linkedin.com/in/aaronlevie/' },
+  { name: 'Satya Nadella',  title: 'CEO, Microsoft',              linkedin: 'https://www.linkedin.com/in/satyanadella/' },
+  { name: 'Marc Benioff',   title: 'CEO, Salesforce',             linkedin: 'https://www.linkedin.com/in/marcbenioff/' },
+  { name: 'Dharmesh Shah',  title: 'CTO, HubSpot',                linkedin: 'https://www.linkedin.com/in/dharmesh/' },
+  { name: 'Ali Ghodsi',     title: 'CEO, Databricks',             linkedin: 'https://www.linkedin.com/in/alighodsi/' },
+  { name: 'Martin Casado',  title: 'General Partner, a16z',       linkedin: 'https://www.linkedin.com/in/martincasado/' },
+  { name: 'Sarah Guo',      title: 'Founder, Conviction',         linkedin: 'https://www.linkedin.com/in/sarahguo/' },
+  { name: 'Jason Lemkin',   title: 'Founder, SaaStr',             linkedin: 'https://www.linkedin.com/in/jasonmlemkin/' },
+  { name: 'Tomasz Tunguz',  title: 'GP, Theory Ventures',         linkedin: 'https://www.linkedin.com/in/tomasztunguz/' },
+  { name: 'Jared Spataro',  title: 'CVP AI at Work, Microsoft',   linkedin: 'https://www.linkedin.com/in/jaredspataro/' },
+];
+
+let activeVoice = null;
+
+function renderVoicesRoster(articles) {
+  const roster = document.getElementById('voices-roster');
+  const grid = document.getElementById('voices-grid');
+  if (!roster || !grid) return;
+
+  // Build chips
+  VOICES.forEach(v => {
+    const chip = document.createElement('a');
+    chip.className = 'voice-chip';
+    chip.href = v.linkedin;
+    chip.target = '_blank';
+    chip.rel = 'noopener';
+    chip.innerHTML = `
+      <div>
+        <div class="voice-chip-name">${safeText(v.name)}</div>
+        <div class="voice-chip-title">${safeText(v.title)}</div>
+      </div>
+    `;
+
+    // Click filters grid to this person's articles
+    chip.addEventListener('click', (e) => {
+      if (e.ctrlKey || e.metaKey) return; // allow open-in-new-tab
+      e.preventDefault();
+      if (activeVoice === v.name) {
+        // Deselect — show all voices articles
+        activeVoice = null;
+        document.querySelectorAll('.voice-chip').forEach(c => c.classList.remove('active'));
+        showVoicesArticles(articles, null);
+      } else {
+        activeVoice = v.name;
+        document.querySelectorAll('.voice-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        showVoicesArticles(articles, v.name);
+      }
+    });
+
+    roster.appendChild(chip);
+  });
+
+  showVoicesArticles(articles, null);
+}
+
+function showVoicesArticles(allArticles, personName) {
+  const grid = document.getElementById('voices-grid');
+  if (!grid) return;
+  const voiceArticles = allArticles.filter(a => a.tags && a.tags.includes('voices'));
+  const filtered = personName
+    ? voiceArticles.filter(a => a.source === personName)
+    : voiceArticles;
+
+  if (!filtered.length) {
+    grid.innerHTML = '<p style="grid-column:span 12;padding:32px 0;color:var(--muted);font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">No articles yet — Google Alerts delivers as stories are published.</p>';
+    return;
+  }
+  grid.innerHTML = '';
+  filtered.slice(0, 8).forEach((a, i) => grid.appendChild(buildCard(a, i)));
+}
+
 // ── Perspectives — same articles-grid as Latest Intelligence ──────
 
 function renderPerspectives(articles) {
@@ -393,6 +468,7 @@ async function init() {
       renderGrid(allArticles.slice(0, PAGE_SIZE));
       offset = PAGE_SIZE;
       renderPerspectives(allArticles);
+      renderVoicesRoster(allArticles);
       renderSaas(allArticles);
     } else {
       // No real content — show nothing rather than fake articles
