@@ -130,7 +130,10 @@ function renderCover(featured) {
   const rest = featured.slice(1, 5);
 
   document.getElementById('cover-source').textContent = hero.source;
-  document.getElementById('cover-headline').textContent = hero.title;
+  const headlineEl = document.getElementById('cover-headline');
+  headlineEl.textContent = hero.title;
+  headlineEl.style.cursor = 'pointer';
+  headlineEl.onclick = () => window.open(hero.url, '_blank', 'noopener');
   document.getElementById('cover-deck').textContent = hero.summary;
   document.getElementById('cover-link').href = hero.url;
 
