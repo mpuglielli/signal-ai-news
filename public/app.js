@@ -467,8 +467,8 @@ async function init() {
       buildTicker(allArticles);
       renderGrid(allArticles.slice(0, PAGE_SIZE));
       offset = PAGE_SIZE;
-      renderPerspectives(allArticles);
       renderVoicesRoster(allArticles);
+      renderPerspectives(allArticles);
       renderSaas(allArticles);
     } else {
       // No real content — show nothing rather than fake articles
