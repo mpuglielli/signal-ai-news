@@ -200,6 +200,11 @@ const VOICES = [
   { name: 'Jason Lemkin',   title: 'Founder, SaaStr',             linkedin: 'https://www.linkedin.com/in/jasonmlemkin/' },
   { name: 'Tomasz Tunguz',  title: 'GP, Theory Ventures',         linkedin: 'https://www.linkedin.com/in/tomasztunguz/' },
   { name: 'Jared Spataro',  title: 'CVP AI at Work, Microsoft',   linkedin: 'https://www.linkedin.com/in/jaredspataro/' },
+  // G2
+  { name: 'Godard Abel',    title: 'CEO & Co-founder, G2',        linkedin: 'https://www.linkedin.com/in/godardabel/' },
+  { name: 'Alexis Zhang',   title: 'G2',                           linkedin: 'https://www.linkedin.com/in/alexis-zhang/' },
+  { name: 'Alex Bradley',   title: 'CFO, G2',                      linkedin: 'https://www.linkedin.com/in/alex-bradley-g2/' },
+  { name: 'Tim Sanders',    title: 'Chief Innovation Officer, G2', linkedin: 'https://www.linkedin.com/in/timsanders/' },
 ];
 
 let activeVoice = null;

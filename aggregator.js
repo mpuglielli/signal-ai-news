@@ -69,7 +69,7 @@ async function fetchFeed(feed) {
         const url = extractUrl(item);
         return {
           id: Buffer.from(url || item.guid || '').toString('base64').slice(0, 16),
-          title: item.title || '',
+          title: stripHtml(item.title || ''),
           summary: stripHtml(item.contentSnippet || item.content || item.summary || '').slice(0, 500),
           url,
           image: extractImage(item),

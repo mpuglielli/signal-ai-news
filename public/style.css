@@ -206,6 +206,8 @@ button { cursor: pointer; font-family: inherit; }
   transition: background 0.15s; background: transparent;
 }
 .article-card:hover { background: var(--subtle); }
+.article-card:hover .card-headline { color: var(--coral); transition: color 0.2s ease; }
+.article-card .card-headline { transition: color 0.2s ease; }
 .article-card.type-accent { background: rgba(255,233,154, 0.25); }
 .article-card.type-text   { background: rgba(6, 40, 70, 0.03); }
 

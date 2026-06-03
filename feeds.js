@@ -126,7 +126,7 @@ module.exports = [
     tags: ['ai', 'critical', 'research'],
   },
 
-  // ── Voices — 10 B2B AI thought leaders via Google Alerts RSS ─────
+  // ── Voices — 14 B2B AI thought leaders via Google Alerts RSS ────
   // Articles where these leaders are quoted or featured in press
   {
     url: 'https://www.google.com/alerts/feeds/17947842405433408902/11420644825276395031',
@@ -197,5 +197,35 @@ module.exports = [
     category: 'thought-leadership',
     tags: ['voices', 'enterprise', 'ai'],
     person: { title: 'CVP AI at Work, Microsoft', linkedin: 'https://www.linkedin.com/in/jaredspataro/' },
+  },
+
+  // ── G2 Voices ────────────────────────────────────────────────────
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/17185920851779908631',
+    name: 'Godard Abel',
+    category: 'thought-leadership',
+    tags: ['voices', 'g2', 'saas'],
+    person: { title: 'CEO & Co-founder, G2', linkedin: 'https://www.linkedin.com/in/godardabel/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/6419994131392353680',
+    name: 'Alexis Zhang',
+    category: 'thought-leadership',
+    tags: ['voices', 'g2', 'saas'],
+    person: { title: 'G2', linkedin: 'https://www.linkedin.com/in/alexis-zhang/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/12128519353283518858',
+    name: 'Alex Bradley',
+    category: 'thought-leadership',
+    tags: ['voices', 'g2', 'saas'],
+    person: { title: 'CFO, G2', linkedin: 'https://www.linkedin.com/in/alex-bradley-g2/' },
+  },
+  {
+    url: 'https://www.google.com/alerts/feeds/17947842405433408902/896611409531037727',
+    name: 'Tim Sanders',
+    category: 'thought-leadership',
+    tags: ['voices', 'g2', 'saas'],
+    person: { title: 'Chief Innovation Officer, G2', linkedin: 'https://www.linkedin.com/in/timsanders/' },
   },
 ];
