@@ -121,6 +121,9 @@ button { cursor: pointer; font-family: inherit; }
   font-size: clamp(15px, 1.3vw, 18px); line-height: 1.65;
   color: var(--muted); max-width: 56ch;
 }
+.cover-headline { transition: color 0.2s ease; }
+.cover-feature:hover .cover-headline { color: var(--coral); }
+
 .cover-cta {
   font-family: var(--font-mono); font-size: 11px;
   letter-spacing: 0.15em; text-transform: uppercase; color: var(--coral);
