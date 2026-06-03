@@ -11,14 +11,15 @@ const parser = new Parser({
 let articleCache = [];
 let lastUpdated = null;
 
-// Returns true only if the URL points to a specific article (has a meaningful path)
+// Returns true if the URL is a specific article path (not just a homepage or bare domain)
 function isArticleUrl(url) {
   if (!url || !url.startsWith('http')) return false;
   try {
     const { pathname } = new URL(url);
-    // Must have a path beyond just '/', '/feed', '/rss', '/news', '/blog'
-    const shallow = /^\/?((feed|rss|blog|news|articles?)\/?)?$/i.test(pathname);
-    return pathname.length > 1 && !shallow;
+    // Reject only the root path or single-segment feed paths — never guess
+    const isRoot = pathname === '/' || pathname === '';
+    const isFeedOnly = /^\/(feed|rss)\/?$/i.test(pathname);
+    return !isRoot && !isFeedOnly;
   } catch {
     return false;
   }
@@ -30,7 +31,7 @@ function extractUrl(item) {
   for (const url of candidates) {
     if (isArticleUrl(url)) return url;
   }
-  return item.link || ''; // fallback even if shallow — better than nothing
+  return item.link || ''; // fallback — better to have a URL than nothing
 }
 
 async function fetchFeed(feed) {
