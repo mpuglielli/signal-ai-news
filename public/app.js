@@ -386,19 +386,30 @@ async function init() {
       fetch(`${API}/api/articles?limit=80`).then((r) => r.json()),
     ]);
     allArticles = articlesRes.articles || [];
-    renderCover(featuredRes.articles || []);
-    buildTicker(allArticles);
-    renderGrid(allArticles.slice(0, PAGE_SIZE));
-    offset = PAGE_SIZE;
-    renderPerspectives(allArticles);
-    renderSaas(allArticles);
+
+    if (allArticles.length > 0) {
+      renderCover(featuredRes.articles || []);
+      buildTicker(allArticles);
+      renderGrid(allArticles.slice(0, PAGE_SIZE));
+      offset = PAGE_SIZE;
+      renderPerspectives(allArticles);
+      renderSaas(allArticles);
+    } else {
+      // No real content — show nothing rather than fake articles
+      document.getElementById('cover').style.display = 'none';
+      document.querySelector('.ticker-wrap').style.display = 'none';
+      document.getElementById('articles-grid').innerHTML =
+        '<p style="grid-column:span 12;padding:60px 0;color:var(--muted);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">No content loaded — feeds refresh Monday & Thursday at 9am EST.</p>';
+      document.getElementById('perspectives-section').style.display = 'none';
+      document.getElementById('saas-section').style.display = 'none';
+    }
     renderG2Section();
     setEditionLabel(articlesRes.lastUpdated);
     setFooterDate(articlesRes.lastUpdated);
   } catch (err) {
     console.error('[app] Failed to load articles:', err);
     document.getElementById('articles-grid').innerHTML =
-      '<p style="grid-column:span 12;padding:40px;color:var(--muted);font-family:var(--font-mono);font-size:13px;">Server offline — run <code>node server.js</code></p>';
+      '<p style="grid-column:span 12;padding:40px;color:var(--muted);font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;">Content unavailable — check back shortly.</p>';
   }
 }
 

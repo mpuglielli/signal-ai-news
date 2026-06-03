@@ -1,6 +1,5 @@
 const Parser = require('rss-parser');
 const feeds = require('./feeds');
-const seedData = require('./seed-data');
 
 const parser = new Parser({
   timeout: 10000,
@@ -94,10 +93,8 @@ async function refreshAll() {
   // Sort newest first
   articleCache.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  // Fall back to seed data if no feeds loaded (e.g. no network on first boot)
   if (articleCache.length === 0) {
-    console.log('[aggregator] No live articles — using seed data.');
-    articleCache = [...seedData];
+    console.log('[aggregator] No live articles loaded — serving empty cache. No fake content.');
   }
 
   lastUpdated = new Date().toISOString();
