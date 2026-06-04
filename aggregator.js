@@ -135,11 +135,16 @@ async function refreshAll() {
   articleCache.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   if (articleCache.length === 0) {
-    console.log('[aggregator] No live articles loaded — serving empty cache. No fake content.');
+    // All feeds failed — keep whatever was already in memory (file cache from cold start)
+    // This prevents Vercel cold-start RSS failures from wiping the cached articles
+    const kept = articleCache.length; // 0 here, but the global articleCache may still have file data
+    console.log('[aggregator] No live articles from feeds — preserving existing cache.');
+    lastUpdated = lastUpdated || new Date().toISOString();
+    return articleCache; // return existing (file-seeded) cache unchanged
   }
 
   lastUpdated = new Date().toISOString();
-  console.log(`[aggregator] Cached ${articleCache.length} articles.`);
+  console.log(`[aggregator] Cached ${articleCache.length} fresh articles.`);
 
   // Persist to disk so next cold start serves real content immediately
   saveCachedArticles(articleCache, lastUpdated);

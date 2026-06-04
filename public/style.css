@@ -71,6 +71,15 @@ button { cursor: pointer; font-family: inherit; }
 }
 .wordmark-g2 { color: var(--coral); }
 
+.beta-pill {
+  font-family: var(--font-mono); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  background: var(--coral); color: var(--white);
+  padding: 3px 7px; border-radius: 3px;
+  vertical-align: middle; margin-left: 6px;
+  position: relative; top: -2px;
+}
+
 .masthead-digest-cta {
   font-family: var(--font-mono); font-size: 10px;
   font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
