@@ -474,11 +474,20 @@ async function fetchWithRetry(url, attempts = 3, delayMs = 8000) {
   return { articles: [], total: 0 };
 }
 
+// ── Lazy section loader ───────────────────────────────────────────
+function lazyRender(sectionId, renderFn) {
+  const el = document.getElementById(sectionId);
+  if (!el || !('IntersectionObserver' in window)) { renderFn(); return; }
+  const observer = new IntersectionObserver((entries, obs) => {
+    if (entries[0].isIntersecting) { obs.disconnect(); renderFn(); }
+  }, { rootMargin: '300px' });
+  observer.observe(el);
+}
+
 async function init() {
   setupFilters();
   setupLoadMore();
   try {
-    // Wake the server first, then fetch in parallel
     const [featuredRes, articlesRes] = await Promise.all([
       fetch(`${API}/api/featured?n=5`).then((r) => r.json()),
       fetchWithRetry(`${API}/api/articles?limit=80`),
@@ -486,15 +495,17 @@ async function init() {
     allArticles = articlesRes.articles || [];
 
     if (allArticles.length > 0) {
+      // Render above-the-fold immediately
       renderCover(featuredRes.articles || []);
       buildTicker(allArticles);
       renderGrid(allArticles.slice(0, PAGE_SIZE));
       offset = PAGE_SIZE;
-      renderVoicesRoster(allArticles);
-      renderPerspectives(allArticles);
-      renderSaas(allArticles);
+      // Lazy-render below-fold sections as user scrolls
+      lazyRender('voices-section',      () => renderVoicesRoster(allArticles));
+      lazyRender('g2-section',          () => renderG2Section());
+      lazyRender('perspectives-section', () => renderPerspectives(allArticles));
+      lazyRender('saas-section',         () => renderSaas(allArticles));
     } else {
-      // No real content — show nothing rather than fake articles
       document.getElementById('cover').style.display = 'none';
       document.querySelector('.ticker-wrap').style.display = 'none';
       document.getElementById('articles-grid').innerHTML =
@@ -502,7 +513,6 @@ async function init() {
       document.getElementById('perspectives-section').style.display = 'none';
       document.getElementById('saas-section').style.display = 'none';
     }
-    renderG2Section();
     setEditionLabel(articlesRes.lastUpdated);
     setFooterDate(articlesRes.lastUpdated);
   } catch (err) {

@@ -29,7 +29,7 @@
   --muted:        #4A6070;  /* WCAG AA on cream: ~5.3:1 */
   --subtle:       rgba(6, 40, 70, 0.05);
 
-  --font-sans:  'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-sans:  'Figtree', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-mono:  'Space Mono', 'Courier New', monospace;
   --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
 
@@ -473,8 +473,8 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .voice-chip {
-  display: flex; align-items: center; gap: 10px;
-  padding: 10px 16px; border: 1px solid var(--rule);
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 22px; border: 1px solid var(--rule);
   background: var(--white); cursor: pointer; transition: all 0.15s;
   text-decoration: none; color: inherit;
 }
@@ -482,12 +482,12 @@ button { cursor: pointer; font-family: inherit; }
 .voice-chip.active { border-color: var(--coral); background: rgba(201,64,37,0.05); }
 
 .voice-chip-name {
-  font-family: var(--font-sans); font-size: 12px; font-weight: 700;
+  font-family: var(--font-sans); font-size: 14px; font-weight: 700;
   color: var(--navy); white-space: nowrap;
 }
 .voice-chip-title {
-  font-family: var(--font-mono); font-size: 9px;
-  letter-spacing: 0.08em; color: var(--muted); white-space: nowrap;
+  font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.06em; color: var(--muted); white-space: nowrap;
 }
 
 @media (max-width: 768px) {

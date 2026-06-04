@@ -69,8 +69,8 @@ async function fetchFeed(feed) {
         const url = extractUrl(item);
         return {
           id: Buffer.from(url || item.guid || '').toString('base64').slice(0, 16),
-          title: stripHtml(item.title || ''),
-          summary: stripHtml(item.contentSnippet || item.content || item.summary || '').slice(0, 500),
+          title: decodeEntities(stripHtml(item.title || '')),
+          summary: decodeEntities(stripHtml(item.contentSnippet || item.content || item.summary || '')).slice(0, 500),
           url,
           image: extractImage(item),
           publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),
@@ -88,6 +88,19 @@ async function fetchFeed(feed) {
 
 function stripHtml(html) {
   return html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function decodeEntities(str) {
+  return str
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code, 10)))
+    .replace(/&[a-zA-Z]+;/g, '');
 }
 
 function extractImage(item) {
