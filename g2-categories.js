@@ -1,6 +1,6 @@
 // G2 AI Category Intelligence
-// Sourced live from G2 MCP — refresh by calling POST /api/g2/refresh
-// Last fetched: auto-set on server boot
+// Auto-refreshed by scheduled task — every 2 weeks
+// Last fetched: 2026-06-01
 
 const categories = [
   {
@@ -12,10 +12,10 @@ const categories = [
     description: 'AI systems that autonomously plan, reason, and execute multi-step tasks — the defining shift from passive tools to active digital workers.',
     product_count_label: '35+ products',
     top_products: [
-      { name: 'Retell AI',            slug: 'retell-ai',            stars: 4.8, reviews: 2370, g2_url: 'https://www.g2.com/products/retell-ai/reviews' },
-      { name: 'Salesforce Agentforce',slug: 'salesforce-agentforce', stars: 4.3, reviews: 1111, g2_url: 'https://www.g2.com/products/salesforce-agentforce/reviews' },
-      { name: 'Synthflow',            slug: 'synthflow',            stars: 4.5, reviews: 1015, g2_url: 'https://www.g2.com/products/synthflow/reviews' },
-      { name: 'ClickUp',              slug: 'clickup',              stars: 4.6, reviews: 12440, g2_url: 'https://www.g2.com/products/clickup/reviews' },
+      { name: 'ClickUp',               slug: 'clickup',               stars: 4.6, reviews: 12440, g2_url: 'https://www.g2.com/products/clickup/reviews' },
+      { name: 'HubSpot Service Hub',   slug: 'hubspot-service-hub',   stars: 4.4, reviews: 2914,  g2_url: 'https://www.g2.com/products/hubspot-service-hub/reviews' },
+      { name: 'Retell AI',             slug: 'retell-ai',             stars: 4.8, reviews: 2370,  g2_url: 'https://www.g2.com/products/retell-ai/reviews' },
+      { name: 'Salesforce Agentforce', slug: 'salesforce-agentforce', stars: 4.3, reviews: 1111,  g2_url: 'https://www.g2.com/products/salesforce-agentforce/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -28,10 +28,10 @@ const categories = [
     description: 'Foundation models and applications that generate text, images, video, and code — now powering the core of every B2B SaaS product roadmap.',
     product_count_label: '200+ products',
     top_products: [
-      { name: 'HeyGen',    slug: 'heygen',    stars: 4.8, reviews: 1760, g2_url: 'https://www.g2.com/products/heygen/reviews' },
-      { name: 'ChatGPT',   slug: 'chatgpt',   stars: 4.6, reviews: 2566, g2_url: 'https://www.g2.com/products/chatgpt/reviews' },
-      { name: 'Synthesia', slug: 'synthesia', stars: 4.6, reviews: 2748, g2_url: 'https://www.g2.com/products/synthesia/reviews' },
-      { name: 'Notion',    slug: 'notion',    stars: 4.6, reviews: 11909, g2_url: 'https://www.g2.com/products/notion/reviews' },
+      { name: 'Simplified', slug: 'simplified', stars: 4.6, reviews: 5008,  g2_url: 'https://www.g2.com/products/simplified/reviews' },
+      { name: 'Synthesia',  slug: 'synthesia',  stars: 4.6, reviews: 2748,  g2_url: 'https://www.g2.com/products/synthesia/reviews' },
+      { name: 'ChatGPT',    slug: 'chatgpt',    stars: 4.6, reviews: 2566,  g2_url: 'https://www.g2.com/products/chatgpt/reviews' },
+      { name: 'HeyGen',     slug: 'heygen',     stars: 4.8, reviews: 1760,  g2_url: 'https://www.g2.com/products/heygen/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -44,10 +44,10 @@ const categories = [
     description: 'The stack powering enterprise AI deployment — model APIs, vector databases, MLOps, and the platforms B2B vendors build on.',
     product_count_label: '50+ products',
     top_products: [
-      { name: 'Saturn Cloud', slug: 'saturn-cloud-saturn-cloud', stars: 4.8, reviews: 320,  g2_url: 'https://www.g2.com/products/saturn-cloud-saturn-cloud/reviews' },
-      { name: 'Databricks',   slug: 'databricks',               stars: 4.6, reviews: 784,  g2_url: 'https://www.g2.com/products/databricks/reviews' },
-      { name: 'Botpress',     slug: 'botpress',                 stars: 4.5, reviews: 494,  g2_url: 'https://www.g2.com/products/botpress/reviews' },
-      { name: 'AWS Bedrock',  slug: 'aws-bedrock',              stars: 4.3, reviews: 69,   g2_url: 'https://www.g2.com/products/aws-bedrock/reviews' },
+      { name: 'Databricks',                    slug: 'databricks',                    stars: 4.6, reviews: 784, g2_url: 'https://www.g2.com/products/databricks/reviews' },
+      { name: 'Gemini Enterprise Agent Platform', slug: 'gemini-enterprise-agent-platform', stars: 4.3, reviews: 657, g2_url: 'https://www.g2.com/products/gemini-enterprise-agent-platform/reviews' },
+      { name: 'Botpress',                      slug: 'botpress',                      stars: 4.5, reviews: 494, g2_url: 'https://www.g2.com/products/botpress/reviews' },
+      { name: 'Saturn Cloud',                  slug: 'saturn-cloud-saturn-cloud',     stars: 4.8, reviews: 320, g2_url: 'https://www.g2.com/products/saturn-cloud-saturn-cloud/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -60,9 +60,10 @@ const categories = [
     description: 'The first mass-market AI category — now table stakes for B2B SaaS. Differentiation has moved to vertical depth and workflow integration.',
     product_count_label: '150+ products',
     top_products: [
-      { name: 'Jasper',         slug: 'jasper-ai',       stars: 4.7, reviews: 1234, g2_url: 'https://www.g2.com/products/jasper-ai/reviews' },
-      { name: 'Grammarly',      slug: 'grammarly',       stars: 4.7, reviews: 9800, g2_url: 'https://www.g2.com/products/grammarly/reviews' },
-      { name: 'Copy.ai',        slug: 'copy-ai',         stars: 4.7, reviews: 189,  g2_url: 'https://www.g2.com/products/copy-ai/reviews' },
+      { name: 'Grammarly',  slug: 'grammarly',  stars: 4.7, reviews: 13702, g2_url: 'https://www.g2.com/products/grammarly/reviews' },
+      { name: 'Notion',     slug: 'notion',     stars: 4.6, reviews: 11909, g2_url: 'https://www.g2.com/products/notion/reviews' },
+      { name: 'Simplified', slug: 'simplified', stars: 4.6, reviews: 5008,  g2_url: 'https://www.g2.com/products/simplified/reviews' },
+      { name: 'Writesonic', slug: 'writesonic', stars: 4.7, reviews: 2113,  g2_url: 'https://www.g2.com/products/writesonic/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -75,7 +76,10 @@ const categories = [
     description: 'Tools for auditing, monitoring, and governing AI systems in enterprise environments — demand accelerating with EU AI Act enforcement.',
     product_count_label: '25+ products',
     top_products: [
-      { name: 'IBM OpenScale', slug: 'watson-openscale', stars: 4.3, reviews: 58,  g2_url: 'https://www.g2.com/products/watson-openscale/reviews' },
+      { name: 'JumpCloud',             slug: 'jumpcloud',             stars: 4.5, reviews: 3972, g2_url: 'https://www.g2.com/products/jumpcloud/reviews' },
+      { name: 'Cortex Cloud',          slug: 'cortex-cloud',          stars: 4.1, reviews: 112,  g2_url: 'https://www.g2.com/products/cortex-cloud/reviews' },
+      { name: 'Securiti',              slug: 'securiti',              stars: 4.7, reviews: 91,   g2_url: 'https://www.g2.com/products/securiti/reviews' },
+      { name: 'IBM watsonx.governance',slug: 'ibm-watsonx-governance',stars: 4.3, reviews: 77,   g2_url: 'https://www.g2.com/products/ibm-watsonx-governance/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -88,10 +92,22 @@ const categories = [
     description: 'Operationalizing machine learning at scale — model monitoring, deployment pipelines, and experiment tracking for production AI.',
     product_count_label: '60+ products',
     top_products: [
-      { name: 'Weights & Biases', slug: 'weights-biases',         stars: 4.8, reviews: 290, g2_url: 'https://www.g2.com/products/weights-biases/reviews' },
-      { name: 'Databricks',       slug: 'databricks',             stars: 4.6, reviews: 784, g2_url: 'https://www.g2.com/products/databricks/reviews' },
-      { name: 'Azure ML',         slug: 'azure-machine-learning', stars: 4.4, reviews: 180, g2_url: 'https://www.g2.com/products/azure-machine-learning/reviews' },
+      { name: 'Databricks',                    slug: 'databricks',                    stars: 4.6, reviews: 784, g2_url: 'https://www.g2.com/products/databricks/reviews' },
+      { name: 'Snowflake',                     slug: 'snowflake',                     stars: 4.6, reviews: 754, g2_url: 'https://www.g2.com/products/snowflake/reviews' },
+      { name: 'Gemini Enterprise Agent Platform', slug: 'gemini-enterprise-agent-platform', stars: 4.3, reviews: 657, g2_url: 'https://www.g2.com/products/gemini-enterprise-agent-platform/reviews' },
+      { name: 'Apache Airflow',                slug: 'apache-airflow',                stars: 4.4, reviews: 126, g2_url: 'https://www.g2.com/products/apache-airflow/reviews' },
     ],
+    updated_at: new Date().toISOString(),
+  },
+  {
+    name: 'AI Marketing Agents',
+    slug: 'ai-marketing-agents',
+    g2_url: 'https://www.g2.com/categories/ai-marketing-agents',
+    signal: 'emerging',
+    signal_label: 'New Category',
+    description: 'Autonomous AI agents that plan, execute, and optimize marketing campaigns across email, SMS, and digital channels — reducing campaign ops to a goal and a click.',
+    product_count_label: '5+ products',
+    top_products: [],
     updated_at: new Date().toISOString(),
   },
 ];
