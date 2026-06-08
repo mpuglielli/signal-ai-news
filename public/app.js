@@ -2,13 +2,14 @@
    SIGNAL — Frontend App
    ═══════════════════════════════════════════════════ */
 
-const API = '';
+const API = ''; // same-origin; change to http://localhost:3000 for dev
+
 let allArticles = [];
 let offset = 0;
 const PAGE_SIZE = 16;
 let currentCategory = 'all';
 
-// ── Utilities ─────────────────────────────────────────────────────
+// ── Utilities ──────────────────────────────────────────────────────
 
 function relativeTime(dateStr) {
   const diff = Date.now() - new Date(dateStr).getTime();
@@ -21,12 +22,21 @@ function relativeTime(dateStr) {
 }
 
 function issueNumber() {
-  const epoch = new Date('2025-01-06');
+  // Deterministic issue number from week count since Jan 2025, Mon+Thu = 2/week
+  const epoch = new Date('2025-01-06'); // first Monday
   const now = new Date();
   const days = Math.floor((now - epoch) / 86400000);
   const weeks = Math.floor(days / 7);
-  const issueSuffix = now.getDay() >= 4 ? 1 : 0;
+  const dayOfWeek = now.getDay(); // 0=Sun,1=Mon,...
+  const issueSuffix = (dayOfWeek >= 4) ? 1 : 0; // Thu onwards = second issue
   return String(weeks * 2 + issueSuffix + 1).padStart(3, '0');
+}
+
+function cardType(index, article) {
+  if (index % 7 === 0) return 'type-text';   // dark typographic
+  if (index % 11 === 5) return 'type-accent'; // red accent
+  if (article.image) return 'type-image';
+  return 'type-text';
 }
 
 function safeText(str) {
@@ -35,93 +45,40 @@ function safeText(str) {
   return d.innerHTML;
 }
 
-// Map category to CSS class for coloured tag
-function categoryClass(cat) {
-  if (cat === 'general') return 'general';
-  if (cat === 'saas') return 'saas';
-  return 'thought-leadership';
-}
-
-// Sources known to be paywalled
-const PAYWALL_SOURCES = new Set([
-  'stratechery', 'the pragmatic engineer', 'mit technology review',
-  'bloomberg', 'the information', 'wall street journal', 'wsj',
-  'financial times', 'ft', 'the atlantic',
-]);
-
-function isPaywalled(source) {
-  return PAYWALL_SOURCES.has((source || '').toLowerCase().trim());
-}
-
-// ── Read time estimate ────────────────────────────────────────────
-// RSS summaries are 30–80 words — a poor proxy for article length.
-// We improve accuracy by calibrating the multiplier based on source type:
-//   Long-form (analysis, deep-dives): ~1,500–3,000 word articles
-//   News briefs (TechCrunch, VentureBeat, press releases): ~400–700 words
-
-const LONG_FORM_SOURCES = new Set([
-  'stratechery', 'benedict evans', 'the pragmatic engineer',
-  'mit technology review', 'wired ai', 'wired',
-  'a16z', 'sequoia capital', 'the algorithmic bridge', 'ai snake oil',
-]);
-
-function readTime(summary, source, category) {
-  const words = Math.max(25, (summary || '').trim().split(/\s+/).filter(Boolean).length);
-  const src = (source || '').toLowerCase();
-
-  const isLongForm = category === 'thought-leadership' ||
-    [...LONG_FORM_SOURCES].some(s => src.includes(s));
-
-  // Multiplier: how many times longer is the full article vs the summary?
-  // Long-form summaries ≈ 3–6% of article → use 30×
-  // News summaries ≈ 8–15% of article → use 12×
-  const multiplier = isLongForm ? 30 : 12;
-  const estimatedWords = words * multiplier;
-  const rawMins = estimatedWords / 220; // 220 wpm average
-
-  const mins = isLongForm
-    ? Math.max(5, Math.round(rawMins))   // floor 5 min for long-form
-    : Math.max(2, Math.round(rawMins));  // floor 2 min for news
-
-  return `${Math.min(mins, 20)} min read`;
-}
-
-// ── Card builder — NO images, NO index number ─────────────────────
-
-function cardType(index) {
-  if (index % 9 === 5) return 'type-accent';
-  if (index % 6 === 0) return 'type-text';
-  return '';
-}
+// ── Card builder ───────────────────────────────────────────────────
 
 function buildCard(article, index, overrideType = null) {
-  const type = overrideType !== null ? overrideType : cardType(index);
+  const type = overrideType || cardType(index, article);
   const card = document.createElement('article');
-  card.className = `article-card${type ? ' ' + type : ''}`;
+  card.className = `article-card ${type}`;
   card.addEventListener('click', () => window.open(article.url, '_blank', 'noopener'));
 
-  const paywallTag = isPaywalled(article.source)
-    ? `<span class="card-tag-paywall" title="This source may require a subscription">Paywall</span>`
+  const imageHtml = (type === 'type-image' && article.image)
+    ? `<div class="card-image" style="background-image:url('${article.image}')"></div>`
     : '';
 
+  const bodyOpen  = (type === 'type-image') ? `<div class="card-body">` : '';
+  const bodyClose = (type === 'type-image') ? `</div>` : '';
+
   card.innerHTML = `
-    <div class="card-source-row">
-      <span class="article-source">${safeText(article.source)}</span>
-      <span class="card-tag ${categoryClass(article.category)}">${safeText(article.category.replace(/-/g, ' '))}</span>
-      ${paywallTag}
-    </div>
-    <h3 class="card-headline">${safeText(article.title)}</h3>
-    <p class="card-summary">${safeText(article.summary)}</p>
-    <div class="card-footer">
-      <span class="card-date">${relativeTime(article.publishedAt)}</span>
-      <span class="card-read-time">${readTime(article.summary, article.source, article.category)}</span>
-      <span class="card-read">Read →</span>
-    </div>
+    ${imageHtml}
+    ${bodyOpen}
+      <div class="card-source-row">
+        <span class="article-source">${safeText(article.source)}</span>
+        <span class="card-tag">${safeText(article.category)}</span>
+      </div>
+      <h3 class="card-headline">${safeText(article.title)}</h3>
+      <p class="card-summary">${safeText(article.summary)}</p>
+      <div class="card-footer">
+        <span class="card-date">${relativeTime(article.publishedAt)}</span>
+        <span class="card-read">Read →</span>
+      </div>
+    ${bodyClose}
   `;
   return card;
 }
 
-// ── Cover — pure typography, no image ────────────────────────────
+// ── Cover / Hero ───────────────────────────────────────────────────
 
 function renderCover(featured) {
   if (!featured.length) return;
@@ -129,14 +86,20 @@ function renderCover(featured) {
   const hero = featured[0];
   const rest = featured.slice(1, 5);
 
+  // Feature
   document.getElementById('cover-source').textContent = hero.source;
-  const headlineEl = document.getElementById('cover-headline');
-  headlineEl.textContent = hero.title;
-  headlineEl.style.cursor = 'pointer';
-  headlineEl.onclick = () => window.open(hero.url, '_blank', 'noopener');
+  document.getElementById('cover-headline').textContent = hero.title;
   document.getElementById('cover-deck').textContent = hero.summary;
   document.getElementById('cover-link').href = hero.url;
 
+  const imgEl = document.getElementById('cover-image');
+  if (hero.image) {
+    imgEl.style.backgroundImage = `url('${hero.image}')`;
+  } else {
+    imgEl.style.background = 'var(--gray-800)';
+  }
+
+  // Secondary cards
   const sec = document.getElementById('cover-secondary');
   sec.innerHTML = '';
   rest.forEach((a) => {
@@ -151,12 +114,14 @@ function renderCover(featured) {
     sec.appendChild(card);
   });
 
-  document.getElementById('stamp-issue').textContent = `№ ${issueNumber()}`;
+  // Stamp
+  const num = issueNumber();
+  document.getElementById('stamp-issue').textContent = `№ ${num}`;
   document.getElementById('stamp-date').textContent =
     new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
 }
 
-// ── Masthead ──────────────────────────────────────────────────────
+// ── Masthead edition label ─────────────────────────────────────────
 
 function setEditionLabel(lastUpdated) {
   const el = document.getElementById('edition-label');
@@ -173,9 +138,9 @@ function setEditionLabel(lastUpdated) {
 function buildTicker(articles) {
   const track = document.getElementById('ticker-track');
   const items = articles.slice(0, 20).map((a) =>
-    `<span class="ticker-item">${safeText(a.title)}</span><span class="ticker-label"> · SIG2NAL · </span>`
-  // Note: ticker uses plain text — G2 orange only applies in the wordmark SVG context
+    `<span class="ticker-item">${safeText(a.title)}</span><span class="ticker-label"> · SIGNAL · </span>`
   ).join('');
+  // Duplicate for seamless loop
   track.innerHTML = items + items;
 }
 
@@ -184,115 +149,67 @@ function buildTicker(articles) {
 function renderGrid(articles, append = false) {
   const grid = document.getElementById('articles-grid');
   if (!append) grid.innerHTML = '';
+
   articles.forEach((a, i) => {
     const card = buildCard(a, append ? grid.children.length + i : i);
     grid.appendChild(card);
   });
 }
 
-// ── Voices — thought leader chips + their articles ────────────────
-
-const VOICES = [
-  { name: 'Aaron Levie',    title: 'CEO, Box',                    linkedin: 'https://www.linkedin.com/in/aaronlevie/' },
-  { name: 'Satya Nadella',  title: 'CEO, Microsoft',              linkedin: 'https://www.linkedin.com/in/satyanadella/' },
-  { name: 'Marc Benioff',   title: 'CEO, Salesforce',             linkedin: 'https://www.linkedin.com/in/marcbenioff/' },
-  { name: 'Dharmesh Shah',  title: 'CTO, HubSpot',                linkedin: 'https://www.linkedin.com/in/dharmesh/' },
-  { name: 'Ali Ghodsi',     title: 'CEO, Databricks',             linkedin: 'https://www.linkedin.com/in/alighodsi/' },
-  { name: 'Martin Casado',  title: 'General Partner, a16z',       linkedin: 'https://www.linkedin.com/in/martincasado/' },
-  { name: 'Sarah Guo',      title: 'Founder, Conviction',         linkedin: 'https://www.linkedin.com/in/sarahguo/' },
-  { name: 'Jason Lemkin',   title: 'Founder, SaaStr',             linkedin: 'https://www.linkedin.com/in/jasonmlemkin/' },
-  { name: 'Tomasz Tunguz',  title: 'GP, Theory Ventures',         linkedin: 'https://www.linkedin.com/in/tomasztunguz/' },
-  { name: 'Jared Spataro',  title: 'CVP AI at Work, Microsoft',   linkedin: 'https://www.linkedin.com/in/jaredspataro/' },
-  // G2
-  { name: 'Godard Abel',    title: 'CEO & Co-founder, G2',        linkedin: 'https://www.linkedin.com/in/godardabel/' },
-  { name: 'Alexis Zhang',   title: 'G2',                           linkedin: 'https://www.linkedin.com/in/alexis-zhang/' },
-  { name: 'Alex Bradley',   title: 'CFO, G2',                      linkedin: 'https://www.linkedin.com/in/alex-bradley-g2/' },
-  { name: 'Tim Sanders',    title: 'Chief Innovation Officer, G2', linkedin: 'https://www.linkedin.com/in/timsanders/' },
-];
-
-let activeVoice = null;
-
-function renderVoicesRoster(articles) {
-  const roster = document.getElementById('voices-roster');
-  const grid = document.getElementById('voices-grid');
-  if (!roster || !grid) return;
-
-  // Build chips
-  VOICES.forEach(v => {
-    const chip = document.createElement('a');
-    chip.className = 'voice-chip';
-    chip.href = v.linkedin;
-    chip.target = '_blank';
-    chip.rel = 'noopener';
-    chip.innerHTML = `
-      <div>
-        <div class="voice-chip-name">${safeText(v.name)}</div>
-        <div class="voice-chip-title">${safeText(v.title)}</div>
-      </div>
-    `;
-
-    // Click filters grid to this person's articles
-    chip.addEventListener('click', (e) => {
-      if (e.ctrlKey || e.metaKey) return; // allow open-in-new-tab
-      e.preventDefault();
-      if (activeVoice === v.name) {
-        // Deselect — show all voices articles
-        activeVoice = null;
-        document.querySelectorAll('.voice-chip').forEach(c => c.classList.remove('active'));
-        showVoicesArticles(articles, null);
-      } else {
-        activeVoice = v.name;
-        document.querySelectorAll('.voice-chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        showVoicesArticles(articles, v.name);
-      }
-    });
-
-    roster.appendChild(chip);
-  });
-
-  showVoicesArticles(articles, null);
-}
-
-function showVoicesArticles(allArticles, personName) {
-  const grid = document.getElementById('voices-grid');
-  if (!grid) return;
-  const voiceArticles = allArticles.filter(a => a.tags && a.tags.includes('voices'));
-  const filtered = personName
-    ? voiceArticles.filter(a => a.source === personName)
-    : voiceArticles;
-
-  if (!filtered.length) {
-    grid.innerHTML = '<p style="grid-column:span 12;padding:32px 0;color:var(--muted);font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">No articles yet — Google Alerts delivers as stories are published.</p>';
-    return;
-  }
-  grid.innerHTML = '';
-  filtered.slice(0, 8).forEach((a, i) => grid.appendChild(buildCard(a, i)));
-}
-
-// ── Perspectives — same articles-grid as Latest Intelligence ──────
+// ── Perspectives section ──────────────────────────────────────────
 
 function renderPerspectives(articles) {
-  const grid = document.getElementById('perspectives-row');
-  if (!grid) return;
-  const items = articles.filter((a) => a.category === 'thought-leadership').slice(0, 8);
-  if (!items.length) { document.getElementById('perspectives-section').style.display = 'none'; return; }
-  grid.innerHTML = '';
-  items.forEach((a, i) => grid.appendChild(buildCard(a, i)));
+  const row = document.getElementById('perspectives-row');
+  row.innerHTML = '';
+  const items = articles
+    .filter((a) => a.category === 'thought-leadership')
+    .slice(0, 3);
+
+  if (!items.length) {
+    document.querySelector('.perspectives-section').style.display = 'none';
+    return;
+  }
+
+  items.forEach((a, i) => {
+    const card = document.createElement('article');
+    card.className = 'perspective-card';
+    card.innerHTML = `
+      <span class="article-source">${safeText(a.source)}</span>
+      <h3 class="card-headline">${safeText(a.title)}</h3>
+      <p class="card-summary">${safeText(a.summary)}</p>
+      <div class="card-footer">
+        <span class="card-date">${relativeTime(a.publishedAt)}</span>
+        <span class="card-read">Read →</span>
+      </div>
+    `;
+    card.addEventListener('click', () => window.open(a.url, '_blank', 'noopener'));
+    row.appendChild(card);
+  });
 }
 
-// ── B2B SaaS — same articles-grid as Latest Intelligence ──────────
+// ── B2B SaaS magazine layout ──────────────────────────────────────
 
 function renderSaas(articles) {
   const grid = document.getElementById('saas-grid');
-  if (!grid) return;
-  const items = articles.filter((a) => a.category === 'saas').slice(0, 8);
-  if (!items.length) { document.getElementById('saas-section').style.display = 'none'; return; }
   grid.innerHTML = '';
-  items.forEach((a, i) => grid.appendChild(buildCard(a, i)));
+
+  const items = articles
+    .filter((a) => a.category === 'saas')
+    .slice(0, 6);
+
+  if (!items.length) {
+    document.querySelector('.saas-section').style.display = 'none';
+    return;
+  }
+
+  items.forEach((a, i) => {
+    const type = i === 0 ? 'type-image' : (i === 2 ? 'type-text' : null);
+    const card = buildCard(a, i, type);
+    grid.appendChild(card);
+  });
 }
 
-// ── Filters ───────────────────────────────────────────────────────
+// ── Filter buttons ────────────────────────────────────────────────
 
 function setupFilters() {
   document.querySelectorAll('.filter-btn').forEach((btn) => {
@@ -301,20 +218,24 @@ function setupFilters() {
       btn.classList.add('active');
       currentCategory = btn.dataset.cat;
       offset = 0;
+
       const filtered = currentCategory === 'all'
         ? allArticles
         : allArticles.filter((a) => a.category === currentCategory || a.tags.includes(currentCategory));
+
       renderGrid(filtered.slice(0, PAGE_SIZE));
       offset = PAGE_SIZE;
     });
   });
 
+  // Nav links
   document.querySelectorAll('.nav-link').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
+      const cat = link.dataset.category;
       document.querySelectorAll('.nav-link').forEach((l) => l.classList.remove('active'));
       link.classList.add('active');
-      const matchingBtn = document.querySelector(`.filter-btn[data-cat="${link.dataset.category}"]`);
+      const matchingBtn = document.querySelector(`.filter-btn[data-cat="${cat}"]`);
       if (matchingBtn) matchingBtn.click();
       document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
     });
@@ -328,6 +249,7 @@ function setupLoadMore() {
     const filtered = currentCategory === 'all'
       ? allArticles
       : allArticles.filter((a) => a.category === currentCategory || a.tags.includes(currentCategory));
+
     const next = filtered.slice(offset, offset + PAGE_SIZE);
     if (!next.length) {
       document.getElementById('load-more').textContent = 'All caught up';
@@ -343,28 +265,35 @@ function setupLoadMore() {
 
 function setFooterDate(lastUpdated) {
   const el = document.getElementById('last-updated-footer');
-  if (lastUpdated) el.textContent = `Last updated: ${new Date(lastUpdated).toLocaleString()}`;
+  if (lastUpdated) {
+    el.textContent = `Last updated: ${new Date(lastUpdated).toLocaleString()}`;
+  }
 }
 
 // ── G2 Category Intelligence ──────────────────────────────────────
 
 function starsHtml(rating) {
+  const full = Math.floor(rating);
+  const hasHalf = rating % 1 >= 0.5;
   let html = '';
   for (let i = 0; i < 5; i++) {
-    html += `<span class="g2-star${i >= Math.round(rating) ? ' empty' : ''}"></span>`;
+    if (i < full) html += `<span class="g2-star"></span>`;
+    else if (i === full && hasHalf) html += `<span class="g2-star half"></span>`;
+    else html += `<span class="g2-star empty"></span>`;
   }
   return `<div class="g2-stars">${html}</div>`;
 }
 
 function formatReviews(n) {
-  return n >= 1000 ? `${(n / 1000).toFixed(1)}k reviews` : `${n} reviews`;
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k reviews`;
+  return `${n} reviews`;
 }
 
 function buildG2Card(cat, index) {
   const card = document.createElement('div');
   card.className = 'g2-card';
-  const maxProducts = index === 0 ? 4 : 3;
-  const productsHtml = (cat.top_products || []).slice(0, maxProducts).map((p) => `
+
+  const productsHtml = cat.top_products.slice(0, index === 0 ? 4 : 3).map((p) => `
     <a class="g2-product-item" href="${p.g2_url}" target="_blank" rel="noopener">
       ${starsHtml(p.stars)}
       <span class="g2-product-name">${safeText(p.name)}</span>
@@ -379,7 +308,7 @@ function buildG2Card(cat, index) {
       <span class="g2-signal ${cat.signal}">${safeText(cat.signal_label)}</span>
     </div>
     <p class="g2-card-desc">${safeText(cat.description)}</p>
-    <div class="g2-card-products">${productsHtml || '<span style="font-family:var(--font-mono);font-size:11px;color:var(--muted)">Emerging — data coming soon</span>'}</div>
+    <div class="g2-card-products">${productsHtml}</div>
     <div class="g2-card-footer">
       <span class="g2-card-count">${cat.product_count_label}</span>
       <a class="g2-view-link" href="${cat.g2_url}" target="_blank" rel="noopener">View on G2 →</a>
@@ -388,137 +317,50 @@ function buildG2Card(cat, index) {
   return card;
 }
 
-function renderG2Summary(categories) {
-  const el = document.getElementById('g2-summary');
-  if (!el) return;
-
-  const totalCats = categories.length;
-  // Sum up product counts from labels like "35+ products" → extract number
-  const totalProductsMin = categories.reduce((sum, c) => {
-    const n = parseInt((c.product_count_label || '').replace(/[^0-9]/g, ''), 10) || 0;
-    return sum + n;
-  }, 0);
-
-  const hot     = categories.filter(c => c.signal === 'hot');
-  const growing = categories.filter(c => c.signal === 'growing');
-  const newCats = categories.filter(c => c.signal_label === 'New Category');
-
-  const hotLabel     = hot.map(c => c.name).join(', ') || '—';
-  const growingLabel = growing.map(c => c.name).join(', ') || '—';
-  const newLabel     = newCats.length
-    ? newCats.map(c => c.name).join(', ')
-    : 'No new categories this cycle';
-
-  el.innerHTML = `
-    <div class="g2-summary-stat">
-      <span class="g2-summary-label">AI Categories Tracked</span>
-      <span class="g2-summary-value">${totalCats}</span>
-      <span class="g2-summary-sub">Across G2's software marketplace, covering the full AI stack</span>
-    </div>
-    <div class="g2-summary-stat">
-      <span class="g2-summary-label">Products Indexed</span>
-      <span class="g2-summary-value">${totalProductsMin.toLocaleString()}+</span>
-      <span class="g2-summary-sub">Reviewed AI products mapped to category and buyer intent data</span>
-    </div>
-    <div class="g2-summary-stat">
-      <span class="g2-summary-label">Data Freshness</span>
-      <span class="g2-summary-value" style="font-size:clamp(18px,2vw,28px);letter-spacing:-0.01em">Bi-Weekly</span>
-      <span class="g2-summary-sub">Refreshed every 1st &amp; 15th via live G2 API — next update June 15</span>
-    </div>
-    <div class="g2-summary-narrative">
-      <div class="g2-narrative-item">
-        <div class="g2-narrative-label">Hottest right now</div>
-        <div class="g2-narrative-text"><strong>${safeText(hotLabel)}</strong> — highest buyer intent signals and fastest-growing product listings on G2 this cycle.</div>
-      </div>
-      <div class="g2-narrative-item">
-        <div class="g2-narrative-label">Growing categories</div>
-        <div class="g2-narrative-text"><strong>${safeText(growingLabel)}</strong> — sustained review velocity and enterprise buyer activity increasing quarter-over-quarter.</div>
-      </div>
-      <div class="g2-narrative-item">
-        <div class="g2-narrative-label">New this cycle</div>
-        <div class="g2-narrative-text">${safeText(newLabel)}${newCats.length ? ' — a newly established G2 category, reflecting emerging buyer demand.' : '.'}</div>
-      </div>
-    </div>
-  `;
-}
-
 async function renderG2Section() {
   const grid = document.getElementById('g2-grid');
   if (!grid) return;
   try {
     const res = await fetch(`${API}/api/g2/categories`);
     const data = await res.json();
-    const cats = data.categories || [];
-    renderG2Summary(cats);
     grid.innerHTML = '';
-    cats.forEach((cat, i) => grid.appendChild(buildG2Card(cat, i)));
+    (data.categories || []).forEach((cat, i) => {
+      grid.appendChild(buildG2Card(cat, i));
+    });
   } catch (err) {
     console.warn('[g2] Failed to load categories:', err);
     if (grid) grid.style.display = 'none';
   }
 }
 
-// ── Init ──────────────────────────────────────────────────────────
-
-async function fetchWithRetry(url, attempts = 3, delayMs = 8000) {
-  for (let i = 0; i < attempts; i++) {
-    const data = await fetch(url).then(r => r.json());
-    if ((data.articles?.length || 0) > 0 || (data.total || 0) > 0) return data;
-    if (i < attempts - 1) {
-      // Server cold-started — show message and retry
-      document.getElementById('articles-grid').innerHTML =
-        '<p style="grid-column:span 12;padding:40px 0;color:var(--muted);font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;">Waking up feeds… retrying in a moment.</p>';
-      await new Promise(r => setTimeout(r, delayMs));
-    }
-  }
-  return { articles: [], total: 0 };
-}
-
-// ── Lazy section loader ───────────────────────────────────────────
-function lazyRender(sectionId, renderFn) {
-  const el = document.getElementById(sectionId);
-  if (!el || !('IntersectionObserver' in window)) { renderFn(); return; }
-  const observer = new IntersectionObserver((entries, obs) => {
-    if (entries[0].isIntersecting) { obs.disconnect(); renderFn(); }
-  }, { rootMargin: '300px' });
-  observer.observe(el);
-}
+// ── Main init ─────────────────────────────────────────────────────
 
 async function init() {
   setupFilters();
   setupLoadMore();
+
   try {
     const [featuredRes, articlesRes] = await Promise.all([
       fetch(`${API}/api/featured?n=5`).then((r) => r.json()),
-      fetchWithRetry(`${API}/api/articles?limit=80`),
+      fetch(`${API}/api/articles?limit=80`).then((r) => r.json()),
     ]);
+
     allArticles = articlesRes.articles || [];
 
-    if (allArticles.length > 0) {
-      // Render above-the-fold immediately
-      renderCover(featuredRes.articles || []);
-      buildTicker(allArticles);
-      renderGrid(allArticles.slice(0, PAGE_SIZE));
-      offset = PAGE_SIZE;
-      // Lazy-render below-fold sections as user scrolls
-      lazyRender('voices-section',      () => renderVoicesRoster(allArticles));
-      lazyRender('g2-section',          () => renderG2Section());
-      lazyRender('perspectives-section', () => renderPerspectives(allArticles));
-      lazyRender('saas-section',         () => renderSaas(allArticles));
-    } else {
-      document.getElementById('cover').style.display = 'none';
-      document.querySelector('.ticker-wrap').style.display = 'none';
-      document.getElementById('articles-grid').innerHTML =
-        '<p style="grid-column:span 12;padding:60px 0;color:var(--muted);font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">No content loaded — feeds refresh Monday & Thursday at 9am EST.</p>';
-      document.getElementById('perspectives-section').style.display = 'none';
-      document.getElementById('saas-section').style.display = 'none';
-    }
+    renderCover(featuredRes.articles || []);
+    buildTicker(allArticles);
+    renderGrid(allArticles.slice(0, PAGE_SIZE));
+    offset = PAGE_SIZE;
+    renderPerspectives(allArticles);
+    renderSaas(allArticles);
+    renderG2Section();
     setEditionLabel(articlesRes.lastUpdated);
     setFooterDate(articlesRes.lastUpdated);
+
   } catch (err) {
     console.error('[app] Failed to load articles:', err);
     document.getElementById('articles-grid').innerHTML =
-      '<p style="grid-column:span 12;padding:40px;color:var(--muted);font-family:var(--font-mono);font-size:13px;letter-spacing:0.05em;">Content unavailable — check back shortly.</p>';
+      '<p style="grid-column:span 12;padding:40px;color:var(--gray-400);font-family:var(--font-mono);font-size:13px;">Could not connect to the content server. Make sure the server is running: <code>node server.js</code></p>';
   }
 }
 
