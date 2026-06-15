@@ -388,6 +388,37 @@ function buildG2Card(cat, index) {
   return card;
 }
 
+// ── G2 Changelog — What's Changed This Cycle ─────────────────────
+
+function directionIcon(dir) {
+  if (dir === 'up')  return '<span class="changelog-dir up">↑</span>';
+  if (dir === 'new') return '<span class="changelog-dir new">✦</span>';
+  if (dir === 'down') return '<span class="changelog-dir down">↓</span>';
+  return '';
+}
+
+function renderG2Changelog(changelog) {
+  const el = document.getElementById('g2-changelog');
+  if (!el || !changelog || !changelog.entries || !changelog.entries.length) return;
+
+  const entriesHtml = changelog.entries.map(e => `
+    <div class="changelog-entry">
+      <div class="changelog-cat">${safeText(e.category)}</div>
+      <div class="changelog-change">${directionIcon(e.direction)}<span>${safeText(e.change)}</span></div>
+      <div class="changelog-detail">${safeText(e.detail)}</div>
+    </div>
+  `).join('');
+
+  el.innerHTML = `
+    <div class="changelog-header">
+      <span class="changelog-title">What's Changed</span>
+      <span class="changelog-meta">${safeText(changelog.previousRefreshDate)} → ${safeText(changelog.refreshDate)}</span>
+    </div>
+    <div class="changelog-entries">${entriesHtml}</div>
+  `;
+  el.style.display = '';
+}
+
 function renderG2Summary(categories) {
   const el = document.getElementById('g2-summary');
   if (!el) return;
@@ -449,6 +480,7 @@ async function renderG2Section() {
     const res = await fetch(`${API}/api/g2/categories`);
     const data = await res.json();
     const cats = data.categories || [];
+    renderG2Changelog(data.changelog);
     renderG2Summary(cats);
     grid.innerHTML = '';
     cats.forEach((cat, i) => grid.appendChild(buildG2Card(cat, i)));

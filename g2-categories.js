@@ -117,4 +117,43 @@ const categories = [
   },
 ];
 
-module.exports = categories;
+// ── What's Changed — diff vs previous refresh ─────────────────────
+// Updated by g2-category-refresh scheduled task each cycle
+const changelog = {
+  refreshDate: '2026-06-15',
+  previousRefreshDate: '2026-06-01',
+  entries: [
+    {
+      category: 'Generative AI',
+      change: 'New entrant in top 4',
+      detail: 'Notion (11,995 reviews) entered the top 4, displacing HeyGen — Notion\'s G2 presence in this category is now undeniable.',
+      direction: 'up',
+    },
+    {
+      category: 'AI Governance Tools',
+      change: 'Ranking shift at #2',
+      detail: 'Coder (199 reviews) jumped into the #2 slot, replacing IBM watsonx.governance — reflects growing demand for governed AI dev environments.',
+      direction: 'up',
+    },
+    {
+      category: 'MLOps Platforms',
+      change: 'New entrant in top 4',
+      detail: 'Saturn Cloud (320 reviews) replaced Apache Airflow (128) as its review volume grew quarter-over-quarter.',
+      direction: 'up',
+    },
+    {
+      category: 'AI Marketing Agents',
+      change: 'First full data cycle',
+      detail: 'HubSpot Marketing Hub (14,793) and ActiveCampaign (14,701) lead, with Agentforce Marketing (Salesforce\'s rebrand) and Attentive rounding out the list.',
+      direction: 'new',
+    },
+    {
+      category: 'Agentic AI',
+      change: 'Review volume gains',
+      detail: 'All top products gained reviews this cycle — ClickUp +190, Retell AI +125, Salesforce Agentforce +78.',
+      direction: 'up',
+    },
+  ],
+};
+
+module.exports = { categories, changelog };

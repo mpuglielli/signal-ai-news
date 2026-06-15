@@ -118,6 +118,7 @@ function extractImage(item) {
 
 async function refreshAll() {
   console.log('[aggregator] Refreshing all feeds…');
+  const prevCache = [...articleCache]; // save before any overwrite
   const results = await Promise.allSettled(feeds.map(fetchFeed));
   const fresh = results
     .filter((r) => r.status === 'fulfilled')
@@ -125,26 +126,37 @@ async function refreshAll() {
 
   // Dedupe by URL
   const seen = new Set();
-  articleCache = fresh.filter((a) => {
+  const deduped = fresh.filter((a) => {
     if (seen.has(a.url)) return false;
     seen.add(a.url);
     return true;
   });
 
   // Sort newest first
-  articleCache.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  deduped.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
-  if (articleCache.length === 0) {
-    // All feeds failed — keep whatever was already in memory (file cache from cold start)
-    // This prevents Vercel cold-start RSS failures from wiping the cached articles
-    const kept = articleCache.length; // 0 here, but the global articleCache may still have file data
+  if (deduped.length === 0) {
+    // All feeds failed — preserve whatever was in cache before this run
     console.log('[aggregator] No live articles from feeds — preserving existing cache.');
     lastUpdated = lastUpdated || new Date().toISOString();
-    return articleCache; // return existing (file-seeded) cache unchanged
+    return articleCache; // unchanged
   }
 
+  // Freshness guard: if the newest article from live feeds is older than 7 days
+  // AND the existing cache has newer content, keep the existing cache.
+  const newestFresh = new Date(deduped[0].publishedAt).getTime();
+  const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+  if (newestFresh < sevenDaysAgo && prevCache.length > 0) {
+    const newestCached = new Date(prevCache[0].publishedAt).getTime();
+    if (newestCached >= newestFresh) {
+      console.log(`[aggregator] Live feeds only returned stale content (newest: ${deduped[0].publishedAt}). Preserving existing cache.`);
+      return articleCache;
+    }
+  }
+
+  articleCache = deduped;
   lastUpdated = new Date().toISOString();
-  console.log(`[aggregator] Cached ${articleCache.length} fresh articles.`);
+  console.log(`[aggregator] Cached ${articleCache.length} fresh articles. Newest: ${deduped[0]?.publishedAt}`);
 
   // Persist to disk so next cold start serves real content immediately
   saveCachedArticles(articleCache, lastUpdated);

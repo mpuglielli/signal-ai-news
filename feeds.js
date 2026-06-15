@@ -1,24 +1,8 @@
 // Curated RSS feed sources — General AI + B2B SaaS relevance
+// NOTE: Many major news sites (TechCrunch, The Verge, Wired) block server IPs.
+// All feeds here are verified to work from Vercel serverless environments.
 module.exports = [
   // ── General AI News ──────────────────────────────────────────────
-  {
-    url: 'https://techcrunch.com/category/artificial-intelligence/feed/',
-    name: 'TechCrunch AI',
-    category: 'general',
-    tags: ['ai', 'industry'],
-  },
-  {
-    url: 'https://www.theverge.com/ai-artificial-intelligence/rss/index.xml',
-    name: 'The Verge · AI',
-    category: 'general',
-    tags: ['ai', 'industry'],
-  },
-  {
-    url: 'https://www.wired.com/feed/category/artificial-intelligence/latest/rss',
-    name: 'Wired AI',
-    category: 'general',
-    tags: ['ai', 'longform'],
-  },
   {
     url: 'https://feeds.feedburner.com/venturebeat/SZYF',
     name: 'VentureBeat AI',
@@ -54,6 +38,30 @@ module.exports = [
     name: 'Hugging Face Blog',
     category: 'general',
     tags: ['ai', 'open-source', 'models'],
+  },
+  {
+    url: 'https://news.ycombinator.com/rss',
+    name: 'Hacker News',
+    category: 'general',
+    tags: ['ai', 'industry', 'tech'],
+  },
+  {
+    url: 'https://techpolicyinstitute.org/feed/',
+    name: 'Tech Policy Institute',
+    category: 'general',
+    tags: ['ai', 'policy'],
+  },
+  {
+    url: 'https://importai.substack.com/feed',
+    name: 'Import AI',
+    category: 'general',
+    tags: ['ai', 'research', 'analysis'],
+  },
+  {
+    url: 'https://thesequence.substack.com/feed',
+    name: 'TheSequence',
+    category: 'general',
+    tags: ['ai', 'ml', 'research'],
   },
 
   // ── B2B SaaS + Enterprise AI ─────────────────────────────────────
@@ -99,6 +107,18 @@ module.exports = [
     category: 'saas',
     tags: ['cloud', 'enterprise', 'ai'],
   },
+  {
+    url: 'https://www.g2.com/articles/feed',
+    name: 'G2 Learn Hub',
+    category: 'saas',
+    tags: ['saas', 'reviews', 'enterprise'],
+  },
+  {
+    url: 'https://www.producthunt.com/feed?category=artificial-intelligence',
+    name: 'Product Hunt AI',
+    category: 'saas',
+    tags: ['ai', 'products', 'launches'],
+  },
 
   // ── Thought Leadership ───────────────────────────────────────────
   {
@@ -124,6 +144,12 @@ module.exports = [
     name: 'AI Snake Oil',
     category: 'thought-leadership',
     tags: ['ai', 'critical', 'research'],
+  },
+  {
+    url: 'https://www.digitalnative.tech/feed',
+    name: 'Digital Native',
+    category: 'thought-leadership',
+    tags: ['saas', 'venture', 'analysis'],
   },
 
   // ── Voices — 14 B2B AI thought leaders via Google Alerts RSS ────

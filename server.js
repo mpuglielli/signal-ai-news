@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const fetch = require('node-fetch');
 const { refreshAll, getArticles, getFeatured } = require('./aggregator');
-const g2Categories = require('./g2-categories');
+const { categories: g2Categories, changelog: g2Changelog } = require('./g2-categories');
 
 const app = express();
 const ESSAYS_FILE = path.join(__dirname, 'essays.json');
@@ -193,7 +193,7 @@ ${articleList}`;
 });
 
 app.get('/api/g2/categories', (req, res) => {
-  res.json({ categories: g2Categories, source: 'G2.com', fetchedAt: new Date().toISOString() });
+  res.json({ categories: g2Categories, changelog: g2Changelog || null, source: 'G2.com', fetchedAt: new Date().toISOString() });
 });
 
 app.get('/digest', (req, res) => {

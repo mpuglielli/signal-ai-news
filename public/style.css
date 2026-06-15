@@ -337,6 +337,61 @@ button { cursor: pointer; font-family: inherit; }
   letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted);
 }
 
+/* ─── G2 CHANGELOG — What's Changed this cycle ────────────────── */
+.g2-changelog {
+  margin-bottom: calc(var(--gap) * 1.5);
+  border: 1.5px solid var(--navy);
+  border-radius: 4px;
+  background: var(--white);
+  overflow: hidden;
+}
+.changelog-header {
+  display: flex; align-items: baseline; gap: 16px;
+  padding: 14px 20px;
+  background: var(--navy);
+}
+.changelog-title {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--white);
+}
+.changelog-meta {
+  font-family: var(--font-mono); font-size: 10px;
+  color: rgba(255,255,255,0.5); letter-spacing: 0.05em;
+}
+.changelog-entries {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0;
+}
+.changelog-entry {
+  padding: 16px 20px;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.changelog-entry:last-child { border-right: none; }
+.changelog-cat {
+  font-family: var(--font-mono); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 6px;
+}
+.changelog-change {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-sans); font-weight: 700; font-size: 13px;
+  color: var(--navy); margin-bottom: 6px;
+}
+.changelog-dir {
+  font-size: 12px; font-weight: 700;
+  width: 18px; height: 18px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%; flex-shrink: 0;
+}
+.changelog-dir.up   { background: #D4F0D4; color: #1A6B1A; }
+.changelog-dir.down { background: #FFE0DC; color: var(--coral); }
+.changelog-dir.new  { background: var(--blue-bg); color: var(--blue-text); }
+.changelog-detail {
+  font-size: 12px; line-height: 1.55; color: var(--muted);
+}
+
 /* ─── G2 SUMMARY — text-based intelligence panel ──────────────── */
 .g2-summary {
   display: grid; grid-template-columns: 1fr 1fr 1fr;
