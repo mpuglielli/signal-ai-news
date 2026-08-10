@@ -1,12 +1,42 @@
 {
   "articles": [
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Here’s why AI agents lie and cheat to reach their goals When two OpenAI models hacked into Hugging Face last month, they weren’t trying to make money or commit sabotage—they were…",
-      "url": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/",
+      "id": "aHR0cHM6Ly9pbXBv",
+      "title": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
+      "summary": "Which galaxy will you choose?",
+      "url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
+      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
+      "publishedAt": "Mon, 10 Aug 2026 12:32:20 GMT",
+      "source": "Import AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "analysis"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zcXVl",
+      "title": "Squeak/Smalltalk 6.1 Release Notes",
+      "summary": "Comments",
+      "url": "https://squeak.org/release_notes/6.1/",
       "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 12:08:00 +0000",
+      "publishedAt": "Mon, 10 Aug 2026 12:15:53 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: AI agents for science, and the “censorship-industrial complex”",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI for science needs reasoning, not just data —Eric Schmidt, the former CEO of Google and the cofounder of Schmidt Sciences, and Suhas Mahesh, who leads the AI for science work…",
+      "url": "https://www.technologyreview.com/2026/08/10/1141526/the-download-ai-agents-science-censorship-industrial-complex/",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 12:10:00 +0000",
       "source": "MIT Technology Review",
       "category": "general",
       "tags": [
@@ -15,12 +45,26 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9yZXNl",
-      "title": "Critical CVE issued for hallucinated SQLite vulnerability",
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "Your agent didn’t hallucinate; it exceeded its authority",
+      "summary": "Content filters can block unsafe output. They cannot tell you whether an agent was authorized to issue that refund, touch that production system, or commit the company to an external action. Those are different problems, and most enterprises are only solving the first one. An AI agent can follow its instructions perfectly and still take an action the business never sanctioned. In commerce environments, I have seen this pattern emerge in practical ways. A service workflow calculates the correct r",
+      "url": "https://venturebeat.com/technology/your-agent-didnt-hallucinate-it-exceeded-its-authority",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/43swqSi0rLgczPqbbebug4/7503760e97b548fbeb2b2474c1df0fc0/u7277289442_An_AI_robot_sitting_at_a_computer_terminal._It_is_a3726764-bcd1-48d9-9aba-e8fc79d02d72_2.png?w=300&q=30",
+      "publishedAt": "Mon, 10 Aug 2026 12:00:00 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9sd24u",
+      "title": "Tail-call optimization in C is relatively recent",
       "summary": "Comments",
-      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "url": "https://lwn.net/Articles/1034703/",
       "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 11:28:54 +0000",
+      "publishedAt": "Mon, 10 Aug 2026 11:34:40 +0000",
       "source": "Hacker News",
       "category": "general",
       "tags": [
@@ -30,18 +74,933 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9naXRo",
-      "title": "Show HN: Nightcrawler – A local AI pentesting agent running on a smartphone",
+      "id": "aHR0cHM6Ly9ieXRl",
+      "title": "Because It's Not Fun Enough: why languages fail",
       "summary": "Comments",
-      "url": "https://github.com/garagehq/nightcrawler/",
+      "url": "https://bytecode.news/posts/2026/08/because-it-s-not-fun-enough",
       "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 11:06:15 +0000",
+      "publishedAt": "Mon, 10 Aug 2026 11:27:47 +0000",
       "source": "Hacker News",
       "category": "general",
       "tags": [
         "ai",
         "industry",
         "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9ldGh3",
+      "title": "Parametron: 50s Japanese computer that uses neither transistors nor vacuum tubes",
+      "summary": "Comments",
+      "url": "https://ethw.org/Milestones:Parametron,_1954",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 10:29:14 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9yZXNl",
+      "title": "Meta Muse Glimmer – open weights 30B local coding model",
+      "summary": "Comments",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 10:10:02 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Making Knowledge Distillation Cheap Enough to Run at Scale",
+      "summary": "",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 10:05:36 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "Apple Earnings, More on Amazon’s Earnings",
+      "summary": "Apple's earnings (and stock) are limited not by memory but rather chip shortages; then, more on Amazon's earnings and Andy Jassy's market analysis.",
+      "url": "https://stratechery.com/2026/apple-earnings-more-on-amazons-earnings/",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 10:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft has joined the growing list of companies cracking down on 'tokenmaxxing' - ITPro",
+      "summary": "Reviews One of the greatest enterprise laptops has been ... Satya Nadella says enterprises shouldn't be sharing so much data with AI providers.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.itpro.com/technology/artificial-intelligence/microsoft-has-joined-the-growing-list-of-companies-cracking-down-on-tokenmaxxing&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3J4Rahm8MibyIs8RvHVg7F",
+      "image": null,
+      "publishedAt": "2026-08-10T09:51:01.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "AI for science needs reasoning, not just data",
+      "summary": "Every few decades, someone announces that science has reached its end. In 1903, the revered physicist Albert Michelson wrote that the “facts of physical science have all been discovered.” In the 1980s, Stephen Hawking predicted that theoretical physics might be finished by the end of the century. With the explosive arrival of artificial intelligence, the…",
+      "url": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "These startups are chasing the next big thing in LLMs",
+      "summary": "MIT Technology Review’s What’s Next series looks across industries, trends, and technologies to give you a first look at the future. You can read the rest of them here. Way back in the summer of 2017, AI researchers at Google put out a paper called “Attention Is All You Need,” in which they described a new…",
+      "url": "https://www.technologyreview.com/2026/08/10/1141511/these-startups-are-chasing-the-next-big-thing-in-llms/",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+      "summary": "Comments",
+      "url": "https://www.docker.com/products/docker-sandboxes/",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 06:02:38 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "signüll: All SaaS Are Facing Dual Pressure from AI - ABAB News",
+      "summary": "Model vendors, AI-native vertical applications, and platforms that control enterprise ... Satya Nadella has previously suggested that AI agents may move ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ababnews.com/news/de6e6470-5369-4712-a012-bfaab267c609&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2TJoJylFzV5x5eDz-3jJ5V",
+      "image": null,
+      "publishedAt": "2026-08-10T05:59:48.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Prime Agent",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/prime-intellect",
+      "image": null,
+      "publishedAt": "2026-08-10T04:13:06.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRo",
+      "title": "Run Android ARM64 VR APKs on Apple Vision Pro",
+      "summary": "Comments",
+      "url": "https://github.com/shinyquagsire23/Klepton",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 03:12:48 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9ibG9n",
+      "title": "What Happened to HackerOne?",
+      "summary": "Comments",
+      "url": "https://blog.teknogeek.io/posts/what-happened-to-hackerone/",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 02:23:17 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+      "summary": "",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "image": null,
+      "publishedAt": "Mon, 10 Aug 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "SecondBrain Note by GenSpark",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/genspark",
+      "image": null,
+      "publishedAt": "2026-08-09T21:55:17.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "' SaaSpocalypse ' debate intensifies as software stocks swing wildly - CNBC",
+      "summary": "Salesforce CEO Marc Benioff has spent months trying to convince ... We do not think AI will kill 'SaaS' but slow decay is bad enough: CLSA.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.cnbc.com/2026/08/07/saaspocalypse-debate-intensifies-as-software-stocks-swing-wildly.html&ct=ga&cd=CAIyGmM1N2U3ODA1OThiMGJmZTA6Y29tOmVuOlVT&usg=AOvVaw2M4jtXAig6oSXdqYnTyoqm",
+      "image": null,
+      "publishedAt": "2026-08-09T18:03:26.000Z",
+      "source": "Marc Benioff",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "AI Group Call",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/ai-group-call",
+      "image": null,
+      "publishedAt": "2026-08-09T16:50:42.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Radar - Issue 910: Last Week in AI: Google Rewires Its Brain and Meta Hires a Coding Swarm",
+      "summary": "Jeff Dean leaves, Demis Hassabis moves upstream, and Muse Code turns software development into an orchestration problem.",
+      "url": "https://thesequence.substack.com/p/the-sequence-radar-issue-910-last",
+      "image": "https://substackcdn.com/image/fetch/$s_!eskq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92d129be-3f66-4d80-9b6d-af65ac41c3ae_1672x941.png",
+      "publishedAt": "Sun, 09 Aug 2026 11:00:43 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "Four AI agents coordinating in real time outperformed Claude Opus 4.8 on enterprise coding tasks",
+      "summary": "As enterprise codebases grow, AI agents tasked with analyzing them are buckling under the weight of long-horizon tasks that require multiple interactions and tool calls. Dividing the work among a team of agents seems like the obvious fix, but it introduces a fatal flaw: most multi-agent systems are not designed for agents to coordinate among themselves mid-task and in real time. To solve this, researchers at Coral AI Labs and multiple universities introduced AgentRadio, an asynchronous message-p",
+      "url": "https://venturebeat.com/orchestration/four-ai-agents-coordinating-in-real-time-outperformed-claude-opus-4-8-on-enterprise-coding-tasks",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5XSt4gOHH2WQdbifIoXK6w/00bfc6d7266a45109f92821ac8555cec/Multi-agent_cooperation.jpg?w=300&q=30",
+      "publishedAt": "Fri, 07 Aug 2026 21:45:39 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/tutormoments",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 17:53:32 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "2026.32: Earnings and Learnings",
+      "summary": "The best Stratechery content from the week of August 3, 2026, including earnings exposure, OpenAI's answer to Apple, and all about LeBron in Philly.",
+      "url": "https://stratechery.com/2026/earnings-and-learnings/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 17:29:02 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "Stanford is running 37,000 AI agents as a virtual biotech — and one of its drug designs got independently confirmed by Merck",
+      "summary": "For developers, the operating assumption has been one engineer, one agent — the model Claude Code and similar tools. At VB Transform 2026, James Zou, associate professor of biomedical data science at Stanford University, argued that assumption is about to break: the next frontier isn't a single, more capable agent, it's tens of thousands of them collaborating. For developers and product builders, the most critical takeaway from Zou’s presentation is how these massive systems are orchestrated. Hi",
+      "url": "https://venturebeat.com/orchestration/stanford-is-running-37-000-ai-agents-as-a-virtual-biotech-and-one-of-its-drug-designs-got-independently-confirmed-by-merck",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/6WOK1urRrBAamMyKo3aZbn/7415fe29ed000de43f54362259b77b5e/2026-VB-Transform-Hotel-Nia-0543.jpg?w=300&q=30",
+      "publishedAt": "Fri, 07 Aug 2026 17:05:52 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "Tencent's Team Memory shares AI agent memory across a team — with no governance yet for when it's wrong",
+      "summary": "A VB Pulse survey this June found that 57% of enterprises had traced a confidently wrong agent answer back to missing or inconsistent context — the latest sign of how central context has become to whether AI agents can be trusted to act on their own. Most of the fixes so far have solved a narrower version of that problem: one agent remembering more, in one session. What's been missing is a way for a team of agents to draw on the same context at once, and that gap is where a newer problem is surf",
+      "url": "https://venturebeat.com/data/tencents-team-memory-shares-ai-agent-memory-across-a-team-with-no-governance-yet-for-when-its-wrong",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/4KaZ8XJq6sjpxb51A5q7VT/2061c33e7cc4c52501ffd2c127c824e7/team-memory-smk1.jpg?w=300&q=30",
+      "publishedAt": "Fri, 07 Aug 2026 16:30:29 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "How Cohere Health digitizes clinical policies using Amazon Bedrock AgentCore",
+      "summary": "In this post, you learn how Cohere Health built a multi-tenant agentic architecture on AgentCore using AgentCore Runtime’s secure MicroVM isolation, unified tool access through AgentCore Gateway, AgentCore Memory, and the Agent Skills open standard to rapidly scale policy digitization capabilities, while preserving transparency, version control, and human oversight.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-cohere-health-digitizes-clinical-policies-using-amazon-bedrock-agentcore/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 16:26:58 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "How TReNDS automates root-cause analysis with Amazon Bedrock",
+      "summary": "TReNDS, a research center at Georgia State University, built an agentic AI pipeline on Amazon Bedrock and the open-source Strands Agents SDK that automatically investigates production errors in real time, reducing root-cause analysis from 15 to 30 minutes of manual work to under 60 seconds.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-trends-automates-root-cause-analysis-with-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 16:22:50 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Determining playoff clinching scenarios in the NHL using constraint programming",
+      "summary": "The AWS Generative AI Innovation Center built an automated system that uses constraint programming and custom tree search to determine, with mathematical certainty, when and how an NHL team clinches a playoff spot. The approach was validated against four full NHL seasons of officially published results.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/determining-playoff-clinching-scenarios-in-the-nhl-using-constraint-programming/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 16:21:00 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 15:20:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: a censorship conspiracy theory and the first virus created by AI",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. How ideas of a vast censorship network moved from the online fringe to Trump policy For years, narratives about a “censorship-industrial complex” spread in right-wing circles. The theory claimed that, under…",
+      "url": "https://www.technologyreview.com/2026/08/07/1141389/the-download-censorship-conspiracy-theory-first-ai-virus/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 14:20:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "How ideas of a vast censorship network moved from the online fringe to Trump policy",
+      "summary": "This article was produced in partnership with Type Investigations, with support from the Wayne Barrett Project. One morning in April 2025, employees of a small office in the US State Department got the email many of them had been dreading. For months, Elon Musk’s Department of Government Efficiency had been cutting a wide swath through…",
+      "url": "https://www.technologyreview.com/2026/08/07/1141105/how-ideas-of-a-vast-censorship-network-moved-from-the-online-fringe-to-trump-policy/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 14:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Salesforce Agentic Enterprise Index: Agent Deployments More Than Double Year over Year",
+      "summary": "An analysis of Agentforce usage among businesses consistently leveraging agents from February 2025 to April 2026 shows how different industries deploy AI agents while building trust and recognizing ROI.",
+      "url": "https://www.salesforce.com/news/stories/agentic-enterprise-index-insights-2026/",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 12:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+      "summary": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
+      "url": "https://openai.com/index/hsp-gruppe",
+      "image": null,
+      "publishedAt": "Fri, 07 Aug 2026 09:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "No cloud, no GPUs, no problem: Liquid AI's new model LFM2.5-2.6B brings powerful AI agents to devices as small as a Raspberry Pi",
+      "summary": "Earlier this week, the AI startup Liquid, formed in 2023 by former MIT computer scientists, debuted LFM2.5-2.6B, a new open-weight language model designed specifically for agentic workloads. In release materials and a recent interview with VentureBeat, Liquid's researchers said LFM2.5-2.6B can run entirely on local hardware — from smartphones and laptops down to a Raspberry Pi — without relying on cloud inference or GPUs, unlocking edge AI applications and giving more options to enterprises work",
+      "url": "https://venturebeat.com/technology/no-cloud-no-gpus-no-problem-liquid-ais-new-model-lfm2-5-2-6b-brings-powerful-ai-agents-to-devices-as-small-as-a-raspberry-pi",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/40zQSjTq3Tmjsc7R6vBNMj/9c86c259b74a77266b3c1bac66c174fd/ChatGPT_Image_Aug_6__2026__05_28_56_PM.png?w=300&q=30",
+      "publishedAt": "Thu, 06 Aug 2026 22:56:06 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Securing AI agents with temporal policies in Amazon Bedrock AgentCore",
+      "summary": "Temporal policies in Amazon Bedrock AgentCore let you define stateful rules that evaluate authorization based on an agent's session history. Learn how to enforce workflow sequencing, prevent data fabrication, cap financial exposure, and require human approval for high-value actions.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/securing-ai-agents-with-temporal-policies-in-amazon-bedrock-agentcore/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 18:57:55 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Configure rate limits for AI traffic on AgentCore gateway",
+      "summary": "Learn how to configure rate limits on Amazon Bedrock AgentCore gateway to enforce per-user and per-target traffic controls. Define request, token, and connection limits scoped by JWT claims or IAM identity to protect downstream models, tools, and agents from traffic spikes.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/configure-rate-limits-for-ai-traffic-on-agentcore-gateway/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 17:50:42 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Control agent behaviors and cost beyond a single action: new capabilities in Amazon Bedrock AgentCore",
+      "summary": "Learn about new capabilities in Amazon Bedrock AgentCore: temporal policies powered by Dogwood, a new open source policy language for AI agents, and rate limiting on the gateway. These features give you deterministic control over sequences of agent actions and cost ceilings that hold regardless of agent behavior.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 16:43:19 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Build visibility for Codex on Amazon Bedrock with OpenTelemetry and Amazon CloudWatch",
+      "summary": "As engineering teams adopt coding agents like Codex, leaders need visibility into adoption, consumption, and reliability. This post shows how to route Codex OpenTelemetry metrics through a local collector to Amazon CloudWatch for an AWS native view of usage by user, team, and cost center.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-visibility-for-codex-on-amazon-bedrock-with-opentelemetry-and-amazon-cloudwatch/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 16:30:47 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Agent Skills for Automated Reasoning policies in Amazon Bedrock",
+      "summary": "Learn how to run the full Amazon Bedrock Automated Reasoning policy lifecycle from your coding agent. A suite of open source Agent Skills builds, reviews, tests, debugs, deploys, and validates a custom policy end to end, turning a specialized console task into a repeatable engineering workflow.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/agent-skills-for-automated-reasoning-policies-in-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 16:12:24 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "Qwen 3.8-Max and Claude Opus 5 show why raw benchmark scores don't predict the bill",
+      "summary": "Alibaba released Qwen 3.8-Max this week and marketed the preview as second only to Claude Fable 5 (their launch-day table was more equivocal: the model leads on one of 12 coding-agent rows). But an independent harness came close to the opposite conclusion: a benchmark run, apparently using the Preview version, put Qwen 3.8-Max's best effort setting mid-pack, and its default setting last. Both results are real and defensible. The gap between them is about token and time budgets, and that matters ",
+      "url": "https://venturebeat.com/orchestration/qwen-3-8-max-and-claude-opus-5-show-why-raw-benchmark-scores-dont-predict-the-bill",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/6zpX2RqBlYloDvRCIfyTbk/53362a14bf8566e0ca2a910e5af9f6e4/Gemini_Generated_Image_x0e43ax0e43ax0e4.png?w=300&q=30",
+      "publishedAt": "Thu, 06 Aug 2026 16:11:47 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly92ZW50",
+      "title": "AI agents are part of your team now. Here’s how to secure all of them.",
+      "summary": "Presented by JumpCloud A practical framework for securing every identity in the modern workforce, human or not. Your organization already has a rigorous process for governing human identities. New employees go through onboarding. They get a role, a set of entitlements, and a named manager accountable for their access. When they leave, their credentials are revoked and access is terminated. It’s a well known IT process: every workforce identity that can access your systems needs to be known, scop",
+      "url": "https://venturebeat.com/security/ai-agents-are-part-of-your-team-now-heres-how-to-secure-all-of-them",
+      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1il6brr3rjPjTdfzguPisn/386aca28bb14bd441778941e6c6845cd/Thumbnail.png?w=300&q=30",
+      "publishedAt": "Thu, 06 Aug 2026 15:30:00 GMT",
+      "source": "VentureBeat AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWVw",
+      "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+      "summary": "",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 15:06:15 +0000",
+      "source": "Google DeepMind",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: Google’s AI shake-up and Meta’s rogue model",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Google’s AI empire is being reshaped. Here’s what’s changed. After a wave of painful losses in the tech talent wars, delays to its next flagship model, and murmurings of poor morale,…",
+      "url": "https://www.technologyreview.com/2026/08/06/1141278/the-download-google-ai-shake-up-meta-rogue-model/",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Opinion #909: Return on Token: The New Economics of AI-Native Engineering",
+      "summary": "Token maxing was the adoption phase. Intelligence resource planning is what comes next.",
+      "url": "https://thesequence.substack.com/p/the-sequence-opinion-909-return-on",
+      "image": "https://substackcdn.com/image/fetch/$s_!GfWd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F335c7d50-876c-474e-95ee-a75cb831d862_1672x941.png",
+      "publishedAt": "Thu, 06 Aug 2026 11:03:23 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+      "summary": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 10:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Vidaya",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/vidaya",
+      "image": null,
+      "publishedAt": "2026-08-06T07:21:22.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Working with the American Psychological Association on youth mental health and AI",
+      "summary": "OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental health.",
+      "url": "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 06:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Remix",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/remix-8",
+      "image": null,
+      "publishedAt": "2026-08-06T02:16:52.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "From asking to doing: How the world is putting ChatGPT to work",
+      "summary": "New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior.",
+      "url": "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Baseten on Hugging Face Inference Providers 🔥",
+      "summary": "",
+      "url": "https://huggingface.co/blog/baseten",
+      "image": null,
+      "publishedAt": "Thu, 06 Aug 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Puzzle Corner",
+      "summary": "Ready for a fresh set of puzzles? Click here for the September/October 2026 Puzzle Corner, brought to you by Michael S. Branicky, ScD ’95, of the Puzzle Corner Puzzle Crew (aka PC2), which also includes Edward Faulkner ’03, MEng ’04, and Abe Kunin ’03. This column includes solutions to the May/June issue. Send problems, solutions (by October…",
+      "url": "https://www.technologyreview.com/2026/08/05/1141230/puzzle-corner-84/",
+      "image": null,
+      "publishedAt": "Wed, 05 Aug 2026 14:56:29 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Month AI Conquered Math: The Full Story",
+      "summary": "The story of July 2026: the conjectures that fell, the humans who celebrate and mourn them, and the limits of what machines can conquer",
+      "url": "https://www.thealgorithmicbridge.com/p/the-month-ai-conquered-math-the-full",
+      "image": "https://substackcdn.com/image/fetch/$s_!JIDE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbab105f4-7d89-448e-8c24-698beacf746c_1536x1024.png",
+      "publishedAt": "Wed, 05 Aug 2026 14:13:12 GMT",
+      "source": "The Algorithmic Bridge",
+      "category": "thought-leadership",
+      "tags": [
+        "ai",
+        "analysis"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "AI agents can't yet do open-ended AI research",
+      "summary": "Early evidence from two case studies",
+      "url": "https://www.normaltech.ai/p/ai-agents-cant-yet-do-open-ended",
+      "image": "https://substackcdn.com/image/fetch/$s_!2o-q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a0117ca-8ce4-45e9-a956-62c82a45d44b_3064x1792.jpeg",
+      "publishedAt": "Wed, 05 Aug 2026 13:49:19 GMT",
+      "source": "AI Snake Oil",
+      "category": "thought-leadership",
+      "tags": [
+        "ai",
+        "critical",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: NASA’s new telescope and Chinese tech import curbs",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. NASA’s new dark energy space telescope can also detect killer asteroids At the end of August, NASA is set to launch the Nancy Grace Roman Space Telescope from Kennedy Space…",
+      "url": "https://www.technologyreview.com/2026/08/05/1141212/the-download-nasa-telescope-chinese-tech-import-curbs/",
+      "image": null,
+      "publishedAt": "Wed, 05 Aug 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence AI of the Week #908: You Need to Learn About Gemini Robotics",
+      "summary": "Google put a walking humanoid inside a single policy, published the reasoning half as an API, and kept the motor half behind a partner gate. The numbers explain why.",
+      "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-908-you",
+      "image": "https://substackcdn.com/image/fetch/$s_!I_mP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F44ebc89c-04a1-4745-b62e-42c43fcf06cb_1448x1086.png",
+      "publishedAt": "Wed, 05 Aug 2026 11:03:15 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "Google Earnings, The Frontier Case, Amazon Earnings",
+      "summary": "Google's earnings seemed to confirm the Anthropic hedge; it was Andy Jassy who explained why their — and Amazon's — capex was justifiable.",
+      "url": "https://stratechery.com/2026/google-earnings-the-frontier-case-amazon-earnings/",
+      "image": null,
+      "publishedAt": "Wed, 05 Aug 2026 10:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "U.S. Army Human Resources Command Deploys Agentforce to Deliver 24/7 AI-Powered Support to 9.2 Million Soldiers, Veterans, and Military Families",
+      "summary": "Army HRC becomes the first Department of War organization to deploy the newly authorized Agentforce Public Sector in Salesforce’s Impact Level 5 environment SAN FRANCISCO and WASHINGTON, August 5, 2026 — Salesforce, the world’s #1 Agentic CRM, today announced that the U.S. Army Human Resources Command (HRC) has selected Missionforce National Security to deploy secure, […]",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/05/us-army-hrc-agentforce-ai-powered-support/",
+      "image": null,
+      "publishedAt": "Wed, 05 Aug 2026 09:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Missionforce National Security Unveils IL5-Authorized AI Agents and Apps to Drive Decision Advantage, Readiness, and Enhanced Warfighter Support",
+      "summary": "With new IL5 authorization, Agentforce 360 — Salesforce’s full portfolio of AI agents, data capabilities, and apps — is now embedded into the Missionforce National Security platform. The Department of War (DOW) can now deploy autonomous AI agents to streamline defense logistics, fast-track recruit onboarding and training, alleviate administrative burdens for military families, and transform […]",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/05/dow-agentforce-mission-readiness/",
+      "image": null,
+      "publishedAt": "Wed, 05 Aug 2026 09:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "image": null,
+      "publishedAt": "Tue, 04 Aug 2026 19:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Deploy local agents everywhere with LFM2.5-2.6B",
+      "summary": "",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "image": null,
+      "publishedAt": "Tue, 04 Aug 2026 13:58:29 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Knowlege #907: The Brain Transplant: Distilling Transformers Into Other Architectures",
+      "summary": "Weird but more common than you think. The type of distillation you were not thinking about.",
+      "url": "https://thesequence.substack.com/p/the-sequence-knowlege-907-the-brain",
+      "image": "https://substackcdn.com/image/fetch/$s_!8Dp1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa2422316-3b13-41b0-bc3c-aa070e7744e5_1672x941.png",
+      "publishedAt": "Tue, 04 Aug 2026 11:04:15 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "Microsoft Earnings, Microsoft vs. Meta, The Efficiency Payoff",
+      "summary": "Microsoft's earnings were compelling because they showed a clarity of strategy, lower costs, and a tangibility of application. The reason why is scarier.",
+      "url": "https://stratechery.com/2026/microsoft-earnings-microsoft-vs-meta-the-efficiency-payoff/",
+      "image": null,
+      "publishedAt": "Tue, 04 Aug 2026 10:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "summary": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build.",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "image": null,
+      "publishedAt": "Tue, 04 Aug 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Apple is getting this wrong",
+      "summary": "OpenAI addresses Apple’s baseless lawsuit, corrects claims about its employees, and shares messages documenting what happened.",
+      "url": "https://openai.com/index/apple-is-getting-this-wrong",
+      "image": null,
+      "publishedAt": "Mon, 03 Aug 2026 22:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9pbXBv",
+      "title": "Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity",
+      "summary": "When do we build the moon arcology?",
+      "url": "https://importai.substack.com/p/import-ai-467-self-sustaining-ai",
+      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
+      "publishedAt": "Mon, 03 Aug 2026 13:31:22 GMT",
+      "source": "Import AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "analysis"
       ]
     },
     {
@@ -56,274 +1015,6 @@
       "tags": [
         "analysis",
         "strategy",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hbmt1",
-      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
-      "summary": "Comments",
-      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 09:32:07 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The true power of regular expressions (2012)",
-      "summary": "Comments",
-      "url": "https://www.npopov.com/2012/06/15/The-true-power-of-regular-expressions.html",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 08:47:23 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Here’s why AI agents lie and cheat to reach their goals",
-      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. When two OpenAI models hacked into the website Hugging Face in July, they weren’t trying to make money or commit sabotage—they were just looking for answers…",
-      "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 08:30:05 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRo",
-      "title": "Bonsai: Janestreet's UI Library",
-      "summary": "Comments",
-      "url": "https://github.com/janestreet/bonsai",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 08:29:57 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRo",
-      "title": "Rust project goals: Immobile types and guaranteed destructors",
-      "summary": "Comments",
-      "url": "https://github.com/rust-lang/rust-project-goals/blob/main/src/2026/move-trait.md",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 06:42:00 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9ncnVo",
-      "title": "Don't be a meat proxy",
-      "summary": "Comments",
-      "url": "https://gruhn.me/blog/2026-08-03/",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 06:28:01 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "MascotAI",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/mascotai",
-      "image": null,
-      "publishedAt": "2026-08-03T06:19:32.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Salesforce Dip Is a Buying Opportunity - AOL.com",
-      "summary": "Fears of artificial intelligence replacing SaaS companies were the major factor that caused Salesforce(NYSE: CRM) ... Salesforce CEO Marc Benioff told ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.aol.com/articles/salesforce-dip-buying-opportunity-150500000.html&ct=ga&cd=CAIyGmM1N2U3ODA1OThiMGJmZTA6Y29tOmVuOlVT&usg=AOvVaw3VrCFeyFAfxLcxICMJ7K2H",
-      "image": null,
-      "publishedAt": "2026-08-03T03:18:27.000Z",
-      "source": "Marc Benioff",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "saas",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Murmell",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/murmell",
-      "image": null,
-      "publishedAt": "2026-08-03T02:46:50.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9xd2Vu",
-      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
-      "summary": "Comments",
-      "url": "https://qwen.ai/blog?id=qwen3.8",
-      "image": null,
-      "publishedAt": "Mon, 03 Aug 2026 02:16:09 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "mpai",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/mpai",
-      "image": null,
-      "publishedAt": "2026-08-02T20:12:27.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "Stop graphing everything: When GraphRAG actually beats vector RAG",
-      "summary": "If you have built anything with retrieval-augmented generation (RAG) in the last two years, you have lived its central frustration: You chop your documents into chunks, embed them, retrieve the top few that look similar to the question, and hand them to the model. For “What was our Q3 refund policy?” This works beautifully. For “What are the recurring themes across two years of customer complaints?” it falls flat — because no single chunk contains the answer. The fashionable fix is GraphRAG: Ins",
-      "url": "https://venturebeat.com/orchestration/stop-graphing-everything-when-graphrag-actually-beats-vector-rag",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/1rpZMHeHr7IpMu9cqSzhdV/1c782495f70f8718047ff5ce0e6f1e3c/u7277289442_A_modern_interpretation_of_cybersecurity._Sleek.__5f8b2e68-6dd7-4e68-b47f-83af6a37b067_0.png?w=300&q=30",
-      "publishedAt": "Sun, 02 Aug 2026 19:00:00 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft CEO Satya Nadella Says 'Every Model Is Substitutable' — What That Means For OpenAI",
-      "summary": "Throughout the call, CEO Satya Nadella emphasized that Microsoft's AI ... enterprise demand for the company's AI platform. Photo Courtesy: Tada ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.yahoo.com/technology/ai/articles/microsoft-ceo-satya-nadella-says-153026289.html&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2MJtUohCWmBChsIjz__Yf4",
-      "image": null,
-      "publishedAt": "2026-08-02T17:44:18.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft CEO Satya Nadella Says 'Every Model Is Substitutable' — What That Means For OpenAI",
-      "summary": "... enterprise demand for the company's AI platform. Photo Courtesy: Tada ... Microsoft CEO Satya Nadella Warns Against AI Overuse: 'Don't Use ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.yahoo.com/technology/ai/articles/microsoft-ceo-satya-nadella-says-153026289.html%3F.tsrc%3Drss&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1W_VE3tiuOqL44Pa5x9wg-",
-      "image": null,
-      "publishedAt": "2026-08-02T17:40:04.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "claudemon",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/claudemon",
-      "image": null,
-      "publishedAt": "2026-08-02T17:23:42.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Enterprise AI grows up, vendors are noticing - Constellation Research",
-      "summary": "Microsoft's fourth quarter earnings call featured CEO Satya Nadella talking about the need for model agnostic approaches, architecture and harnesses.",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.constellationr.com/insights/news/enterprise-ai-grows-vendors-are-noticing&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2WAxwP7b33e5derqsd-2c8",
-      "image": null,
-      "publishedAt": "2026-08-02T16:06:42.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Salesforce Surges as AI Drives Strong Market Growth - SekberNews.id",
-      "summary": "... (AI) displacing SaaS companies, according to data cited from Detik Finance. ... Salesforce CEO Marc Benioff highlighted agentic AI as the company's ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.sekbernews.id/en/salesforce-surges-ai-market-growth&ct=ga&cd=CAIyGmM1N2U3ODA1OThiMGJmZTA6Y29tOmVuOlVT&usg=AOvVaw0RJ_Z8K1F9hpWuBbUACJJn",
-      "image": null,
-      "publishedAt": "2026-08-02T15:54:53.000Z",
-      "source": "Marc Benioff",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "saas",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Hidden Price of Intelligence: Inside the Reverse Information Paradox Reshaping Enterprise AI",
-      "summary": "When Microsoft chairman and CEO Satya Nadella posted a lengthy essay on X in mid-July, he did more than share a thought. He gave the enterprise ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.cybersecurity-insiders.com/the-hidden-price-of-intelligence-inside-the-reverse-information-paradox-reshaping-enterprise-ai/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw10BkQfTjFJyttASvT6Kxdm",
-      "image": null,
-      "publishedAt": "2026-08-02T14:54:32.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
         "ai"
       ]
     },
@@ -343,138 +1034,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Ten advances in mathematics and theoretical computer science",
-      "summary": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
-      "url": "https://openai.com/index/ten-advances-in-mathematics",
-      "image": null,
-      "publishedAt": "Sat, 01 Aug 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "Structured AI data pipelines score 10.9 points below free-form code — DataFlow-Harness closes the gap",
-      "summary": "If you ask an AI coding agent to write a standalone Python script to parse a single JSON file, it will likely give you a perfect answer in seconds. But the same agent often breaks if you ask it to build a systematic data processing pipeline, like ingesting thousands of messy documents, chunking text, scoring quality, and filtering noise for a Retrieval-Augmented Generation (RAG) system that fits your specific enterprise stack. While large language models (LLMs) excel at one-off code generation, ",
-      "url": "https://venturebeat.com/orchestration/structured-ai-data-pipelines-score-10-9-points-below-free-form-code-dataflow-harness-closes-the-gap",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/5ZUEngb5nFa8FVJh9w4Usk/f431725ee18d29a94533d0ec0814bdc8/Modular_AI_block.jpg?w=300&q=30",
-      "publishedAt": "Fri, 31 Jul 2026 21:19:09 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Announcing the Agentic Catalog Experience in Amazon Quick",
-      "summary": "Amazon Quick introduces the Agentic Catalog Experience, an AI-powered workflow for data curators to discover upstream catalog assets in natural language and auto-create Datasets and Topics with inherited semantics. Now in preview for AWS Glue Data Catalog and Databricks Unity Catalog.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-the-agentic-catalog-experience-in-amazon-quick/",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 19:53:04 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "How is your enterprise tracking AI agent telemetry? Groundcover thinks it should never leave your cloud",
-      "summary": "The AI agent observability space is taking off — but how can enterprises be sure what observability products and solutions they need? Observability startup groudcover (lower case \"g\" intentional) announced this week that it raised $100 million in a round led by One Peak, bringing its total funding to $160 million. The company says it has more than 250 paying customers, tripled annual recurring revenue over the past year and is increasingly replacing established observability platforms inside ent",
-      "url": "https://venturebeat.com/data/how-is-your-enterprise-tracking-ai-agent-telemetry-groundcover-thinks-it-should-never-leave-your-cloud",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/47iXx5tHsFYuZidBBJmQWD/928fa33c093086117d59c6cfc90586b2/ChatGPT_Image_Jul_31__2026__03_18_51_PM.png?w=300&q=30",
-      "publishedAt": "Fri, 31 Jul 2026 19:20:00 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Optimizing production agents with Amazon Bedrock AgentCore Observability",
-      "summary": "As your AI agents move from prototype to production, the challenge shifts from getting them to work to keeping them fast and efficient. Learn how to use Amazon Bedrock AgentCore Observability and Amazon CloudWatch to find performance bottlenecks and diagnose memory issues in long-running agent sessions.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-production-agents-with-amazon-bedrock-agentcore-observability/",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 15:33:11 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Advancing responsible AI across Europe",
-      "summary": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.",
-      "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Building abundant intelligence",
-      "summary": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.",
-      "url": "https://openai.com/index/building-abundant-intelligence",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Ctruh Studio",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/ctruh-studio",
-      "image": null,
-      "publishedAt": "2026-07-31T13:09:11.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Download: Montana’s new experimental drug rules",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Montana’s plan to become an experimental medical hub just pushed forward As of this week in Montana, biotech companies whose drugs have been through preliminary testing—sometimes in as few as 10…",
-      "url": "https://www.technologyreview.com/2026/07/31/1140999/the-download-montanas-right-to-try-law-anthropic-hacks/",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 12:16:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly90aGVz",
       "title": "The Sequence Robotics #905: Who Builds the Robot Brain?",
       "summary": "Frontier Labs, Startups, and the Race for Physical Intelligence",
@@ -487,210 +1046,6 @@
         "ai",
         "ml",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Montana’s new “right to try” law can’t come soon enough for some",
-      "summary": "Kris DeVault is desperate. His son, Brody, was born in March 2023. It wasn’t long before he started to show signs of developmental delay, says DeVault. As time went on, Brody started missing key milestones in speech, movement, and coordination, he says. When Brody was around two and a half years old, a genetic test…",
-      "url": "https://www.technologyreview.com/2026/07/31/1140945/montanas-new-right-to-try-law-cant-come-soon-enough-for-some/",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Univé builds an AI-ready workforce",
-      "summary": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
-      "url": "https://openai.com/index/unive",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 07:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "AgentSky",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/agentsky",
-      "image": null,
-      "publishedAt": "2026-07-31T04:59:22.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "Not just OpenAI: Now Anthropic says its internal models got online and cyberattacked 3 other organizations",
-      "summary": "Days after OpenAI disclosed that two frontier AI models escaped containment measures and autonomously cyberattacked the AI code sharing platform Hugging Face, OpenAI's top U.S. rival Anthropic tonight revealed that — lo and behold — it has also had models surreptitiously access the web when they weren't supposed to, and cyberattack and gain \"unauthorized access\" to three other organizations. Anthropic says that it ran \"capture the flag\" cybersecurity scenarios with three models — Claude Opus 4.7",
-      "url": "https://venturebeat.com/security/not-just-openai-now-anthropic-says-its-internal-models-got-online-and-cyberattacked-3-other-organizations",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/YbMldiuNLKbUKEJTmkq0I/3e4df5c2a5c019b6b9790ce71c9dcd6e/ChatGPT_Image_Jul_30__2026__09_12_49_PM.png?w=300&q=30",
-      "publishedAt": "Fri, 31 Jul 2026 01:45:07 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "Thinking Machines debuts Inkling Small open source AI model nearing performance of predecessor at about 1/4 size",
-      "summary": "Just two weeks after Thinking Machines released Inkling, its first open source AI language model, the well-funded startup led by former OpenAI chief technology officer Mira Murati today introduced Inkling-Small without sacrificing much of any performance — and in fact, the new model surpasses its larger predecessor on several benchmarks. Inkling Small is a 276-billion-parameter multimodal reasoning model with a permissive Apache 2.0 license that comes within a single point of its larger sibling ",
-      "url": "https://venturebeat.com/technology/thinking-machines-debuts-inkling-small-open-source-ai-model-nearing-performance-of-predecessor-at-about-1-4-size",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/7gMtExpXjcD7vdSrlrD5Af/f6e41d5d0d1248046f97c767e5d7aee4/ChatGPT_Image_Jul_30__2026__07_32_19_PM.png?w=300&q=30",
-      "publishedAt": "Fri, 31 Jul 2026 00:14:22 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Disrupting a Criminal Scam Operation",
-      "summary": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.",
-      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
-      "image": null,
-      "publishedAt": "Fri, 31 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "AI price wars: OpenAI cuts GPT-5.6 Luna prices by 80% as model competition shifts toward cost",
-      "summary": "To quote an ancient Jedi Master \"Begun, the AI price wars have!\" OpenAI is sharply reducing the prices of two models in its GPT-5.6 frontier series, cutting GPT-5.6 Luna, the smallest and fastest model in the series, by 80% and GPT-5.6 Terra, the mid-tier model, by 20%, while adding a premium Fast mode for its flagship GPT-5.6 Sol model. The cuts place Luna much closer to the lowest-cost commercial models in the market and arrive just a few days after Anthropic released its highly performant Cla",
-      "url": "https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/2fGdveK7V6JapEiEv85EpL/16b6cb580fce352e2d10fc0bcc5f0b21/ChatGPT_Image_Jul_30__2026__05_09_51_PM.png?w=300&q=30",
-      "publishedAt": "Thu, 30 Jul 2026 21:48:00 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Deploying Kimi K3 on Amazon SageMaker HyperPod and Amazon EKS",
-      "summary": "This post walks through deploying Kimi K3 on AWS using two approaches: Amazon SageMaker HyperPod, and Amazon Elastic Kubernetes Service (Amazon EKS) cluster.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/deploying-kimi-k3-on-amazon-sagemaker-hyperpod-and-amazon-eks/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 17:22:32 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Montana’s plan to become an experimental medical hub just pushed forward",
-      "summary": "As of this week in Montana, any biotech company with an experimental drug has a clear path to selling it to consumers. Companies whose drugs have been through preliminary testing—sometimes in as few as 10 healthy people—can pay $12,500 to apply to a newly established review board for approval. Once its treatment is rubber-stamped, the…",
-      "url": "https://www.technologyreview.com/2026/07/30/1140942/montana-experimental-medical-hub-pushed-forward-right-to-try/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 17:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly92ZW50",
-      "title": "Mastercard spent decades training its fraud system to see bots as thieves. Now bots are the ones doing the buying.",
-      "summary": "Every time a Mastercard gets tapped, the network has less than a tenth of a second to judge how likely the purchase is to be fraudulent. It made that call across 175 billion transactions last year. Now the buyer on the other side of that judgment is starting to change, and Greg Ulrich, the company's chief AI and data officer, spelled out the consequence for the VB Transform 2026 audience in Menlo Park on July 14. \"We've built a bunch of risk rules over time that were intended to stop a bot from ",
-      "url": "https://venturebeat.com/security/mastercard-spent-decades-training-its-fraud-system-to-see-bots-as-thieves-now-bots-are-the-ones-doing-the-buying",
-      "image": "https://images.ctfassets.net/jdtwqhzvc2n1/30UH4P8mgfH5YlUrcpSR3Q/c7c8f1f4a0d1dafe74eeb22c393bb265/mastercard_hero.png?w=300&q=30",
-      "publishedAt": "Thu, 30 Jul 2026 16:57:14 GMT",
-      "source": "VentureBeat AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "How Yahoo enhances search retargeting using Amazon Bedrock",
-      "summary": "In this post, we demonstrate how Yahoo implemented Amazon Bedrock to enhance their Search Retargeting (SRT) capabilities in the Yahoo DSP ad tech suite. SRT is a core audience targeting solution that helps advertisers reach users based on their historical search behavior, bridging search intent with display, video, and native advertising. Beyond targeting keywords entered on Yahoo Search, SRT uses AI to identify and engage users who demonstrate intent through search activity both on Yahoo and ac",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-yahoo-enhances-search-retargeting-using-amazon-bedrock/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 16:40:36 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Inference meta-monitoring for Amazon SageMaker AI endpoints with Amazon Quick",
-      "summary": "Learn how to build an inference meta-monitoring system for Amazon SageMaker AI endpoints using Amazon Quick. This governance layer sits above production ML inference pipelines to continuously track prediction and data quality, detect drift, integrate delayed ground truth, and surface automated performance dashboards.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/inference-meta-monitoring-for-amazon-sagemaker-ai-endpoints-with-amazon-quick/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 16:10:10 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Introducing explicit prompt caching for OpenAI GPT-5.6 models on Amazon Bedrock",
-      "summary": "OpenAI GPT-5.6 Sol, Terra, and Luna are now generally available on Amazon Bedrock, along with explicit prompt caching that gives you precise control over which parts of your prompt are cached and reused. Learn how to get started, set up explicit caching, and migrate existing GPT workloads to reduce inference cost.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-explicit-prompt-caching-for-openai-gpt-5-6-models-on-amazon-bedrock/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 16:02:32 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Migrate your prompts to new models and optimize them on Amazon Bedrock",
-      "summary": "Amazon Bedrock Advanced Prompt Optimization optimizes your prompts for up to 5 models at once and compares original versus optimized performance across quality, latency, and cost. Migrate to a new model or improve your current one in minutes instead of weeks.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/migrate-your-prompts-to-new-models-and-optimize-them-on-amazon-bedrock/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 15:58:32 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
       ]
     },
     {
@@ -738,20 +1093,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Download: tricking LLMs, and reviving geothermal plants",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A fundamental flaw leaves LLMs strikingly vulnerable to attack It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a…",
-      "url": "https://www.technologyreview.com/2026/07/30/1140936/the-download-tricking-llms-reviving-geothermal/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly90aGVz",
       "title": "TheSequence Opinion #904: The Age of Research Is Overrated. AI Engineering Is Winning",
       "summary": "Why AI’s next breakthroughs may come from the learning loop around the Transformer—not from replacing it.",
@@ -763,64 +1104,6 @@
       "tags": [
         "ai",
         "ml",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
-      "summary": "It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a team of researchers argue in a paper presented at the International Conference on Machine Learning, a top AI conference, this month. The claim has huge implications for the safety of this technology, which…",
-      "url": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 10:15:19 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "summary": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
-      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-      "summary": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
-      "url": "https://openai.com/index/avatarin",
-      "image": null,
-      "publishedAt": "Thu, 30 Jul 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "How an overlooked geothermal plant got a second chance",
-      "summary": "In June 2024, a small company called Zanskar purchased a geothermal power plant in New Mexico that was failing fast. The water coming from the underground reservoir was getting colder by the day, making the plant uneconomical to run. Now, two years later, that plant is running at full capacity again, thanks to a new…",
-      "url": "https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/",
-      "image": null,
-      "publishedAt": "Wed, 29 Jul 2026 17:58:44 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
         "research"
       ]
     },
@@ -840,21 +1123,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Authenticate with Private Key JWT using Amazon Bedrock AgentCore Identity",
-      "summary": "This post explains how Private Key JWT client authentication works in AgentCore Identity and reviews the supported grant flows. We then walk through creating an AWS KMS signing key, registering its public key with your identity provider, configuring a credential provider on the AWS Management Console, and reviewing example AWS CloudTrail events that record your agent’s access.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/",
-      "image": null,
-      "publishedAt": "Wed, 29 Jul 2026 16:20:28 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9kZWVw",
       "title": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
       "summary": "",
@@ -866,21 +1134,6 @@
       "tags": [
         "ai",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-      "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
-      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-      "image": null,
-      "publishedAt": "Wed, 29 Jul 2026 15:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
       ]
     },
     {
@@ -896,6 +1149,21 @@
         "crm",
         "enterprise",
         "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Portfolio Lab",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/portfolio-lab",
+      "image": null,
+      "publishedAt": "2026-07-29T14:22:05.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
       ]
     },
     {
@@ -925,21 +1193,6 @@
       "tags": [
         "ai",
         "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "The OlmoEarth Platform: Geospatial inference at planetary scale",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-      "image": null,
-      "publishedAt": "Tue, 28 Jul 2026 16:27:42 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
       ]
     },
     {
@@ -973,21 +1226,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "LFM2.5-Encoders for Fast Long-Context Inference on CPU",
-      "summary": "",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
-      "image": null,
-      "publishedAt": "Tue, 28 Jul 2026 15:01:45 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9kZWVw",
       "title": "Gemini Robotics 2 brings whole body intelligence to robots",
       "summary": "",
@@ -1014,21 +1252,6 @@
         "crm",
         "enterprise",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Knowledge #902: Learning About Distillation: When the Dataset Becomes the Teacher",
-      "summary": "Once models can generate their own curricula, data stops being a static resource and becomes a transmission medium for intelligence.",
-      "url": "https://thesequence.substack.com/p/the-sequence-knowledge-902-learning",
-      "image": "https://substackcdn.com/image/fetch/$s_!uN0j!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59a545d5-4b29-47e8-bf8e-0183ca03b3ae_1448x1086.png",
-      "publishedAt": "Tue, 28 Jul 2026 11:03:37 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
       ]
     },
     {
@@ -1092,21 +1315,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Radar #901: Last Week in AI: Smarter Models, Physical Machines, and the Expanding AI Stack",
-      "summary": "Opus 5 pushed the intelligence frontier forward, Atoms brought AI deeper into the physical world, and the rest of the week revealed the infrastructure, capital, and security challenges forming around",
-      "url": "https://thesequence.substack.com/p/the-sequence-radar-901-last-week",
-      "image": "https://substackcdn.com/image/fetch/$s_!dWnG!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Facd9b82f-9d9d-4214-9a68-684ce6e0074a_1536x1024.png",
-      "publishedAt": "Sun, 26 Jul 2026 12:02:58 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9zdHJh",
       "title": "2026.30: The Copium Wars",
       "summary": "The best Stratechery content from the week of July 20, 2026 including Chinese models and frontier futures, what happened to Hugging Face, and the NBA and its second apron bet.",
@@ -1119,21 +1327,6 @@
         "analysis",
         "strategy",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "PassiveShorts",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/passiveshorts",
-      "image": null,
-      "publishedAt": "2026-07-24T16:35:01.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
       ]
     },
     {
@@ -1197,66 +1390,6 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Aligned, Accurate, and Agile: How Slackbot Powers the Salesforce Legal Team",
-      "summary": "It’s a common assumption in the business world: Legal, compliance, and risk departments are the last to change their ways. Historically seen as risk-averse, slow to adopt new technology and protective of established processes, these functions are labeled as often lagging when it comes to enterprise transformation journeys. At Salesforce, we decided to test that […]",
-      "url": "https://www.salesforce.com/news/stories/salesforce-legal-building-agentic-enterprise-playbook/",
-      "image": null,
-      "publishedAt": "Thu, 23 Jul 2026 13:00:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Opinion #900: Beyond the GPU: Is Google the Only Full-Stack Rival to NVIDIA?",
-      "summary": "A thesis about the biggest AI rivarly nobody is talking about.",
-      "url": "https://thesequence.substack.com/p/the-sequence-opinion-900-beyond-the",
-      "image": "https://substackcdn.com/image/fetch/$s_!HtLF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fae8072db-59a5-4f2a-861e-d4528de84b14_1672x941.png",
-      "publishedAt": "Thu, 23 Jul 2026 11:03:00 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
-      "summary": "",
-      "url": "https://huggingface.co/blog/nunchaku-diffusers",
-      "image": null,
-      "publishedAt": "Thu, 23 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "How Salesforce Pilots Its Own Software",
-      "summary": "Companies often let customers and beta testers find their software bugs. Salesforce decided to find them first. Before most major products reach a customer, it runs a rigorous gauntlet: 75,000 Salesforce employees using it in their day-to-day jobs. They file support tickets, stress-test it during chaotic real-world scenarios, and query it in multiple languages. In […]",
-      "url": "https://www.salesforce.com/news/stories/customer-zero-pilots/",
-      "image": null,
-      "publishedAt": "Wed, 22 Jul 2026 15:00:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
       "title": "The Post-Agentic Founder",
       "summary": "From the Daybreak Q2 2026 LP Letter",
       "url": "https://www.digitalnative.tech/p/the-post-agentic-founder",
@@ -1297,21 +1430,6 @@
         "enterprise",
         "copilot",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence AI of the Week #899: Inside Inkling: A Trillion-Parameter Model That Only Wakes Up 41 Billion at a Time",
-      "summary": "Thinking Machine's new model revitalizes America's open source AI approach.",
-      "url": "https://thesequence.substack.com/p/the-sequence-ai-of-the-week-899-inside",
-      "image": "https://substackcdn.com/image/fetch/$s_!VDxM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F265ac174-9163-49d7-bee4-16bb96fe5247_1672x941.png",
-      "publishedAt": "Wed, 22 Jul 2026 11:04:51 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
       ]
     },
     {
@@ -1374,21 +1492,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Grabette: an open system to record robot-manipulation data",
-      "summary": "",
-      "url": "https://huggingface.co/blog/grabette",
-      "image": null,
-      "publishedAt": "Tue, 21 Jul 2026 00:00:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
       "title": "7 Consequences of America Finally Losing Its AI Edge to China",
       "summary": "Moonshot, DeepSeek, Zhipu, etc., will cause huge trouble",
@@ -1433,18 +1536,18 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "Who’s Afraid of Chinese Models?",
-      "summary": "Everyone is worried about Chinese models, but the frontier labs will be fine; we need to enable open U.S. alternatives.",
-      "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/",
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Paritok",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/paritok",
       "image": null,
-      "publishedAt": "Mon, 20 Jul 2026 11:00:08 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
+      "publishedAt": "2026-07-20T08:39:12.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
       "tags": [
-        "analysis",
-        "strategy",
-        "ai"
+        "ai",
+        "products",
+        "launches"
       ]
     },
     {
@@ -1463,32 +1566,17 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Hand Wave",
+      "title": "oqoqo",
       "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/hand-wave",
+      "url": "https://www.producthunt.com/products/oqoqo",
       "image": null,
-      "publishedAt": "2026-07-18T06:13:43.000Z",
+      "publishedAt": "2026-07-17T21:16:17.000Z",
       "source": "Product Hunt AI",
       "category": "saas",
       "tags": [
         "ai",
         "products",
         "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "2026.29: Mainframes and Main Characters",
-      "summary": "The best Stratechery content from the week of July 13, 2026, including the end of the mainframe, the continuing adventures of OpenAI, and answering the question, \"Is Netflix Washed?\".",
-      "url": "https://stratechery.com/2026/mainframes-and-main-characters/",
-      "image": null,
-      "publishedAt": "Fri, 17 Jul 2026 17:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
       ]
     },
     {
@@ -1520,21 +1608,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Simplify Sales: Unifying Data in Slack",
-      "summary": "Many sales teams struggle with fragmented tools that force sellers to waste time hunting for information across endless tabs instead of actually selling. Agentforce for Sales addresses these workflow inefficiencies by integrating autonomous AI directly into Slack. Discover how these AI agents proactively scan the web, emails, and calls to identify qualified leads and supercharge […]",
-      "url": "https://www.salesforce.com/news/stories/video/simplify-sales-unifying-data-in-slack/",
-      "image": null,
-      "publishedAt": "Thu, 16 Jul 2026 21:30:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdz",
       "title": "The Pulse: Grok’s CLI caught uploading all your local files to the cloud",
       "summary": "Also: engineering leaders concerned about continued increase in code review load, devs at enterprises surprised by high enterprise pricing, and more",
@@ -1547,21 +1620,6 @@
         "engineering",
         "saas",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Newer Models, Same Advantage",
-      "summary": "",
-      "url": "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
-      "image": null,
-      "publishedAt": "Thu, 16 Jul 2026 11:49:48 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
       ]
     },
     {
@@ -1594,21 +1652,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "IBM Misses, IBM’s Mainframe Moat, IBM’s Many AI Problems",
-      "summary": "IBM announced preliminary results that spooked the software market generally; this is a story, however, specifically about IBM and its mainframe franchise.",
-      "url": "https://stratechery.com/2026/ibm-misses-ibms-mainframe-moat-ibms-many-ai-problems/",
-      "image": null,
-      "publishedAt": "Wed, 15 Jul 2026 10:00:19 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdz",
       "title": "What is “loop engineering?”",
       "summary": "There’s talk about loop engineering, but what is it exactly? I looked into it, and found triggers, cron jobs, AI slop & more. Is it a “here today, gone tomorrow” trend?",
@@ -1620,21 +1663,6 @@
       "tags": [
         "engineering",
         "saas",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "The OpenAI Super App, ChatGPT = Codex, Whither Chat",
-      "summary": "OpenAI has refashioned Codex as the new ChatGPT; is the company abandoning the chat category they pioneered?",
-      "url": "https://stratechery.com/2026/the-openai-super-app-chatgpt-codex-whither-chat/",
-      "image": null,
-      "publishedAt": "Tue, 14 Jul 2026 10:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
         "ai"
       ]
     },
@@ -1665,20 +1693,6 @@
       "tags": [
         "ai",
         "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9kZWVw",
-      "title": "Empowering India’s next generation of innovators with ATL Saathi",
-      "summary": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
-      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
-      "image": null,
-      "publishedAt": "Mon, 13 Jul 2026 12:37:28 +0000",
-      "source": "Google DeepMind",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
       ]
     },
     {
@@ -1738,20 +1752,6 @@
         "analysis",
         "saas",
         "trends"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The AI Industry Has a Really Dark Secret You're Better Off Not Knowing",
-      "summary": "To be clear, you shouldn't read this",
-      "url": "https://www.thealgorithmicbridge.com/p/the-ai-industry-has-a-really-dark",
-      "image": "https://substackcdn.com/image/fetch/$s_!06eO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ce88143-4af4-447a-80d9-b0fbe4379a63_3013x2442.jpeg",
-      "publishedAt": "Wed, 08 Jul 2026 14:01:04 GMT",
-      "source": "The Algorithmic Bridge",
-      "category": "thought-leadership",
-      "tags": [
-        "ai",
-        "analysis"
       ]
     },
     {
@@ -1902,36 +1902,6 @@
         "ai",
         "critical",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9pbXBv",
-      "title": "Import AI 460: Reward hacking society, RSI data from Anthropic; and RL-based quadcopter racing",
-      "summary": "When will markets price the singularity?",
-      "url": "https://importai.substack.com/p/import-ai-460-reward-hacking-society",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "publishedAt": "Mon, 08 Jun 2026 12:31:32 GMT",
-      "source": "Import AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9pbXBv",
-      "title": "Import AI 459: AI oversight is difficult; scaling laws for protein folding models; and pricing the extinction risk of AI systems",
-      "summary": "Do you feel as though you are living in a revolution?",
-      "url": "https://importai.substack.com/p/import-ai-459-ai-oversight-is-difficult",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "publishedAt": "Mon, 01 Jun 2026 13:31:56 GMT",
-      "source": "Import AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "analysis"
       ]
     },
     {
@@ -2116,21 +2086,6 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "AI Won’t Automatically Make Legal Services Cheaper",
-      "summary": "Applying the AI as Normal Technology framework to legal services",
-      "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/2a2691bd-fda5-4a31-aa6c-ff0d59c79e4d_2428x1368.png",
-      "publishedAt": "Thu, 12 Feb 2026 19:26:05 GMT",
-      "source": "AI Snake Oil",
-      "category": "thought-leadership",
-      "tags": [
-        "ai",
-        "critical",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
       "title": "AI, networks and Mechanical Turks",
       "summary": "How far do LLMs give us a step change in how good a search and recommendation system can be? Do they let you build one without needing a vast user base of your own?",
       "url": "https://www.ben-evans.com/benedictevans/2025/11/23/ai-networks-and-mechanical-turks",
@@ -2205,5 +2160,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-08-03T13:05:31.790Z"
+  "lastUpdated": "2026-08-10T13:01:39.980Z"
 }
