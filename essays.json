@@ -1,5 +1,73 @@
 [
   {
+    "id": "2026-09-28",
+    "generatedAt": "2026-09-28T13:10:45.514986Z",
+    "wordCount": 643,
+    "essay": "The center of gravity in B2B SaaS this week is agentic liability — who owns the outcome when an AI agent takes an action nobody explicitly approved. MIT Technology Review's look at rogue-agent accountability lands squarely on enterprise buyers already living this problem: procurement, legal, and security teams are being asked to sign off on agents that can execute multi-step workflows, and the contractual language for who eats the loss when one goes wrong simply doesn't exist yet [1]. Box CEO Aaron Levie and a16z's Martin Casado sharpened the point in conversation, arguing that \"agent swarms\" — many autonomous agents acting concurrently across systems — break the access-control models enterprises built for human users, because permissions were never designed for a workforce that can fork itself a thousand times over lunch [7]. That tension between agent autonomy and enterprise governance is quickly becoming the defining vendor-selection criterion of the year, ahead of raw model capability.\n\nPlatform consolidation is the other throughline. Stratechery's two-part argument this week — first on how apps, agents, and aggregation interact, then on the opening moves of what it calls the \"Aggregator Wars\" — makes the case that agent interfaces are becoming the new distribution chokepoint, echoing how search and app stores once decided which software won [2][9]. Microsoft is acting on exactly that thesis: Satya Nadella described Copilot as a new \"OS for work,\" and Microsoft's own blog unveiled Copilot Home, Code, and Autopilot as an expansion meant to make Copilot the default surface employees touch before any individual SaaS app [4][10]. For vendors that have spent a decade building standalone tools, the strategic question is no longer just \"build a great product\" but \"will we be visible inside the agent layer that sits above us.\"\n\nDatabricks is answering that question by acquiring rather than waiting. Its purchase of Row Zero, aimed at accelerating an agentic-AI strategy inside the data platform, is a bet that the next competitive moat is owning the workflow an agent operates in, not just the data it operates on [5]. CEO Ali Ghodsi separately pushed back on doom-laden AI narratives, arguing the biggest near-term risk to the industry isn't superintelligence but organizations mismanaging the agentic transition they're already mid-way through — a more grounded worry that maps directly onto the liability and access-control questions above [3].\n\nUnderneath the platform maneuvering, the economics of AI-native SaaS are getting a harder look. Jason Lemkin's widely circulated \"just a hint too expensive\" framing captures a pattern G2 customers will recognize: usage-based AI pricing is landing close enough to value that buyers hesitate rather than reject outright, and that hesitation is now the biggest lever left for vendors to pull on renewal and expansion motions, ahead of feature parity [6]. It's a useful corrective to the assumption that AI features sell themselves — pricing friction, not capability gaps, is increasingly the reason deals stall.\n\nAgainst that backdrop, OpenAI published a concrete counterexample of ROI done right: enterprise software company Proaction reported a 60% lift in sales and more than 75 hours saved per rep using Codex for engineering and workflow automation, a case study aimed squarely at CFOs asking whether agentic tooling pays for itself [8]. Cases like this will matter more than model benchmark scores in the next round of budget conversations, because they translate agent capability into the same revenue and hours-saved language sales and RevOps leaders already use to justify tool spend.\n\nThe trend worth watching heading into Q4: enterprise buyers are converging on the same checklist — can this vendor show a governance and access-control story for agent autonomy, is it positioned inside or outside the emerging agent-layer aggregators, and does its pricing model survive scrutiny once the novelty of \"AI-powered\" wears off. Vendors that can answer all three will separate from a crowded field faster than any single feature launch could manage.",
+    "citations": [
+      {
+        "num": 1,
+        "title": "Who's liable when AI agents go rogue?",
+        "source": "MIT Technology Review",
+        "url": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/"
+      },
+      {
+        "num": 2,
+        "title": "Apps, Agents, and Aggregation",
+        "source": "Stratechery",
+        "url": "https://stratechery.com/2026/apps-agents-and-aggregation/"
+      },
+      {
+        "num": 3,
+        "title": "Databricks CEO Says the Biggest AI Threat Isn't Superintelligence",
+        "source": "Inc. Magazine",
+        "url": "https://www.inc.com/chris-morris/databricks-ceo-says-the-biggest-ai-threat-isnt-superintelligence/91409495"
+      },
+      {
+        "num": 4,
+        "title": "Satya Nadella: \"We're building Copilot as a new OS for work\"",
+        "source": "Martin Cid Magazine",
+        "url": "https://www.martincid.com/technology-sv/tech-ai/satya-nadella-copilot-new-os-for-work/"
+      },
+      {
+        "num": 5,
+        "title": "Databricks Acquires Row Zero to Drive Agentic AI Strategy",
+        "source": "Business Chief",
+        "url": "https://businesschief.com/news/databricks-acquires-row-zero-to-drive-agentic-ai-strategy"
+      },
+      {
+        "num": 6,
+        "title": "\"Just a Hint Too Expensive\" — The Four-Word Verdict That Should Make Every SaaS Vendor Nervous",
+        "source": "FourWeekMBA",
+        "url": "https://fourweekmba.com/ai-crusoe-power-to-tokens-too-expensive-mac480/"
+      },
+      {
+        "num": 7,
+        "title": "Box CEO Aaron Levie and a16z's Martin Casado on Why Agent Swarms Break Enterprise Access Control",
+        "source": "FourWeekMBA",
+        "url": "https://fourweekmba.com/ai-box-aaron-levie-agent-swarms-enterprise-access-control/"
+      },
+      {
+        "num": 8,
+        "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+        "source": "OpenAI",
+        "url": "https://openai.com/index/proaction"
+      },
+      {
+        "num": 9,
+        "title": "2026.39: Begun, the Aggregator Wars Have",
+        "source": "Stratechery",
+        "url": "https://stratechery.com/2026/begun-the-aggregator-wars-have/"
+      },
+      {
+        "num": 10,
+        "title": "Introducing the new Copilot with Home, Code and Autopilot",
+        "source": "Microsoft Blog",
+        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+      }
+    ]
+  },
+  {
     "id": "2026-08-03",
     "generatedAt": "2026-08-03T13:08:42.759919Z",
     "wordCount": 690,
