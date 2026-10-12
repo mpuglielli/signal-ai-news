@@ -1,6 +1,1180 @@
 {
   "articles": [
     {
+      "id": "aHR0cHM6Ly9ibG9n",
+      "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+      "summary": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microsoft products and services. The multigenerational... The post Microsoft to expand Azure Maia system to multi-gigawatt deployments appeared first on The Official Microsoft Blog.",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 13:01:29 +0000",
+      "source": "Microsoft Blog",
+      "category": "saas",
+      "tags": [
+        "enterprise",
+        "copilot",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9pbXBv",
+      "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+      "summary": "Will we give robots the moon?",
+      "url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
+      "image": "https://substackcdn.com/image/youtube/w_728,c_limit/4v837X1Py4M",
+      "publishedAt": "Mon, 12 Oct 2026 12:30:39 GMT",
+      "source": "Import AI",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "analysis"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Hackers activate automatic defrosting accross European supermarket fridges",
+      "summary": "Comments",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 12:16:42 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: moon city problems and drone traffic controllers",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Mars may be a hellhole, but the moon is not far behind The US and China are racing to build bases on the moon, with NASA hoping to establish a small…",
+      "url": "https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Salesforce Signs Definitive Agreement to Acquire Loops",
+      "summary": "Salesforce, the #1 AI CRM, today announced it has signed a definitive agreement to acquire Loops, an AI-powered analytics platform that continuously monitors business performance, explains why key metrics change, and surfaces opportunities to improve by leveraging machine learning models. Tableau is helping customers move from the data driven enterprise to the agentic analytics enterprise. […]",
+      "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-loops/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 12:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRo",
+      "title": "QGIS bans AI assisted contributions",
+      "summary": "Comments",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 11:22:24 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Deloitte falsified documents to evade tax on Abramovich's wealth",
+      "summary": "Comments",
+      "url": "https://www.bbc.com/news/articles/c64g1l5389kvo",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 10:21:27 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "Personal Day",
+      "summary": "Personal Day — No Update",
+      "url": "https://stratechery.com/2026/personal-day-4/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 10:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Mars may be a hellhole, but the moon is not far behind",
+      "summary": "Welcome to the second space race. You can be forgiven for experiencing déjà vu. Last time, it was the Soviet Union and the United States vying to be the first to plant some flags. Now it’s a sprint to the lunar surface between America and China—alongside a host of varyingly friendly and rival nations—plus a…",
+      "url": "https://www.technologyreview.com/2026/10/12/1145760/imagining-building-cities-on-the-moon/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 09:37:02 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The ecologist revealing the invisible networks that revive rainforests",
+      "summary": "In a research station in central Panama, you can walk through a century of forest time, watching scrubby plots of adolescent trees give way to cathedral-­like canopies of mature growth. Forest ecologist Daisy Dent, a senior scientist at ETH Zurich, oversees this sequence of plots across the Barro Colorado Nature Monument, some of which date…",
+      "url": "https://www.technologyreview.com/2026/10/12/1145745/daisy-dent-ecologist-revealing-invisible-networks-revive-rainforests/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRo",
+      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
+      "summary": "Comments",
+      "url": "https://github.com/snuri00/ps2-web-recomp",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 06:46:53 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9sYWxp",
+      "title": "Type-safe HTML templating in Zig",
+      "summary": "Comments",
+      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 05:02:34 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "LG's 'One LG' Strategy Gains Momentum in AI Infrastructure Through Partnerships With ...",
+      "summary": "Recently, Koo met with Microsoft CEO Satya Nadella and other senior ... AI data center infrastructure, enterprise AI transformation and physical AI.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.koreaittimes.com/news/articleView.html%3Fidxno%3D157998&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2nGVVzuOr7JkFpEZZ_RgCL",
+      "image": null,
+      "publishedAt": "2026-10-12T04:14:45.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Satya Nadella wants AI oversight as 'emergency brake' and a Nikon photo prize is disqualified | Mint",
+      "summary": "Satya Nadella's AI warning. The AI bosses seem to be ricocheting between ... ENTERPRISES share priceADANI PORTS share priceAPOLLO HOSPITALS ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.livemint.com/mint-lounge/business-of-life/ai-news-satya-nadella-twitter-x-post-nikon-photo-11791757461396.html&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2ptLfh6SlYyKZNunzuNKIl",
+      "image": null,
+      "publishedAt": "2026-10-12T03:31:07.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Kudos 3.0",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/kudos-smart-wallet",
+      "image": null,
+      "publishedAt": "2026-10-12T01:58:06.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Meta Muse Needs $2.8B Compute for 100M Users [2026] - Tech Insider",
+      "summary": "Aaron Levie, the Box CEO known for his frequent public commentary on enterprise AI economics, amplified it with his widely shared post crediting ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://tech-insider.org/meta-muse-2-8-billion-compute-100-million-users-2026/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw1yVK9mFwWcxxJzv6CdqUcB",
+      "image": null,
+      "publishedAt": "2026-10-12T01:25:03.000Z",
+      "source": "Aaron Levie",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft President: AI Less Regulated Than Milk | The Tech Buzz",
+      "summary": "AIEnterpriseDealsSecurityCrypto ... The comments reflect Microsoft's broader strategic pivot under CEO Satya Nadella, who has bet the company's future ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.techbuzz.ai/articles/microsoft-president-ai-less-regulated-than-milk&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3awqezeJDWvus3b66YdNQL",
+      "image": null,
+      "publishedAt": "2026-10-12T00:31:16.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9yb3lm",
+      "title": "Fingerprints are the new cookies",
+      "summary": "Comments",
+      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+      "image": null,
+      "publishedAt": "Sun, 11 Oct 2026 22:33:39 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Agent swarms will impact software, finance, and AI research, Aaron Levie notes",
+      "summary": "Aaron Levie explores how agent swarms could drive widespread token use in enterprise fields from finance to technology and scientific...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://tradersunion.com/news/market-voices/show/3755189-agent-swarms-token-impact/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw0KQSo1kftLsvS1WsILeYhF",
+      "image": null,
+      "publishedAt": "2026-10-11T21:24:28.000Z",
+      "source": "Aaron Levie",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Nadella Urges Zero-Trust Security as Microsoft Launches AI Execution Containers",
+      "summary": "Microsoft CEO Satya Nadella urges enterprises to treat advanced AI ... enterprise access. in 18 hours. Read Full Article · Taipei Times.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://ground.news/article/nadella-urges-zero-trust-security-as-microsoft-launches-ai-execution-containers_1b5e6d&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1xKOEpAAQeLe2viFqP3yZZ",
+      "image": null,
+      "publishedAt": "2026-10-11T21:13:39.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Jason's Takes on This Week's 20VC: Loyalty Changed for Good, Agents Now Pick Your ... - SaaStr",
+      "summary": "Top SaaStr Content for the Week: Samsara's CSO, AMA with Jason Lemkin, ZoomInfo's CEO and lots more! Get The Best SaaS Advice. Get fresh insights, ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.saastr.com/jasons-takes-on-this-weeks-20vc-loyalty-changed-for-good-agents-now-pick-your-vendors-and-when-to-take-the-2-billion/&ct=ga&cd=CAIyGjM4OTY0Y2JmNmI1NzkwMjc6Y29tOmVuOlVT&usg=AOvVaw2UWpUHOqspygaUe-11nMbM",
+      "image": null,
+      "publishedAt": "2026-10-11T21:11:16.000Z",
+      "source": "Jason Lemkin",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Manifold MCP",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/manifold-mcp",
+      "image": null,
+      "publishedAt": "2026-10-11T21:01:27.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft's Valuation Edge Among Big Tech Stocks | Intellectia. AI",
+      "summary": "... enterprise AI revolution, the analyst tells investors. Unlock Full ... AI Safety Design: Microsoft CEO Satya Nadella emphasized that advanced AI ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://intellectia.ai/news/stock/microsofts-valuation-edge-among-big-tech-stocks&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3smA21DrJfbPtikDTzX6yz",
+      "image": null,
+      "publishedAt": "2026-10-11T20:11:10.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Scrape Anything by Context.dev",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/context-dev",
+      "image": null,
+      "publishedAt": "2026-10-11T19:23:53.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Dropstone CLI",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/dropstone-cli",
+      "image": null,
+      "publishedAt": "2026-10-11T19:00:02.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft's Nadella Urges Companies to Treat AI as an Insider Threat, Build In an 'Emergency Brake'",
+      "summary": "Microsoft CEO Satya Nadella is calling for a fundamental shift in how companies manage advanced AI systems, urging them to treat models as ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.biggo.com/news/195337b0-8c0a-4a77-a2a3-0f6de3fe4407&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2lS6LgqEzgzXyfrQHXQz-1",
+      "image": null,
+      "publishedAt": "2026-10-11T18:28:40.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Data ontology: A kinder, gentler form of lock-in | Constellation Research",
+      "summary": "... enterprise AI. After all, data and knowledge are different sides of ... Microsoft CEO Satya Nadella said agentic AI systems need to separate ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.constellationr.com/insights/news/data-ontology-kinder-gentler-form-lock&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw34TlUo-tceYVuitcLwIrPM",
+      "image": null,
+      "publishedAt": "2026-10-11T16:10:53.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft's Nadella Wants An Emergency Brake On Every AI Model - Forbes",
+      "summary": "Meeting The Moment In Enterprise: AI As AI Spending Surged ... Satya Nadella published a blog post on Saturday that moves responsibility for AI ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.forbes.com/sites/gabrielalinzainescu/2026/10/11/microsofts-nadella-wants-an-emergency-brake-on-every-ai-model/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1lf4Czj6APrEauhLQv5Ai1",
+      "image": null,
+      "publishedAt": "2026-10-11T15:25:23.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "a16z Partner Martin Casado Announces Partnership with TypeSafe to Advance Jev - ABAB News",
+      "summary": "Martin Casado stated in a public post that the software era is far from ... AI Gateway's history. TypeSafe claims to have saved clients ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ababnews.com/news/7235278e-5958-4d58-9fee-20d84caf5ebb&ct=ga&cd=CAIyGmE5NzNkYmQwNmVhMDllOWQ6Y29tOmVuOlVT&usg=AOvVaw1y18yJd5IjqkGdRa2gD9-D",
+      "image": null,
+      "publishedAt": "2026-10-11T13:39:01.000Z",
+      "source": "Martin Casado",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "venture",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Radar - Issue 948: Last Week in AI: Billions in Funding, Hundreds of Papers, One Big Leap?",
+      "summary": "Reflection and Mistral expand the model race, TypeSafe and Arena raise the stakes, and OpenAI puts mathematical discovery under scrutiny.",
+      "url": "https://thesequence.substack.com/p/the-sequence-radar-issue-948-last",
+      "image": "https://substackcdn.com/image/fetch/$s_!0Iiv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed21cf71-45ae-4ab3-a8f3-7f3cab79fb89_1672x941.png",
+      "publishedAt": "Sun, 11 Oct 2026 11:03:38 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Cube Forms",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/cube-forms",
+      "image": null,
+      "publishedAt": "2026-10-11T08:49:11.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft CEO Satya Nadella Says AI Systems Should Be Built to 'Trust the Model the Least'",
+      "summary": "... enterprise. Aaron Levie. @levie. Good post to start thinking through the long term safety approaches to managing intelligence in an enterprise. As ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tradingview.com/news/benzinga:39aface46094b:0-microsoft-ceo-satya-nadella-says-ai-systems-should-be-built-to-trust-the-model-the-least/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw0CeQaUjdypbj57tWS4HHRM",
+      "image": null,
+      "publishedAt": "2026-10-11T04:19:34.000Z",
+      "source": "Aaron Levie",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Secret of Orange Cats Revealed After 60-Year Search",
+      "summary": "Comments",
+      "url": "https://www.sciencealert.com/secret-of-orange-cats-finally-revealed-after-60-year-search",
+      "image": null,
+      "publishedAt": "Sat, 10 Oct 2026 22:10:57 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9waXhl",
+      "title": "The Making Of Super Mario 64 – full Giles Goddard interview (2001)",
+      "summary": "Comments",
+      "url": "https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/",
+      "image": null,
+      "publishedAt": "Sat, 10 Oct 2026 19:28:41 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Your Customer’s Personal Agent Is Knocking. Is Your Business Ready to Answer?",
+      "summary": "With the advent of personal AI agents, every business is grappling with the same question: Let them in or block them at the front door?",
+      "url": "https://www.salesforce.com/news/stories/personal-ai-agents-evolution/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 18:30:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "2026.41: It’s Not You, It’s Me",
+      "summary": "The best Stratechery content from the week of October 5, 2026, including drifting apart from Apple, Facebook complications, and the delightful absurdity of U.S.-China dynamics.",
+      "url": "https://stratechery.com/2026/its-not-you-its-me/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 17:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "ICYMI: What landed for AI builders in September 2026",
+      "summary": "A monthly recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026: broader model choice, faster serverless agents with built-in evaluation, and automated knowledge base syncing with native enterprise connectors.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 15:38:39 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+      "summary": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amazon Bedrock at scale.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 15:35:02 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Actual Reason Why Meta Got Back in the AI Race Changes Everything",
+      "summary": "An unlikely friendship; a predictable outcome",
+      "url": "https://www.thealgorithmicbridge.com/p/the-actual-reason-why-meta-got-back",
+      "image": "https://substackcdn.com/image/fetch/$s_!5Dov!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8a72b79-a9b7-4ffd-9280-9b4ae5725900_3840x2760.jpeg",
+      "publishedAt": "Fri, 09 Oct 2026 15:25:22 GMT",
+      "source": "The Algorithmic Bridge",
+      "category": "thought-leadership",
+      "tags": [
+        "ai",
+        "analysis"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Impactful scheduling for GPU clusters",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 15:20:29 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: AI’s refusal problem and weight-loss drug side effects",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. We’re putting too much faith in AI’s ability to say no Today’s AI models are trained to refuse a vast number of prompts. If you ask your chatbot how to poison…",
+      "url": "https://www.technologyreview.com/2026/10/09/1146250/the-download-ai-refusal-problem-weight-loss-drug-side-effects/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 12:10:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "We’re putting too much faith in AI’s ability to say no",
+      "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience. Most of these capers are, of course, cautionary. But recently, the idea that AI shouldn’t…",
+      "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Job titles of the future: Delivery drone air traffic controller",
+      "summary": "The moment Trevor Wischnewsky heard that drones were delivering pizza and sushi around his Texas neighborhood, his mind was made up. “It was super fascinating,” he says. “I just immediately wanted to be a part of it.” Wischnewsky is now an RPIC, or “remote pilot in command,” at a company called FlyTrex. An RPIC is…",
+      "url": "https://www.technologyreview.com/2026/10/09/1145737/job-titles-delivery-drone-air-traffic-controller-trevor-wischnewsky/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "We’re still figuring out the side effects of GLP-1 weight-loss drugs",
+      "summary": "This week my colleague Antonio Regalado had an interesting update on GLP-1 weight-loss drugs. According to research presented at an aging meeting in Boston, these drugs seem to affect at least some measures of biological age. Overweight and diabetic people who take GLP-1s have a biological age around two to three years younger than similar…",
+      "url": "https://www.technologyreview.com/2026/10/09/1146094/were-still-figuring-out-the-side-effects-of-glp-1-weight-loss-drugs/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "url": "https://openai.com/index/sophos",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+      "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Join senior AI reporter…",
+      "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+      "image": null,
+      "publishedAt": "Fri, 09 Oct 2026 00:08:24 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+      "summary": "Amazon Bedrock AgentCore payments gives AI agents a managed way to pay for services on demand, with spending limits enforced by the infrastructure. See how Incarna's agents pay BlockRun for model inference one request at a time over x402, cutting the work of adding x402 payment support from months to days.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 18:33:29 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Marc Benioff on the AI boom, SaaSpocalypse, and future of Slack",
+      "summary": "",
+      "url": "https://www.salesforce.com/news/linked-content/marc-benioff-on-the-ai-boom-saaspocalypse-and-future-of-slack/",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 17:00:51 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdz",
+      "title": "The Pulse: new trend of building “internal vibe-coding apps” at tech companies",
+      "summary": "Also: do us engineers truly enjoy ‘hard problems’, or do we really just want to solve those which attract promotions, new open models launch in the EU and US, and more",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal",
+      "image": "https://substackcdn.com/image/fetch/$s_!u_p9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41ad4d5f-4218-458f-863e-7cab93aa8741_1440x900.png",
+      "publishedAt": "Thu, 08 Oct 2026 16:55:51 GMT",
+      "source": "The Pragmatic Engineer",
+      "category": "saas",
+      "tags": [
+        "engineering",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
+      "summary": "A reference architecture for securely sharing one Amazon SageMaker HyperPod EKS cluster across multiple teams, using AWS IAM Identity Center for authentication, per-team SageMaker Domains and Kubernetes namespaces for isolation, HyperPod Task Governance for fairness, and namespace-level cost allocation for chargeback.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 16:20:04 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+      "url": "https://openai.com/index/oracle",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 16:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Codemind",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/codemind-2",
+      "image": null,
+      "publishedAt": "2026-10-08T13:07:17.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+      "url": "https://openai.com/index/pollo-ai",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Opinion - Issue 947: Jev and the Rise of Decision Models",
+      "summary": "Jev started a revolution. Now we are getting dozens of decision models",
+      "url": "https://thesequence.substack.com/p/the-sequence-opinion-issue-947-jev",
+      "image": "https://substackcdn.com/image/fetch/$s_!_eqt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb59520c4-827b-44d8-b9ce-c84def6e3269_1672x941.png",
+      "publishedAt": "Thu, 08 Oct 2026 10:48:08 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "An Interview with Katie Harbath About Disrupting Politics at Facebook",
+      "summary": "An interview with former Facebook Head of Global Elections Katie Harbath about her new book Disrupting Politics, and how things change for the company in the 2010s.",
+      "url": "https://stratechery.com/2026/an-interview-with-katie-harbath-about-disrupting-politics-at-facebook/",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 10:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Disrupting AI-enabled “false front” operations",
+      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 00:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "The model that didn't exist, so you made it yourself",
+      "summary": "",
+      "url": "https://huggingface.co/blog/building-with-ml-intern",
+      "image": null,
+      "publishedAt": "Thu, 08 Oct 2026 00:00:00 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Introducing Claude Haiku 5.5 on AWS",
+      "summary": "Claude Haiku 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. According to Anthropic, it is the fastest, most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work, and costs around 75% less than Claude Haiku 4.5 for most tasks. This post covers its improvements and how to get started.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 18:52:10 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
+      "summary": "Enterprise RAG unlocks insights from knowledge sources like SharePoint, Google Drive, and Confluence, but those sources carry complex permissions. Learn how Amazon Quick and Amazon Bedrock Knowledge Bases enforce document-level access controls in real time, verifying permissions directly with authoritative sources at query time.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 18:34:44 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdz",
+      "title": "Building resilient systems with Sam Newman",
+      "summary": "Sam Newman joins me to discuss when to use microservices, how to build resilient distributed systems, and how AI is changing software development.",
+      "url": "https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 17:19:58 GMT",
+      "source": "The Pragmatic Engineer",
+      "category": "saas",
+      "tags": [
+        "engineering",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Multimodal open d1 decision models for the edge",
+      "summary": "",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 16:54:33 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Beyond hours saved: Building the business case for agentic automation",
+      "summary": "The RPA-era ROI model misses most of the value agentic automation creates. This post gives AI center of excellence leaders a framework to size the full value of agents across time savings, exception handling, decision quality, and maintenance economics, and to prioritize which workflows to automate first.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-hours-saved-building-the-business-case-for-agentic-automation/",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 15:50:00 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "How Qlik built grounded, enterprise-scale AI with Amazon Bedrock",
+      "summary": "Qlik built Qlik Answers on Amazon Bedrock to give its 40,000+ customers grounded, sourced answers across structured and unstructured enterprise data. Learn how a layered, multi-agent architecture with cross-Region inference and Amazon Bedrock Guardrails delivers trusted AI at global scale.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-qlik-built-grounded-enterprise-scale-ai-with-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 15:48:46 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "From Autonomy to Accountability: How to Think About Trust in the Multi-Agent Future",
+      "summary": "The transition from isolated large language models (LLMs) to interoperable multi-agent systems promises a revolutionary leap in productivity. It will allow autonomous AI to negotiate, trade, and collaborate across company lines. Agents from third-party vendors and partners can access data and execute tasks across your platform, a fluidity that’s a fundamental engine of strategic growth. […]",
+      "url": "https://www.salesforce.com/news/stories/trust-in-multi-agent-future/",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 15:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Audience at a Magic Show",
+      "summary": "This is what the future holds",
+      "url": "https://www.thealgorithmicbridge.com/p/audience-at-a-magic-show",
+      "image": "https://substackcdn.com/image/fetch/$s_!rVsZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe7b18697-b991-43ea-8666-c813fd493b17_1536x1024.png",
+      "publishedAt": "Wed, 07 Oct 2026 14:14:20 GMT",
+      "source": "The Algorithmic Bridge",
+      "category": "thought-leadership",
+      "tags": [
+        "ai",
+        "analysis"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Introducing Falcon ASR",
+      "summary": "",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 13:21:03 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+      "summary": "",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 12:45:31 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Learning Loop - Issue 946: Learning About OpenAI DevDay Releases and Gemini 4 Argon",
+      "summary": "OpenAI and Google advance sustained execution—and make cost per completed task a more meaningful measure of progress.",
+      "url": "https://thesequence.substack.com/p/the-sequence-learning-loop-issue-f1b",
+      "image": "https://substackcdn.com/image/fetch/$s_!mINQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3b991da5-690d-4886-b58a-8024817b2383_1672x941.png",
+      "publishedAt": "Wed, 07 Oct 2026 10:54:43 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "Apple and LG, The House For Everyone Else, Agent Standards and Amazon",
+      "summary": "Apple is taking a smarter approach to the home than I expected, leaning into integration (with partners); then, what Amazon should do about agents.",
+      "url": "https://stratechery.com/2026/apple-and-lg-the-house-for-everyone-else-agent-standards-and-amazon/",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 10:01:39 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
+      "url": "https://openai.com/index/radisson",
+      "image": null,
+      "publishedAt": "Wed, 07 Oct 2026 07:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWVw",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "summary": "",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "image": null,
+      "publishedAt": "Tue, 06 Oct 2026 19:57:04 +0000",
+      "source": "Google DeepMind",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdz",
+      "title": "The state of the tech industry in 2026",
+      "summary": "A look into what has changed, what’s still the same – and what’s broken – in the tech industry. The full video and the summary of my keynote at LDX3 New York",
+      "url": "https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in",
+      "image": "https://substackcdn.com/image/fetch/$s_!wmBO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F55ac4f75-983e-45c6-bde0-40307f3bcd03_2048x1366.jpeg",
+      "publishedAt": "Tue, 06 Oct 2026 16:25:03 GMT",
+      "source": "The Pragmatic Engineer",
+      "category": "saas",
+      "tags": [
+        "engineering",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Google EmbeddingGemma 2",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/embeddinggemma-2",
+      "image": null,
+      "publishedAt": "2026-10-06T16:08:17.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Trustworthy, Explainable, and Accountable: How to Give AI Autonomy Without Letting It Run Wild",
+      "summary": "Salesforce Principal Architect of Ethical AI Practice Kathy Baxter explains how pairing a probabilistic model with deterministic logic gives agents the ability to take action — without giving up the guardrails.",
+      "url": "https://www.salesforce.com/news/stories/giving-ai-autonomy-without-running-wild/",
+      "image": null,
+      "publishedAt": "Tue, 06 Oct 2026 15:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Knowledge - Issue 945: Learning RSI: Agents that Rewrite their Own Scaffolding",
+      "summary": "An agent that opens its own source code and rewrites it now exists, and it works. What it chose to fix tells you more about self-improvement than any thought experiment ever did.",
+      "url": "https://thesequence.substack.com/p/the-sequence-knowledge-issue-945",
+      "image": "https://substackcdn.com/image/fetch/$s_!krH7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5a5ebe05-64d7-4f50-8f97-fbe40959c887_1672x941.png",
+      "publishedAt": "Tue, 06 Oct 2026 11:03:58 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "Game Decompilation, Is This Legal?, A Well-Trodden Path",
+      "summary": "Games are being decompiled, but the real risk to gaming is new games and increased personalization.",
+      "url": "https://stratechery.com/2026/game-decompilation-is-this-legal-a-well-trodden-path/",
+      "image": null,
+      "publishedAt": "Tue, 06 Oct 2026 10:07:36 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly9pbXBv",
       "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
       "summary": "Who chooses what AI gets to do?",
@@ -13,20 +1187,6 @@
         "ai",
         "research",
         "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Download: AI’s popularity paradox and EmTech Future 2026",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. People really hate AI, so why can’t they get enough? —Will Douglas Heaven Over the summer I talked to the CEO of Springboards, a startup building an LLM designed to come…",
-      "url": "https://www.technologyreview.com/2026/10/05/1145711/the-download-ai-popularity-paradox-emtech-future-2026/",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
       ]
     },
     {
@@ -44,226 +1204,18 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly90ZWNo",
-      "title": "Europe's new robotics unicorn: Germany's RobCo hits $1B valuation",
-      "summary": "Comments",
-      "url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 11:13:51 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9kZXZl",
-      "title": "Web Search API",
-      "summary": "Comments",
-      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 10:47:06 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Press Release: Nobel Prize in Physiology or Medicine 2026",
-      "summary": "Comments",
-      "url": "https://www.nobelprize.org/prizes/medicine/2026/press-release/",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 10:35:59 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9zdHJh",
-      "title": "Apple and a Hacker's Future",
-      "summary": "Comments",
+      "title": "Apple and a Hacker’s Future",
+      "summary": "I was happy for years in Apple's walled garden; with AI, however, their protections feel like limitations.",
       "url": "https://stratechery.com/2026/apple-and-a-hackers-future/",
       "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 10:05:02 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Building advertising for the way people use AI",
-      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
-      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Chamath Palihapitiya Backs Satya Nadella's Warning on Closed AI Models - Benzinga",
-      "summary": "Venture Capitalist Chamath Palihapitiya backs Microsoft CEO Satya Nadella's warning that closed AI makes companies pay twice.",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.benzinga.com/markets/tech/26/10/62155005/chamath-palihapitiya-backs-satya-nadellas-warning-on-closed-ai-models-companies-could-be-paying-for-intelligence-twice-heres-why&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw0gbjQdNR5wb8T4p9amZet2",
-      "image": null,
-      "publishedAt": "2026-10-05T08:40:54.000Z",
-      "source": "Satya Nadella",
+      "publishedAt": "Mon, 05 Oct 2026 10:00:00 +0000",
+      "source": "Stratechery",
       "category": "thought-leadership",
       "tags": [
-        "voices",
-        "enterprise",
+        "analysis",
+        "strategy",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Denmark Data Breach Exposes 8.8M People's Personal Data",
-      "summary": "Comments",
-      "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 08:09:36 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "People really hate AI, so why can’t they get enough?",
-      "summary": "Over the summer I talked to the CEO of Springboards, a startup building an LLM that’s designed to come up with a wider variety of responses than its mainstream rivals do. At the start of the call, he said something that’s been stuck in my head since: “We often say that we’re a self-loathing AI…",
-      "url": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 08:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Huawei and Qualcomm Announce Broad Patent License Agreement",
-      "summary": "Comments",
-      "url": "https://www.huawei.com/en/news/2026/10/qualcomm-broad-patent-agreement",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 07:46:10 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Stocktwits Tech Watch: AI Investors Shift Focus To Applied Digital Earnings, Microsoft Event ...",
-      "summary": "... AI, startups, infrastructure, robotics and enterprise tech. ... Satya Nadella, Surface chief Pavan Davuluri and Nvidia CEO Jensen Huang ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tradingview.com/news/stocktwits:78b3c9758094b:0-stocktwits-tech-watch-ai-investors-shift-focus-to-applied-digital-earnings-microsoft-event-sf-tech-week/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3vPZYHExc103YU-IyTEHIz",
-      "image": null,
-      "publishedAt": "2026-10-05T05:56:26.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "EmTech Future 2026: When AI Meets Everything",
-      "summary": "Yossi Matias, Vice President & Head of Google Research, explores how AI is beginning to reshape biology, infrastructure, manufacturing, and science, and why its greatest impact may come when it intersects with other fields. Step inside the newsroom with our MIT Technology Review editors for sharp analysis and unpublished insights from the team that researches…",
-      "url": "https://www.technologyreview.com/2026/10/05/1145413/emtech-future-2026-when-ai-meets-everything/",
-      "image": null,
-      "publishedAt": "Mon, 05 Oct 2026 04:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Pilot5 Legal",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/pilot5-ai",
-      "image": null,
-      "publishedAt": "2026-10-04T20:12:37.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Reviu",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/reviu",
-      "image": null,
-      "publishedAt": "2026-10-04T16:27:10.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "SpeechShield",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/speechshield",
-      "image": null,
-      "publishedAt": "2026-10-04T15:59:56.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9naXRo",
-      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
-      "summary": "Comments",
-      "url": "https://github.com/Niko1221/Strata",
-      "image": null,
-      "publishedAt": "Sun, 04 Oct 2026 12:51:53 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
       ]
     },
     {
@@ -282,21 +1234,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Box CEO Aaron Levie : The adoption of AI agents is currently polarized, with ... - ABAB News",
-      "summary": "Box CEO Aaron Levie stated that the adoption of AI agents is currently polarized ... Beneficiaries are programming tools, while enterprise ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ababnews.com/news/be07b1aa-db1f-4b60-aa21-bb96d6f6f089&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw2pNX6lWe5DX7bDVynKKhIU",
-      "image": null,
-      "publishedAt": "2026-10-04T09:32:01.000Z",
-      "source": "Aaron Levie",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9odWdn",
       "title": "The Agent Said It Was Done. The Database Disagreed.",
       "summary": "",
@@ -309,36 +1246,6 @@
         "ai",
         "open-source",
         "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9kYW5p",
-      "title": "Type Safe Generic Data Structures in C",
-      "summary": "Comments",
-      "url": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
-      "image": null,
-      "publishedAt": "Sat, 03 Oct 2026 11:57:20 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "devpit",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/devpit",
-      "image": null,
-      "publishedAt": "2026-10-02T19:16:12.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
       ]
     },
     {
@@ -372,137 +1279,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "A model guide for the GPT-6 family",
-      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 16:15:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Redefining enterprise intelligence with autonomous AI",
-      "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall. Globally, AI investment is set to reach $2.5 trillion in 2026, up 44% from the previous year. For many enterprises, this investment has…",
-      "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 15:49:04 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Sweep thousands of leases for compliance using Amazon Quick and the Adjudicated Query pattern",
-      "summary": "The Adjudicated Query pattern pairs the Amazon Quick chat agent with a bounded MCP server over a deterministic rules engine to deliver provably complete, defensible compliance answers. This post walks through the reference architecture and a deployable AWS CDK sample, using lease compliance as the running example.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/sweep-thousands-of-leases-for-compliance-using-amazon-quick-and-the-adjudicated-query-pattern/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 15:48:26 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Add secure Web Search to Claude Desktop with Amazon Bedrock AgentCore",
-      "summary": "Claude Desktop on Amazon Bedrock is limited to the model's knowledge cutoff without web search. In this post, we walk through connecting Claude Desktop to Web Search using Amazon Bedrock AgentCore Gateway, with JWT-based inbound authentication through AWS IAM Identity Center and Amazon Cognito.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 15:46:05 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Fine-tune a search agent with multi-turn RL on Amazon SageMaker AI",
-      "summary": "Fine-tuning teaches a small search agent your tools and environment, giving it the reliability of a frontier model at lower latency and cost. In this post, we fine-tune an LLM-powered search agent with multi-turn reinforcement learning (MTRL) on Amazon SageMaker AI and share the gains we measured in retrieval quality and reliability.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-a-search-agent-with-multi-turn-rl-on-amazon-sagemaker-ai/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 15:44:20 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 15:19:50 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Download: a biological de-aging contest and why LLMs don’t reason",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. A new contest pits competitors against each other in a race to biological youth —Jessica Hamzelou This week, I officially signed up for an unusual competition. One that rewards competitors for…",
-      "url": "https://www.technologyreview.com/2026/10/02/1145666/the-download-biological-de-aging-ai-reasoning/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "A new contest pits competitors against each other in a race to biological youth",
-      "summary": "This week, I officially signed up for an unusual competition. One that rewards competitors for getting younger. I recently turned 40, and I don’t need reminding that both time and my chronological age only tick forward. But this game is focused on competitors’ biological ages—figures that are meant to provide a better way to measure…",
-      "url": "https://www.technologyreview.com/2026/10/02/1145610/younger-contest-race-to-biological-youth/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Don’t be fooled—LLMs don’t reason",
-      "summary": "On an afternoon in Seoul in March 2016, I watched a program I helped build put a stone on the fifth line of a Go board in what looked like a gift to its human opponent. Move 37 in game two of the five-game match looked so absurd that some commentators thought it was a…",
-      "url": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
-      "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 08:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9odWdn",
       "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
       "summary": "",
@@ -518,78 +1294,18 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Chatham scales its capital markets expertise with OpenAI",
-      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
-      "url": "https://openai.com/index/chatham-financial",
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "ngram 2.0",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/ngram",
       "image": null,
-      "publishedAt": "Fri, 02 Oct 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
+      "publishedAt": "2026-10-01T17:34:14.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
       "tags": [
         "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Scaling cloud migrations with agentic AI on Amazon Bedrock AgentCore",
-      "summary": "Learn how AWS Professional Services uses a multi-agent framework built on Amazon Bedrock AgentCore to automate enterprise cloud migrations end to end. Purpose-built AI agents handle discovery, infrastructure as code generation, portfolio governance, and post-migration operations, reducing IaC development time from weeks to minutes.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 22:06:14 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Serve live, governed data in AI-built apps with Amazon Quick",
-      "summary": "With Live Data in Apps in Amazon Quick, AI-built apps query your governed Quick Sight datasets in real time instead of static, build-time snapshots. Each query runs as the person viewing the app, so row-level and column-level security apply per reader. Learn how to build, publish, and share a live-data app using natural language.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/serve-live-governed-data-in-ai-built-apps-with-amazon-quick/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 19:49:06 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Build agent memory with NVIDIA NeMo Agent Toolkit and Amazon S3 Vectors",
-      "summary": "Learn how to use Amazon S3 Vectors as the persistent memory layer within the NVIDIA NeMo Agent Toolkit (NAT), deployed on Amazon Elastic Kubernetes Service (Amazon EKS). This post shows how NAT's memory subsystem works and how to implement Amazon S3 Vectors as a custom memory provider, using a multi-agent investment research use case.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-agent-memory-with-nvidia-nemo-agent-toolkit-and-amazon-s3-vectors/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 17:34:56 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "The eternal complement",
-      "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
-      "url": "https://openai.com/index/the-eternal-complement",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 17:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
+        "products",
+        "launches"
       ]
     },
     {
@@ -608,21 +1324,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Uplifting conversion across the acquisition funnel with personalization using contextual bandits on AWS",
-      "summary": "Generative AI makes it cheap to produce personalized content at scale, but which variation do you show each customer? Amazon Payments used a multi-objective contextual bandit on Amazon SageMaker AI to personalize an acquisition funnel, achieving a high single-digit conversion lift for one audience, and learning why content, not the model, was the constraint.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/uplifting-conversion-across-the-acquisition-funnel-with-personalization-using-contextual-bandits-on-aws/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 16:51:04 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdz",
       "title": "The Pulse: Firebase’s global outage & poor response",
       "summary": "Also: OpenAI’s platform play that has similarities to AWS, more data on companies moving to open models, and more",
@@ -638,21 +1339,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Building ambient agents with Amazon Bedrock AgentCore: From event-driven signals to human-in-the-loop workflows",
-      "summary": "Ambient agents respond to events such as an Amazon S3 upload, a schedule, or an alert instead of waiting for a chat prompt. This post walks through building framework-agnostic ambient agents on Amazon Bedrock AgentCore using Amazon SQS, AWS Lambda, and Amazon DynamoDB, with a single ask_human tool and a Jobs page for human-in-the-loop review.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/building-ambient-agents-with-amazon-bedrock-agentcore-from-event-driven-signals-to-human-in-the-loop-workflows/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 16:40:24 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
       "title": "A big-tent or small-tent AI safety movement?",
       "summary": "The unstated disagreement that underpins safety debates",
@@ -665,21 +1351,6 @@
         "ai",
         "critical",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "How Albertsons Companies is reimagining retail from the inside out",
-      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-      "url": "https://openai.com/index/albertsons-reimagining-retail",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 16:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
       ]
     },
     {
@@ -713,20 +1384,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Download: AI “mind-reading” and creative uses for small batteries",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. An AI “mind-reading” tool can reconstruct what you’re looking at based on a brain scan A new AI tool can guess what you’re looking at just by analyzing your brain scans—and…",
-      "url": "https://www.technologyreview.com/2026/10/01/1145592/the-download-ai-mind-reading-small-batteries/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 12:10:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly90aGVz",
       "title": "The Sequence Opinion - Issue 943: When Compute Gets a Futures Market",
       "summary": "What grain electricity and freight reveal about compute markets",
@@ -739,21 +1396,6 @@
         "ai",
         "ml",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Oogwai Beacon",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/oogwai-beacon",
-      "image": null,
-      "publishedAt": "2026-10-01T10:06:14.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
       ]
     },
     {
@@ -772,21 +1414,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-      "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
-      "url": "https://openai.com/index/the-den-family-social",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 00:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9kZWVw",
       "title": "Gemini 4 Argon: our next era of frontier intelligence",
       "summary": "",
@@ -798,21 +1425,6 @@
       "tags": [
         "ai",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Salesforce has built the TSA a new AI agent to make travelling less awful for everyone",
-      "summary": "",
-      "url": "https://www.salesforce.com/news/linked-content/salesforce-has-built-the-tsa-a-new-ai-agent-to-make-travelling-less-awful-for-everyone/",
-      "image": null,
-      "publishedAt": "Wed, 30 Sep 2026 17:00:06 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
       ]
     },
     {
@@ -860,51 +1472,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Disrupting a coordinated model-distillation campaign",
-      "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "image": null,
-      "publishedAt": "Wed, 30 Sep 2026 10:30:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Helping small businesses put AI to work",
-      "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-      "image": null,
-      "publishedAt": "Wed, 30 Sep 2026 10:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "OpenAI Dev Day, Dot and OpenAI’s Product Transition, Sign In With ChatGPT",
-      "summary": "OpenAI's Dev Day showcased a product that is, frankly, pretty confusing. However, there is more vision here than it might seem.",
-      "url": "https://stratechery.com/2026/openai-dev-day-dot-and-openais-product-transition-sign-in-with-chatgpt/",
-      "image": null,
-      "publishedAt": "Wed, 30 Sep 2026 10:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9odWdn",
       "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
       "summary": "",
@@ -917,36 +1484,6 @@
         "ai",
         "open-source",
         "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Salesforce Signs Definitive Agreement to Acquire Listen Labs",
-      "summary": "Salesforce, the #1 AI CRM, today announced it has signed a definitive agreement to acquire Listen Labs, an AI-powered customer research and human simulation platform. Listen Labs’s AI agents design studies, conduct in-depth research, and synthesize insights, automating the lifecycle of connecting with customers and analyzing their feedback. Listen Labs streamlines this process from months […]",
-      "url": "https://www.salesforce.com/news/stories/salesforce-signs-definitive-agreement-to-acquire-listen-labs/",
-      "image": null,
-      "publishedAt": "Tue, 29 Sep 2026 20:00:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "DailyHelm",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/dailyhelm",
-      "image": null,
-      "publishedAt": "2026-09-29T18:28:04.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
       ]
     },
     {
@@ -965,36 +1502,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-      "summary": "",
-      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "image": null,
-      "publishedAt": "Tue, 29 Sep 2026 15:30:38 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-      "summary": "",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "image": null,
-      "publishedAt": "Tue, 29 Sep 2026 13:07:00 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly90aGVz",
       "title": "The Sequence Knowledge - Issue 941: Learning RSI: The Model Is Frozen. The System Is Not.",
       "summary": "Your agent got better this quarter and nobody trained anything. Where did the improvement go? Into the notes. This is the loop that runs between model releases, and it might be where the durable value",
@@ -1007,21 +1514,6 @@
         "ai",
         "ml",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "One More Note on Agents, Meta Connect, Meta Enterprise Platform",
-      "summary": "Meta has the chance to own the consumer agentic space; going for enterprise is a big mistake.",
-      "url": "https://stratechery.com/2026/one-more-note-on-agents-meta-connect-meta-enterprise-platform/",
-      "image": null,
-      "publishedAt": "Tue, 29 Sep 2026 10:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
       ]
     },
     {
@@ -1084,66 +1576,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "Apps, Agents, and Aggregation",
-      "summary": "Agents are the ultimate Aggregators; they reveal apps as a means, not an ends, and providing them is tech's biggest prize.",
-      "url": "https://stratechery.com/2026/apps-agents-and-aggregation/",
-      "image": null,
-      "publishedAt": "Mon, 28 Sep 2026 10:25:37 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Holo4: powering generalist computer-use agents",
-      "summary": "",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "image": null,
-      "publishedAt": "Mon, 28 Sep 2026 09:44:05 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Radar - Issue 940: Last Week in AI: Opus 5.5 Gets Leaner, Meta Goes Wearable, Washington Talks to Beijing, and Claude Explores DNA",
-      "summary": "Smarter models, wearable agents, scientific discoveries, and superpower diplomacy reveal how quickly AI is moving into the world.",
-      "url": "https://thesequence.substack.com/p/the-sequence-radar-issue-940-last",
-      "image": "https://substackcdn.com/image/fetch/$s_!6GY-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F888ac42e-0c0b-461c-b367-6be01605ab56_1774x887.png",
-      "publishedAt": "Sun, 27 Sep 2026 11:02:17 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "2026.39: Begun, the Aggregator Wars Have",
-      "summary": "The best Stratechery content from the week of September 21, 2026, including Meta vs. Amazon, GM bending the knee to CarPlay, and profiling the profiler.",
-      "url": "https://stratechery.com/2026/begun-the-aggregator-wars-have/",
-      "image": null,
-      "publishedAt": "Fri, 25 Sep 2026 17:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9ibG9n",
       "title": "Introducing the new Copilot with Home, Code and Autopilot",
       "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition. Today we’re introducing the new Copilot to connect the tools people rely on with the next generation of capabilities they’ll need to build, customize and scale AI... The post Introducing the new Copilot with Home, Code and Autopilot appeared first on The Official Microsoft Blog.",
@@ -1155,21 +1587,6 @@
       "tags": [
         "enterprise",
         "copilot",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The ‘SaaSpocalypse’ is over. How Salesforce now plans to thrive in an AI world",
-      "summary": "",
-      "url": "https://www.salesforce.com/news/linked-content/the-saaspocalypse-is-over-how-salesforce-now-plans-to-thrive-in-an-ai-world/",
-      "image": null,
-      "publishedAt": "Thu, 24 Sep 2026 19:00:11 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
         "ai"
       ]
     },
@@ -1217,81 +1634,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Five Big Ideas Coming Out of Dreamforce 2026",
-      "summary": "In the leadup to Dreamforce 2026, dozens of announcements outlined what enterprises look like when software meets AI, but the event itself filled in the picture. Organizations are being transformed. Ways of working within them are transforming just as quickly. To see how headless architecture, Slack Code, purpose-trained models, and more are going to shape […]",
-      "url": "https://www.salesforce.com/news/stories/five-dreamforce-2026-takeaways/",
-      "image": null,
-      "publishedAt": "Thu, 24 Sep 2026 15:00:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-      "summary": "",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-      "image": null,
-      "publishedAt": "Thu, 24 Sep 2026 14:08:57 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Opinion - Issue 939: Beyond the Next Token",
-      "summary": "How text diffusion models rethink language generation—and the tradeoffs that will determine their future.",
-      "url": "https://thesequence.substack.com/p/the-sequence-opinion-issue-939-beyond",
-      "image": "https://substackcdn.com/image/fetch/$s_!G1mT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd392a08d-f258-48d1-b804-03ccafad4918_1942x809.png",
-      "publishedAt": "Thu, 24 Sep 2026 11:03:36 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "An Interview with Colossus EIC Jeremy Stern About Profiling Mark Zuckerberg",
-      "summary": "An interview with Colossus EIC Jeremy Stern about profiling Mark Zuckerberg and other prominent tech figures.",
-      "url": "https://stratechery.com/2026/an-interview-with-colossus-eic-jeremy-stern-about-profiling-mark-zuckerberg/",
-      "image": null,
-      "publishedAt": "Thu, 24 Sep 2026 10:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Invofox Self Serve",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/invofox",
-      "image": null,
-      "publishedAt": "2026-09-23T19:54:18.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdz",
       "title": "Design Engineering with Maggie Appleton",
       "summary": "Maggie Appleton on what engineers can learn from designers, working with AI agents, and why human judgment still matters.",
@@ -1335,51 +1677,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Learning Loop - Issue 938: Learn About the Amazing Jev, Gemini and Paper2Agent",
-      "summary": "Three ways to turn model intelligence into working software",
-      "url": "https://thesequence.substack.com/p/the-sequence-learning-loop-issue-dbe",
-      "image": "https://substackcdn.com/image/fetch/$s_!I-yk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff60e9414-8357-42b7-9b52-7d7228c97580_1672x941.png",
-      "publishedAt": "Wed, 23 Sep 2026 12:03:45 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdz",
-      "title": "How will AI change operating systems? Part 2: Windows",
-      "summary": "Deepdive into the Windows team’s efforts to make the OS “AI agent-friendly” and win back developers by going all-in on Linux on Windows, local models, GPUs, & more",
-      "url": "https://newsletter.pragmaticengineer.com/p/windows-and-ai",
-      "image": "https://substackcdn.com/image/fetch/$s_!_YFt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2c1feff9-3b33-4c9d-a088-ef35a1fb2978_872x607.png",
-      "publishedAt": "Tue, 22 Sep 2026 17:17:31 GMT",
-      "source": "The Pragmatic Engineer",
-      "category": "saas",
-      "tags": [
-        "engineering",
-        "saas",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Knowledge - Issue 937: RSI in Post-Training: The Loop That Already Shipped",
-      "summary": "Inside the RSI post-training pipeline",
-      "url": "https://thesequence.substack.com/p/the-sequence-knowledge-issue-937",
-      "image": "https://substackcdn.com/image/fetch/$s_!R4Cq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc8f75d0a-b2f6-4456-85aa-246c1abf90a9_1672x941.png",
-      "publishedAt": "Tue, 22 Sep 2026 10:59:58 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
       "title": "11 Charts the AI Industry Doesn’t Want You to See (pt. 2)",
       "summary": "If there's an AI bubble, this is what it looks like",
@@ -1409,21 +1706,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Futures Issue 5: Agentic Enterprise Futures",
-      "summary": "",
-      "url": "https://www.salesforce.com/news/linked-content/futures-issue-5-agentic-enterprise-futures/",
-      "image": null,
-      "publishedAt": "Thu, 17 Sep 2026 19:00:15 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9ibG9n",
       "title": "What we’ve learned from Microsoft’s own AI transformation",
       "summary": "AI is reshaping work faster than any organization has fully mastered. Across industries, the conversation has shifted from what AI can do to how companies can use AI to create business value and expand what people are able to achieve. At Microsoft, we believe the organizations that succeed will be what we call Frontier Firms:... The post What we’ve learned from Microsoft’s own AI transformation appeared first on The Official Microsoft Blog.",
@@ -1435,21 +1717,6 @@
       "tags": [
         "enterprise",
         "copilot",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdz",
-      "title": "AI Skills with Matt Pocock",
-      "summary": "Matt Pocock explains how he uses AI coding skills and agents to plan and build software, and why engineering fundamentals matter more than ever.",
-      "url": "https://newsletter.pragmaticengineer.com/p/ai-skills-with-matt-pocock",
-      "image": null,
-      "publishedAt": "Thu, 17 Sep 2026 11:29:00 GMT",
-      "source": "The Pragmatic Engineer",
-      "category": "saas",
-      "tags": [
-        "engineering",
-        "saas",
         "ai"
       ]
     },
@@ -1480,36 +1747,6 @@
       "tags": [
         "ai",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9uZXdz",
-      "title": "Inside OpenAI’s agentic software factory",
-      "summary": "A deepdive into how Codex has “taken over” OpenAI, how the frontier lab builds its agentic software factory, and the engineering challenges of one billion users. Details from inside OpenAI",
-      "url": "https://newsletter.pragmaticengineer.com/p/openai-software-factory",
-      "image": "https://substackcdn.com/image/fetch/$s_!Eiw9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e73721e-e4d8-473f-a5a1-b6211c14f6ca_2048x1762.png",
-      "publishedAt": "Tue, 15 Sep 2026 15:41:25 GMT",
-      "source": "The Pragmatic Engineer",
-      "category": "saas",
-      "tags": [
-        "engineering",
-        "saas",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Opengeni",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/opengeni",
-      "image": null,
-      "publishedAt": "2026-09-15T04:52:53.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
       ]
     },
     {
@@ -1548,34 +1785,6 @@
       "url": "https://www.thealgorithmicbridge.com/p/millennium-pastimes",
       "image": "https://substackcdn.com/image/fetch/$s_!Oxr4!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a82a9af-1163-4b28-9f47-5e467748c850_1320x1078.jpeg",
       "publishedAt": "Sat, 12 Sep 2026 15:53:45 GMT",
-      "source": "The Algorithmic Bridge",
-      "category": "thought-leadership",
-      "tags": [
-        "ai",
-        "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "The Singularity Paradox",
-      "summary": "Or: why the singularity might not happen",
-      "url": "https://www.thealgorithmicbridge.com/p/the-singularity-paradox",
-      "image": "https://substackcdn.com/image/fetch/$s_!avbN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd354ab1-3510-4af1-9de7-71db4a5fb0af_1920x1440.jpeg",
-      "publishedAt": "Thu, 10 Sep 2026 08:48:10 GMT",
-      "source": "The Algorithmic Bridge",
-      "category": "thought-leadership",
-      "tags": [
-        "ai",
-        "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "A Bad Day For Humans, a Worse Day For Humanity",
-      "summary": "A quick thought on the top stories this week",
-      "url": "https://www.thealgorithmicbridge.com/p/a-bad-day-for-humans-a-worse-day",
-      "image": "https://substackcdn.com/image/fetch/$s_!vpMy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F797b7987-0ebe-4f2a-a232-733a872ca346_1536x1024.png",
-      "publishedAt": "Tue, 08 Sep 2026 14:52:45 GMT",
       "source": "The Algorithmic Bridge",
       "category": "thought-leadership",
       "tags": [
@@ -1667,20 +1876,6 @@
       "tags": [
         "ai",
         "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9kZWVw",
-      "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-      "summary": "",
-      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
-      "image": null,
-      "publishedAt": "Thu, 03 Sep 2026 15:02:08 +0000",
-      "source": "Google DeepMind",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
       ]
     },
     {
@@ -1800,21 +1995,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9pbXBv",
-      "title": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
-      "summary": "Which galaxy will you choose?",
-      "url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
-      "image": "https://substackcdn.com/image/fetch/$s_!3yYS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258.png",
-      "publishedAt": "Mon, 10 Aug 2026 12:32:20 GMT",
-      "source": "Import AI",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "analysis"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
       "title": "AI agents can't yet do open-ended AI research",
       "summary": "Early evidence from two case studies",
@@ -1836,21 +2016,6 @@
       "url": "https://blogs.microsoft.com/blog/2026/07/28/looking-back-on-microsofts-fy26-from-ai-experimentation-to-frontier-transformation/",
       "image": null,
       "publishedAt": "Tue, 28 Jul 2026 16:00:10 +0000",
-      "source": "Microsoft Blog",
-      "category": "saas",
-      "tags": [
-        "enterprise",
-        "copilot",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9ibG9n",
-      "title": "Rethinking security for the age of AI",
-      "summary": "Editor’s note: Updates with additional details on the model’s crash score. Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is falling, while the volume, velocity and complexity of what... The post Rethinking security for the age of AI appeared first on The Official Microsoft Blog.",
-      "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
-      "image": null,
-      "publishedAt": "Mon, 27 Jul 2026 16:30:09 +0000",
       "source": "Microsoft Blog",
       "category": "saas",
       "tags": [
@@ -2145,5 +2310,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-10-05T13:06:47.532Z"
+  "lastUpdated": "2026-10-12T13:12:41.802Z"
 }
