@@ -1,6 +1,630 @@
 {
   "articles": [
     {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Hidden Costs Of Enterprise AI : Build, Buy Or Rent? - YouTube",
+      "summary": "The Hidden Costs Of Enterprise AI: Build, Buy Or Rent? ... Satya Nadella and Jensen Huang discuss Hybrid Intelligence and the future of PC.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3D-JTI-JtdhNc&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw252K0HFmejrM3zXtLJ5dgH",
+      "image": null,
+      "publishedAt": "2026-10-13T20:11:45.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Building agents that transact with Anchor Browser and AgentCore payments",
+      "summary": "Learn how the AWS Generative AI Innovation Center Partner Agent Factory and Anchor Browser built AI agents that autonomously pay for x402-protected web resources and APIs. Amazon Bedrock AgentCore payments checks budgets, signs transactions, and retries requests without exposing wallet credentials to the agent runtime.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-agents-that-transact-with-anchor-browser-and-agentcore-payments/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 20:10:33 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWVw",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "summary": "",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 19:43:07 +0000",
+      "source": "Google DeepMind",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9ndWl0",
+      "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+      "summary": "Comments",
+      "url": "https://guitoro.com/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 19:11:48 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "BIG MOVE: HCLTech And Anthropic Team Up To Build New Enterprise AI Giant - YouTube",
+      "summary": "HCLTech and Anthropic are partnering to deploy Agentic AI, moving enterprise ... Satya Nadella and Jensen Huang discuss Hybrid Intelligence and the ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DfhbrHBE_oh4&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3-JhQF_QEL2niCjXrQYwpC",
+      "image": null,
+      "publishedAt": "2026-10-13T18:58:40.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft CEO Satya Nadella warns against trusting opaque AI to police AI - Crypto Briefing",
+      "summary": "Microsoft CEO Satya Nadella warns AI models may act as insider risks and calls for external controls, emergency brakes and strict logging.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://cryptobriefing.com/nadella-warns-opaque-ai-security-controls/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3hLENukiB4a8ixoQcnycmm",
+      "image": null,
+      "publishedAt": "2026-10-13T17:53:43.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Manage private pricing offers for Amazon Bedrock with managed entitlements",
+      "summary": "Managing AI model access across dozens or hundreds of AWS accounts creates friction when each account must accept AWS Marketplace Private Pricing Offers individually. This post shows two ways to activate MPPO entitlements in AWS License Manager: a lightweight script for a one-time fix, and CDK automation for ongoing event-driven processing.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 17:17:25 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9odWdn",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "summary": "",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 17:05:48 GMT",
+      "source": "Hugging Face Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "open-source",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "From Radar to Reasoning: Why Enterprise AI Finally Watches Your Business in Real Time",
+      "summary": "In 1935, the British Air Ministry asked physicist Robert Watson-Watt for a death ray capable of downing enemy aircraft. He couldn’t build one, but his team developed something arguably more valuable. Within weeks, their radar was able to detect a bomber 8 miles out. Radar was a conceptual coup as much as a technical one. […]",
+      "url": "https://www.salesforce.com/news/stories/operational-intelligence-ai-radar/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 17:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "AI : Microsoft CEO Satya Nadella Urges Businesses To Treat LLMs As Compromised By Default",
+      "summary": "AI: Microsoft CEO Satya Nadella Urges Businesses to Treat LLMs as Compromised by Default ... Broader investment patterns show that enterprise interest ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.crowdfundinsider.com/2026/10/317713-ai-microsoft-ceo-satya-nadella-urges-businesses-to-treat-llms-as-compromised-by-default/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3v3LBmFbV83RaAMK1NlZVY",
+      "image": null,
+      "publishedAt": "2026-10-13T16:04:23.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9uZXdz",
+      "title": "Building resilient AI-powered software, and planning for when things go wrong",
+      "summary": "How to handle uncertainty with AI vendors and disaster recovery (DR) approaches to consider. An excerpt from the book Building Resilient Distributed Systems by Sam Newman",
+      "url": "https://newsletter.pragmaticengineer.com/p/building-resilient-systems",
+      "image": "https://substackcdn.com/image/fetch/$s_!P4Ph!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fad7aee47-aa20-4fc7-8e43-ae2bf2360782_1320x716.png",
+      "publishedAt": "Tue, 13 Oct 2026 16:03:33 GMT",
+      "source": "The Pragmatic Engineer",
+      "category": "saas",
+      "tags": [
+        "engineering",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Natural language security queries at Orca Security using Amazon Bedrock",
+      "summary": "Orca Security built Discovery AI, a natural language query agent on Amazon Bedrock that converts plain-English questions into Sonar queries. The post shares the multi-stage architecture and the results: 90% lower query cost, 93% fewer input tokens, and 75% lower latency than the initial baseline.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 16:03:31 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWVw",
+      "title": "Gemini 4 Argon",
+      "summary": "Comments",
+      "url": "https://deepmind.google/models/gemini/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 16:03:16 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft President Brad Smith Urges Global AI Safety Rules, Says UK Is Best Placed to Lead",
+      "summary": "Business & Markets · Enterprise. Apple Expands AI Ambitions With ... Microsoft CEO Satya Nadella Calls for Emergency Brake Controls on AI Models.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://theaiinsider.tech/2026/10/13/microsoft-president-brad-smith-urges-global-ai-safety-rules-says-uk-is-best-placed-to-lead/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw0BH1sHhEshCZkQIP_xG21W",
+      "image": null,
+      "publishedAt": "2026-10-13T16:02:46.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWVw",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 16:01:58 +0000",
+      "source": "Google DeepMind",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9kZWVw",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 16:01:52 +0000",
+      "source": "Google DeepMind",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "How ShipStation Global built an AI IT help desk on Amazon Bedrock AgentCore",
+      "summary": "ShipStation Global's engineering team built Deckhand, an AI IT help desk agent for Slack on Amazon Bedrock AgentCore. It answers routine IT questions from a curated knowledge base, reads error-message screenshots, and files Jira tickets. In its first three months it resolved 97.5% of channel queries with a 96% positive feedback rating.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:54:49 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Build long-horizon agents with Grok 4.7 on Amazon Bedrock",
+      "summary": "Grok 4.7 is now available on Amazon Bedrock. In this post, we build a tool-calling agent on Grok 4.7 and evaluate it on three reasoning tasks at four reasoning effort levels, measuring correctness and token cost per completed task. We show how to tune the trade-off per request and monitor it in production.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:52:20 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Redesigning source control at Anthropic",
+      "summary": "Comments",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:49:56 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "summary": "Comments",
+      "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:25:50 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Mixture-of-Experts kernel engineering on Amazon SageMaker AI",
+      "summary": "AWS engineers share kernel optimizations for fused Mixture-of-Experts (MoE) models on Amazon SageMaker AI: Swap-AB for WGMMA utilization, Triton backend routing for FP8 quantization, and eliminating Triton JIT recompilation. Together they deliver up to 10% higher throughput and up to 9% faster Time to First Token on H200 GPUs.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/mixture-of-experts-kernel-engineering-on-amazon-sagemaker-ai/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:17:09 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9ibG9n",
+      "title": "Thunderbird for iOS",
+      "summary": "Comments",
+      "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:07:37 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Why Salesforce Lets You Pick the Right AI Model for the Job",
+      "summary": "Salesforce Chief Data Officer Michael Andrew explains how purpose-built models like Koa and multiplayer AI in Slack fit together.",
+      "url": "https://www.salesforce.com/news/stories/ai-model-choice/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 15:00:00 +0000",
+      "source": "Salesforce News",
+      "category": "saas",
+      "tags": [
+        "crm",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Apple HomeView",
+      "summary": "Comments",
+      "url": "https://www.apple.com/apple-homeview/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 13:02:12 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "How India Became the World's AI Infrastructure Hub? - YouTube",
+      "summary": "India is not just adopting enterprise AI, it is building the foundation to run it at scale ... Satya Nadella and Jensen Huang discuss Hybrid ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DtZnHnbuK4T8&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw0HKUi59zLebNEY18PRKwq0",
+      "image": null,
+      "publishedAt": "2026-10-13T12:55:52.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft's CEO Just Called for a Kill Switch on AI . Here Is What It Means for the Stock.",
+      "summary": "His recent essay, \"The Reverse Information Paradox,\" outlines a new direction for enterprise AI adoption. Satya Nadella spent a weekend post saying ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://247wallst.com/investing/2026/10/13/microsofts-ceo-just-called-for-a-kill-switch-on-ai-here-is-what-it-means-for-the-stock/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1eeZ4Xl_JMDidc5Mrd7dNz",
+      "image": null,
+      "publishedAt": "2026-10-13T12:51:26.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Download: open model trade-offs and geothermal power’s promise",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Open models have real benefits. Do they outweigh the risks? Anthropic recently released a report arguing that a powerful new model released by the Chinese company Z.ai, poses a major cyberattack…",
+      "url": "https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 12:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9vcGVu",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 12:00:00 GMT",
+      "source": "OpenAI Blog",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research",
+        "models"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Microsoft Could Be Worth Far More as Its Cloud and AI Businesses Scale - 24/7 Wall St.",
+      "summary": "Microsoft CEO Satya Nadella LAS VEGAS, NEVADA - JANUARY 09: Microsoft Chairman and CEO Satya Nadella speaks during a keynote address by Walmart Inc.",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://247wallst.com/investing/2026/10/13/microsoft-could-be-worth-far-more-as-its-cloud-and-ai-businesses-scale/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3u9XX3sZJIzl7MR35vUCOA",
+      "image": null,
+      "publishedAt": "2026-10-13T11:24:41.000Z",
+      "source": "Satya Nadella",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly90aGVz",
+      "title": "The Sequence Knowledge - Issue 949: Learning RSI: AI Is Helping Build AI. Who Sets the Agenda?",
+      "summary": "Inside OpenAI’s research automation—and the scientific judgment that still determines what happens next.",
+      "url": "https://thesequence.substack.com/p/the-sequence-knowledge-issue-949",
+      "image": "https://substackcdn.com/image/fetch/$s_!Gw8a!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6b57acb8-baa5-410d-b366-feb589960046_1672x941.png",
+      "publishedAt": "Tue, 13 Oct 2026 11:04:13 GMT",
+      "source": "TheSequence",
+      "category": "general",
+      "tags": [
+        "ai",
+        "ml",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Box CEO Aaron Levie Says AI Agent Swarms Could Become Enterprise 'Core' as ...",
+      "summary": "(NYSE:BOX) CEO Aaron Levie said AI agent swarms could become a major part of enterprise workflows, with cybersecurity emerging as a key application as ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.benzinga.com/markets/tech/26/10/62317780/box-ceo-aaron-levie-says-ai-agent-swarms-could-become-enterprise-core-as-cybersecurity-emerges-as-a-massive-token-use&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw0a4Me7zn4XXfUH1ORn9YhG",
+      "image": null,
+      "publishedAt": "2026-10-13T10:52:57.000Z",
+      "source": "Aaron Levie",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "enterprise",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9naXRo",
+      "title": "11 year old unsoundness bugs found in Rust borrow checker",
+      "summary": "Comments",
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 10:27:00 +0000",
+      "source": "Hacker News",
+      "category": "general",
+      "tags": [
+        "ai",
+        "industry",
+        "tech"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Open models have real benefits. Do they outweigh the risks?",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk. The report’s core concern is that the…",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 10:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9zdHJh",
+      "title": "SpaceX Buys More Spectrum, Musk and Market Structure, Distributed Cellular",
+      "summary": "SpaceX's mobile strategy is becoming clearly with its latest spectrum purchase, and it might work.",
+      "url": "https://stratechery.com/2026/spacex-buys-more-spectrum-musk-and-market-structure-distributed-cellular/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 10:00:00 +0000",
+      "source": "Stratechery",
+      "category": "thought-leadership",
+      "tags": [
+        "analysis",
+        "strategy",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "AI labs are buying data from dead startups to train their models",
+      "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…",
+      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+      "image": null,
+      "publishedAt": "Tue, 13 Oct 2026 09:00:00 +0000",
+      "source": "MIT Technology Review",
+      "category": "general",
+      "tags": [
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Our AI Agent Picked Render Over Railway and Vercel. I'd Barely Heard of It. That's How You ...",
+      "summary": "That's How You Get Leads in The Agent Age. by Jason Lemkin | Artificial Intelligence (AI), Blog Posts, SaaStr.Ai. I asked our agent for SaaStr AI ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.saastr.com/our-ai-agent-picked-render-over-railway-and-vercel-id-never-heard-of-it-thats-how-you-get-leads-in-the-agent-age/&ct=ga&cd=CAIyGjM4OTY0Y2JmNmI1NzkwMjc6Y29tOmVuOlVT&usg=AOvVaw10Hvv2vWeKjwOeN43RZbe6",
+      "image": null,
+      "publishedAt": "2026-10-13T03:11:25.000Z",
+      "source": "Jason Lemkin",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "The Latest SaaStr AI Agent Playbook for GTM Is Out: Everything We've Learned Running ...",
+      "summary": "SaaStr's AI Agent Playbook: How We Deployed 20+ Agents to Scale 8-Figure Revenue with Single-Digit Headcount · Jason Lemkin. Founder ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.saastr.com/the-latest-saastr-ai-agent-playbook-for-gtm-is-out-everything-weve-learned-running-saastr-on-3-humans-and-21-ai-agents-in-one-handy-guide/&ct=ga&cd=CAIyGjM4OTY0Y2JmNmI1NzkwMjc6Y29tOmVuOlVT&usg=AOvVaw25d-4_IsFMvxlLMkwY2P0E",
+      "image": null,
+      "publishedAt": "2026-10-13T03:11:23.000Z",
+      "source": "Jason Lemkin",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "saas",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Toby",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/toby-5",
+      "image": null,
+      "publishedAt": "2026-10-13T02:51:31.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "TypeSafe AI Raises $870M in Series A Funding at $7.5 Billion Valuation - FinSMEs",
+      "summary": "In conjunction with the funding, Martin Casado joined the company's board. The company intends to use the funds to expand its lineup of machine ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.finsmes.com/2026/10/typesafe-ai-raises-870m-in-series-a-funding-at-7-5-billion-valuation.html&ct=ga&cd=CAIyGmE5NzNkYmQwNmVhMDllOWQ6Y29tOmVuOlVT&usg=AOvVaw0FF5N6pireFfOLTmAqKrwB",
+      "image": null,
+      "publishedAt": "2026-10-12T23:01:47.000Z",
+      "source": "Martin Casado",
+      "category": "thought-leadership",
+      "tags": [
+        "voices",
+        "venture",
+        "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "vibesmonitor.com",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/vibesmonitor",
+      "image": null,
+      "publishedAt": "2026-10-12T18:25:03.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Accessing OpenAI GPT models on Amazon Bedrock with global cross-Region inference in Thailand, Malaysia, Singapore, Indonesia, and Taiwan",
+      "summary": "Learn how to run OpenAI GPT-6 Sol, Luna, and Astra on Amazon Bedrock through global cross-Region inference from Singapore, Jakarta, Thailand, Malaysia, and Taipei. This post covers the Converse and OpenAI-compatible APIs, IAM and SCP permissions, quota sizing, and monitoring inference from your source Region.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-models-on-amazon-bedrock-with-global-cross-region-inference-in-thailand-malaysia-singapore-indonesia-and-taiwan/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 17:52:22 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly9hd3Mu",
+      "title": "Deploy decision models with llama.cpp on Amazon SageMaker AI",
+      "summary": "Learn how to deploy decision models with llama.cpp on Amazon SageMaker AI. This technical how-to serves OpenAI-compatible chat completions with the AWS Deep Learning Container for llama.cpp, then extends the runtime with SemIf to return probabilities over declared options on CPU or GPU.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/deploy-decision-models-with-llama-cpp-on-amazon-sagemaker-ai/",
+      "image": null,
+      "publishedAt": "Mon, 12 Oct 2026 15:51:46 +0000",
+      "source": "AWS Machine Learning",
+      "category": "saas",
+      "tags": [
+        "cloud",
+        "mlops",
+        "enterprise"
+      ]
+    },
+    {
       "id": "aHR0cHM6Ly9ibG9n",
       "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
       "summary": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microsoft products and services. The multigenerational... The post Microsoft to expand Azure Maia system to multi-gigawatt deployments appeared first on The Official Microsoft Blog.",
@@ -28,21 +652,6 @@
         "ai",
         "research",
         "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Hackers activate automatic defrosting accross European supermarket fridges",
-      "summary": "Comments",
-      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
-      "image": null,
-      "publishedAt": "Mon, 12 Oct 2026 12:16:42 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
       ]
     },
     {
@@ -75,27 +684,12 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9naXRo",
-      "title": "QGIS bans AI assisted contributions",
-      "summary": "Comments",
-      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "image": null,
-      "publishedAt": "Mon, 12 Oct 2026 11:22:24 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Deloitte falsified documents to evade tax on Abramovich's wealth",
+      "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
       "summary": "Comments",
-      "url": "https://www.bbc.com/news/articles/c64g1l5389kvo",
+      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
       "image": null,
-      "publishedAt": "Mon, 12 Oct 2026 10:21:27 +0000",
+      "publishedAt": "Mon, 12 Oct 2026 10:09:37 +0000",
       "source": "Hacker News",
       "category": "general",
       "tags": [
@@ -121,7 +715,7 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Mars may be a hellhole, but the moon is not far behind",
+      "title": "What it would take to build a city on the moon",
       "summary": "Welcome to the second space race. You can be forgiven for experiencing déjà vu. Last time, it was the Soviet Union and the United States vying to be the first to plant some flags. Now it’s a sprint to the lunar surface between America and China—alongside a host of varyingly friendly and rival nations—plus a…",
       "url": "https://www.technologyreview.com/2026/10/12/1145760/imagining-building-cities-on-the-moon/",
       "image": null,
@@ -148,288 +742,33 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9naXRo",
-      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
-      "summary": "Comments",
-      "url": "https://github.com/snuri00/ps2-web-recomp",
-      "image": null,
-      "publishedAt": "Mon, 12 Oct 2026 06:46:53 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9sYWxp",
-      "title": "Type-safe HTML templating in Zig",
-      "summary": "Comments",
-      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
-      "image": null,
-      "publishedAt": "Mon, 12 Oct 2026 05:02:34 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "LG's 'One LG' Strategy Gains Momentum in AI Infrastructure Through Partnerships With ...",
-      "summary": "Recently, Koo met with Microsoft CEO Satya Nadella and other senior ... AI data center infrastructure, enterprise AI transformation and physical AI.",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.koreaittimes.com/news/articleView.html%3Fidxno%3D157998&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2nGVVzuOr7JkFpEZZ_RgCL",
+      "title": "VC funding deals: TypeSafe AI , Atlas Atomics, Ultra Robotics - InfotechLead",
+      "summary": "The company plans to expand its model portfolio, developer infrastructure and enterprise capabilities. Andreessen Horowitz partner Martin Casado will ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://infotechlead.com/tech/vc-funding-deals-typesafe-ai-atlas-atomics-ultra-robotics-98766%3Famp%3D1&ct=ga&cd=CAIyGmE5NzNkYmQwNmVhMDllOWQ6Y29tOmVuOlVT&usg=AOvVaw2iKAfAjwarN19-DxWJurLm",
       "image": null,
-      "publishedAt": "2026-10-12T04:14:45.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Satya Nadella wants AI oversight as 'emergency brake' and a Nikon photo prize is disqualified | Mint",
-      "summary": "Satya Nadella's AI warning. The AI bosses seem to be ricocheting between ... ENTERPRISES share priceADANI PORTS share priceAPOLLO HOSPITALS ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.livemint.com/mint-lounge/business-of-life/ai-news-satya-nadella-twitter-x-post-nikon-photo-11791757461396.html&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2ptLfh6SlYyKZNunzuNKIl",
-      "image": null,
-      "publishedAt": "2026-10-12T03:31:07.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Kudos 3.0",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/kudos-smart-wallet",
-      "image": null,
-      "publishedAt": "2026-10-12T01:58:06.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Meta Muse Needs $2.8B Compute for 100M Users [2026] - Tech Insider",
-      "summary": "Aaron Levie, the Box CEO known for his frequent public commentary on enterprise AI economics, amplified it with his widely shared post crediting ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://tech-insider.org/meta-muse-2-8-billion-compute-100-million-users-2026/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw1yVK9mFwWcxxJzv6CdqUcB",
-      "image": null,
-      "publishedAt": "2026-10-12T01:25:03.000Z",
-      "source": "Aaron Levie",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft President: AI Less Regulated Than Milk | The Tech Buzz",
-      "summary": "AIEnterpriseDealsSecurityCrypto ... The comments reflect Microsoft's broader strategic pivot under CEO Satya Nadella, who has bet the company's future ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.techbuzz.ai/articles/microsoft-president-ai-less-regulated-than-milk&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3awqezeJDWvus3b66YdNQL",
-      "image": null,
-      "publishedAt": "2026-10-12T00:31:16.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9yb3lm",
-      "title": "Fingerprints are the new cookies",
-      "summary": "Comments",
-      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
-      "image": null,
-      "publishedAt": "Sun, 11 Oct 2026 22:33:39 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Agent swarms will impact software, finance, and AI research, Aaron Levie notes",
-      "summary": "Aaron Levie explores how agent swarms could drive widespread token use in enterprise fields from finance to technology and scientific...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://tradersunion.com/news/market-voices/show/3755189-agent-swarms-token-impact/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw0KQSo1kftLsvS1WsILeYhF",
-      "image": null,
-      "publishedAt": "2026-10-11T21:24:28.000Z",
-      "source": "Aaron Levie",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Nadella Urges Zero-Trust Security as Microsoft Launches AI Execution Containers",
-      "summary": "Microsoft CEO Satya Nadella urges enterprises to treat advanced AI ... enterprise access. in 18 hours. Read Full Article · Taipei Times.",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://ground.news/article/nadella-urges-zero-trust-security-as-microsoft-launches-ai-execution-containers_1b5e6d&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1xKOEpAAQeLe2viFqP3yZZ",
-      "image": null,
-      "publishedAt": "2026-10-11T21:13:39.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Jason's Takes on This Week's 20VC: Loyalty Changed for Good, Agents Now Pick Your ... - SaaStr",
-      "summary": "Top SaaStr Content for the Week: Samsara's CSO, AMA with Jason Lemkin, ZoomInfo's CEO and lots more! Get The Best SaaS Advice. Get fresh insights, ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.saastr.com/jasons-takes-on-this-weeks-20vc-loyalty-changed-for-good-agents-now-pick-your-vendors-and-when-to-take-the-2-billion/&ct=ga&cd=CAIyGjM4OTY0Y2JmNmI1NzkwMjc6Y29tOmVuOlVT&usg=AOvVaw2UWpUHOqspygaUe-11nMbM",
-      "image": null,
-      "publishedAt": "2026-10-11T21:11:16.000Z",
-      "source": "Jason Lemkin",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "saas",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Manifold MCP",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/manifold-mcp",
-      "image": null,
-      "publishedAt": "2026-10-11T21:01:27.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft's Valuation Edge Among Big Tech Stocks | Intellectia. AI",
-      "summary": "... enterprise AI revolution, the analyst tells investors. Unlock Full ... AI Safety Design: Microsoft CEO Satya Nadella emphasized that advanced AI ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://intellectia.ai/news/stock/microsofts-valuation-edge-among-big-tech-stocks&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw3smA21DrJfbPtikDTzX6yz",
-      "image": null,
-      "publishedAt": "2026-10-11T20:11:10.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Scrape Anything by Context.dev",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/context-dev",
-      "image": null,
-      "publishedAt": "2026-10-11T19:23:53.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Dropstone CLI",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/dropstone-cli",
-      "image": null,
-      "publishedAt": "2026-10-11T19:00:02.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft's Nadella Urges Companies to Treat AI as an Insider Threat, Build In an 'Emergency Brake'",
-      "summary": "Microsoft CEO Satya Nadella is calling for a fundamental shift in how companies manage advanced AI systems, urging them to treat models as ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.biggo.com/news/195337b0-8c0a-4a77-a2a3-0f6de3fe4407&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw2lS6LgqEzgzXyfrQHXQz-1",
-      "image": null,
-      "publishedAt": "2026-10-11T18:28:40.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Data ontology: A kinder, gentler form of lock-in | Constellation Research",
-      "summary": "... enterprise AI. After all, data and knowledge are different sides of ... Microsoft CEO Satya Nadella said agentic AI systems need to separate ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.constellationr.com/insights/news/data-ontology-kinder-gentler-form-lock&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw34TlUo-tceYVuitcLwIrPM",
-      "image": null,
-      "publishedAt": "2026-10-11T16:10:53.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft's Nadella Wants An Emergency Brake On Every AI Model - Forbes",
-      "summary": "Meeting The Moment In Enterprise: AI As AI Spending Surged ... Satya Nadella published a blog post on Saturday that moves responsibility for AI ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.forbes.com/sites/gabrielalinzainescu/2026/10/11/microsofts-nadella-wants-an-emergency-brake-on-every-ai-model/&ct=ga&cd=CAIyGmQwOGJmNDUyMjVmZmY0ZjA6Y29tOmVuOlVT&usg=AOvVaw1lf4Czj6APrEauhLQv5Ai1",
-      "image": null,
-      "publishedAt": "2026-10-11T15:25:23.000Z",
-      "source": "Satya Nadella",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "a16z Partner Martin Casado Announces Partnership with TypeSafe to Advance Jev - ABAB News",
-      "summary": "Martin Casado stated in a public post that the software era is far from ... AI Gateway's history. TypeSafe claims to have saved clients ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ababnews.com/news/7235278e-5958-4d58-9fee-20d84caf5ebb&ct=ga&cd=CAIyGmE5NzNkYmQwNmVhMDllOWQ6Y29tOmVuOlVT&usg=AOvVaw1y18yJd5IjqkGdRa2gD9-D",
-      "image": null,
-      "publishedAt": "2026-10-11T13:39:01.000Z",
+      "publishedAt": "2026-10-12T05:28:14.000Z",
       "source": "Martin Casado",
       "category": "thought-leadership",
       "tags": [
         "voices",
         "venture",
         "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Takes for Mac",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/takes-for-mac",
+      "image": null,
+      "publishedAt": "2026-10-11T19:12:39.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
       ]
     },
     {
@@ -449,62 +788,17 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Cube Forms",
+      "title": "CLI Manager",
       "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/cube-forms",
+      "url": "https://www.producthunt.com/products/cli-manager",
       "image": null,
-      "publishedAt": "2026-10-11T08:49:11.000Z",
+      "publishedAt": "2026-10-10T07:57:49.000Z",
       "source": "Product Hunt AI",
       "category": "saas",
       "tags": [
         "ai",
         "products",
         "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Microsoft CEO Satya Nadella Says AI Systems Should Be Built to 'Trust the Model the Least'",
-      "summary": "... enterprise. Aaron Levie. @levie. Good post to start thinking through the long term safety approaches to managing intelligence in an enterprise. As ...",
-      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.tradingview.com/news/benzinga:39aface46094b:0-microsoft-ceo-satya-nadella-says-ai-systems-should-be-built-to-trust-the-model-the-least/&ct=ga&cd=CAIyGjc3MTE2MzRkM2QwMDFjMDQ6Y29tOmVuOlVT&usg=AOvVaw0CeQaUjdypbj57tWS4HHRM",
-      "image": null,
-      "publishedAt": "2026-10-11T04:19:34.000Z",
-      "source": "Aaron Levie",
-      "category": "thought-leadership",
-      "tags": [
-        "voices",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Secret of Orange Cats Revealed After 60-Year Search",
-      "summary": "Comments",
-      "url": "https://www.sciencealert.com/secret-of-orange-cats-finally-revealed-after-60-year-search",
-      "image": null,
-      "publishedAt": "Sat, 10 Oct 2026 22:10:57 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9waXhl",
-      "title": "The Making Of Super Mario 64 – full Giles Goddard interview (2001)",
-      "summary": "Comments",
-      "url": "https://pixelatron.com/blog/the-making-of-super-mario-64-full-giles-goddard-interview-ngc/",
-      "image": null,
-      "publishedAt": "Sat, 10 Oct 2026 19:28:41 +0000",
-      "source": "Hacker News",
-      "category": "general",
-      "tags": [
-        "ai",
-        "industry",
-        "tech"
       ]
     },
     {
@@ -535,36 +829,6 @@
         "analysis",
         "strategy",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "ICYMI: What landed for AI builders in September 2026",
-      "summary": "A monthly recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026: broader model choice, faster serverless agents with built-in evaluation, and automated knowledge base syncing with native enterprise connectors.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
-      "image": null,
-      "publishedAt": "Fri, 09 Oct 2026 15:38:39 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
-      "summary": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amazon Bedrock at scale.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
-      "image": null,
-      "publishedAt": "Fri, 09 Oct 2026 15:35:02 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
       ]
     },
     {
@@ -625,34 +889,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Job titles of the future: Delivery drone air traffic controller",
-      "summary": "The moment Trevor Wischnewsky heard that drones were delivering pizza and sushi around his Texas neighborhood, his mind was made up. “It was super fascinating,” he says. “I just immediately wanted to be a part of it.” Wischnewsky is now an RPIC, or “remote pilot in command,” at a company called FlyTrex. An RPIC is…",
-      "url": "https://www.technologyreview.com/2026/10/09/1145737/job-titles-delivery-drone-air-traffic-controller-trevor-wischnewsky/",
-      "image": null,
-      "publishedAt": "Fri, 09 Oct 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "We’re still figuring out the side effects of GLP-1 weight-loss drugs",
-      "summary": "This week my colleague Antonio Regalado had an interesting update on GLP-1 weight-loss drugs. According to research presented at an aging meeting in Boston, these drugs seem to affect at least some measures of biological age. Overweight and diabetic people who take GLP-1s have a biological age around two to three years younger than similar…",
-      "url": "https://www.technologyreview.com/2026/10/09/1146094/were-still-figuring-out-the-side-effects-of-glp-1-weight-loss-drugs/",
-      "image": null,
-      "publishedAt": "Fri, 09 Oct 2026 09:00:00 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9vcGVu",
       "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
       "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
@@ -680,35 +916,6 @@
         "ai",
         "research",
         "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-      "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Join senior AI reporter…",
-      "url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-      "image": null,
-      "publishedAt": "Fri, 09 Oct 2026 00:08:24 +0000",
-      "source": "MIT Technology Review",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
-      "summary": "Amazon Bedrock AgentCore payments gives AI agents a managed way to pay for services on demand, with spending limits enforced by the infrastructure. See how Incarna's agents pay BlockRun for model inference one request at a time over x402, cutting the work of adding x402 payment support from months to days.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
-      "image": null,
-      "publishedAt": "Thu, 08 Oct 2026 18:33:29 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
       ]
     },
     {
@@ -742,21 +949,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
-      "summary": "A reference architecture for securely sharing one Amazon SageMaker HyperPod EKS cluster across multiple teams, using AWS IAM Identity Center for authentication, per-team SageMaker Domains and Kubernetes namespaces for isolation, HyperPod Task Governance for fairness, and namespace-level cost allocation for chargeback.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
-      "image": null,
-      "publishedAt": "Thu, 08 Oct 2026 16:20:04 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9vcGVu",
       "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
       "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
@@ -769,21 +961,6 @@
         "ai",
         "research",
         "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Codemind",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/codemind-2",
-      "image": null,
-      "publishedAt": "2026-10-08T13:07:17.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
       ]
     },
     {
@@ -877,33 +1054,18 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Introducing Claude Haiku 5.5 on AWS",
-      "summary": "Claude Haiku 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. According to Anthropic, it is the fastest, most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work, and costs around 75% less than Claude Haiku 4.5 for most tasks. This post covers its improvements and how to get started.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "PostNitro for Agents",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/postnitro",
       "image": null,
-      "publishedAt": "Wed, 07 Oct 2026 18:52:10 +0000",
-      "source": "AWS Machine Learning",
+      "publishedAt": "2026-10-07T18:23:37.000Z",
+      "source": "Product Hunt AI",
       "category": "saas",
       "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
-      "summary": "Enterprise RAG unlocks insights from knowledge sources like SharePoint, Google Drive, and Confluence, but those sources carry complex permissions. Learn how Amazon Quick and Amazon Bedrock Knowledge Bases enforce document-level access controls in real time, verifying permissions directly with authoritative sources at query time.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
-      "image": null,
-      "publishedAt": "Wed, 07 Oct 2026 18:34:44 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
+        "ai",
+        "products",
+        "launches"
       ]
     },
     {
@@ -919,51 +1081,6 @@
         "engineering",
         "saas",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9odWdn",
-      "title": "Multimodal open d1 decision models for the edge",
-      "summary": "",
-      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-      "image": null,
-      "publishedAt": "Wed, 07 Oct 2026 16:54:33 GMT",
-      "source": "Hugging Face Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "open-source",
-        "models"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "Beyond hours saved: Building the business case for agentic automation",
-      "summary": "The RPA-era ROI model misses most of the value agentic automation creates. This post gives AI center of excellence leaders a framework to size the full value of agents across time savings, exception handling, decision quality, and maintenance economics, and to prioritize which workflows to automate first.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-hours-saved-building-the-business-case-for-agentic-automation/",
-      "image": null,
-      "publishedAt": "Wed, 07 Oct 2026 15:50:00 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9hd3Mu",
-      "title": "How Qlik built grounded, enterprise-scale AI with Amazon Bedrock",
-      "summary": "Qlik built Qlik Answers on Amazon Bedrock to give its 40,000+ customers grounded, sourced answers across structured and unstructured enterprise data. Learn how a layered, multi-agent architecture with cross-Region inference and Amazon Bedrock Guardrails delivers trusted AI at global scale.",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-qlik-built-grounded-enterprise-scale-ai-with-amazon-bedrock/",
-      "image": null,
-      "publishedAt": "Wed, 07 Oct 2026 15:48:46 +0000",
-      "source": "AWS Machine Learning",
-      "category": "saas",
-      "tags": [
-        "cloud",
-        "mlops",
-        "enterprise"
       ]
     },
     {
@@ -1071,21 +1188,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9vcGVu",
-      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-      "summary": "Radisson partnered with Accenture to build a ChatGPT plugin using OpenAI technology, helping travelers find, compare, and book hotels while planning their trips.",
-      "url": "https://openai.com/index/radisson",
-      "image": null,
-      "publishedAt": "Wed, 07 Oct 2026 07:00:00 GMT",
-      "source": "OpenAI Blog",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research",
-        "models"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9kZWVw",
       "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
       "summary": "",
@@ -1116,21 +1218,6 @@
     },
     {
       "id": "aHR0cHM6Ly93d3cu",
-      "title": "Google EmbeddingGemma 2",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/embeddinggemma-2",
-      "image": null,
-      "publishedAt": "2026-10-06T16:08:17.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
       "title": "Trustworthy, Explainable, and Accountable: How to Give AI Autonomy Without Letting It Run Wild",
       "summary": "Salesforce Principal Architect of Ethical AI Practice Kathy Baxter explains how pairing a probabilistic model with deterministic logic gives agents the ability to take action — without giving up the guardrails.",
       "url": "https://www.salesforce.com/news/stories/giving-ai-autonomy-without-running-wild/",
@@ -1142,6 +1229,21 @@
         "crm",
         "enterprise",
         "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "MausBot",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/mausbot",
+      "image": null,
+      "publishedAt": "2026-10-06T12:05:48.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
       ]
     },
     {
@@ -1172,6 +1274,36 @@
         "analysis",
         "strategy",
         "ai"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "MentionBird",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/mentionbird",
+      "image": null,
+      "publishedAt": "2026-10-06T06:13:08.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
+      ]
+    },
+    {
+      "id": "aHR0cHM6Ly93d3cu",
+      "title": "Remocn Studio",
+      "summary": "Discussion | Link",
+      "url": "https://www.producthunt.com/products/remocn-studio",
+      "image": null,
+      "publishedAt": "2026-10-05T13:15:43.000Z",
+      "source": "Product Hunt AI",
+      "category": "saas",
+      "tags": [
+        "ai",
+        "products",
+        "launches"
       ]
     },
     {
@@ -1294,36 +1426,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "ngram 2.0",
-      "summary": "Discussion | Link",
-      "url": "https://www.producthunt.com/products/ngram",
-      "image": null,
-      "publishedAt": "2026-10-01T17:34:14.000Z",
-      "source": "Product Hunt AI",
-      "category": "saas",
-      "tags": [
-        "ai",
-        "products",
-        "launches"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Multiplayer AI: The Shift from Smarter Individuals to a Smarter Company",
-      "summary": "Work is a team sport. We can get good results working alone, but when a team gets in a room and focuses on the same problem at the same time, something changes. It can be a real power-up. Slack has fueled that kind of collaboration for a decade. Today, Slack is evolving into what we […]",
-      "url": "https://www.salesforce.com/news/stories/multiplayer-ai/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 17:00:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9uZXdz",
       "title": "The Pulse: Firebase’s global outage & poor response",
       "summary": "Also: OpenAI’s platform play that has similarities to AWS, more data on companies moving to open models, and more",
@@ -1369,21 +1471,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly93d3cu",
-      "title": "Getting to ROI: How Brands Turn Cost Centers into Revenue Engines with AI",
-      "summary": "Key Takeaways Salesforce customers across industries recently described their agentic rollouts, sharing what worked, what surprised them, and what they’d tell others just getting started on their own AI journeys. A clear pattern emerged. Customers seeing real results don’t just deploy. They listen to their users, define success, and build the guardrails to sustain it. […]",
-      "url": "https://www.salesforce.com/news/stories/getting-to-roi-with-ai/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 15:00:00 +0000",
-      "source": "Salesforce News",
-      "category": "saas",
-      "tags": [
-        "crm",
-        "enterprise",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly90aGVz",
       "title": "The Sequence Opinion - Issue 943: When Compute Gets a Futures Market",
       "summary": "What grain electricity and freight reveal about compute markets",
@@ -1396,21 +1483,6 @@
         "ai",
         "ml",
         "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9zdHJh",
-      "title": "An Interview with Jason Del Rey About Muse, Amazon, and Walmart",
-      "summary": "An interview with Jason Del Rey about Amazon versus Meta, which is a continuation of the oldest battle in retail between Amazon and Walmart.",
-      "url": "https://stratechery.com/2026/an-interview-with-jason-del-rey-about-muse-amazon-and-walmart/",
-      "image": null,
-      "publishedAt": "Thu, 01 Oct 2026 10:00:00 +0000",
-      "source": "Stratechery",
-      "category": "thought-leadership",
-      "tags": [
-        "analysis",
-        "strategy",
-        "ai"
       ]
     },
     {
@@ -1499,21 +1571,6 @@
         "engineering",
         "saas",
         "ai"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly90aGVz",
-      "title": "The Sequence Knowledge - Issue 941: Learning RSI: The Model Is Frozen. The System Is Not.",
-      "summary": "Your agent got better this quarter and nobody trained anything. Where did the improvement go? Into the notes. This is the loop that runs between model releases, and it might be where the durable value",
-      "url": "https://thesequence.substack.com/p/the-sequence-knowledge-issue-941",
-      "image": "https://substackcdn.com/image/fetch/$s_!rawg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F501d7ae6-98b5-4c27-b0d4-db6e264f320e_1774x887.png",
-      "publishedAt": "Tue, 29 Sep 2026 11:01:42 GMT",
-      "source": "TheSequence",
-      "category": "general",
-      "tags": [
-        "ai",
-        "ml",
-        "research"
       ]
     },
     {
@@ -1634,41 +1691,12 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9uZXdz",
-      "title": "Design Engineering with Maggie Appleton",
-      "summary": "Maggie Appleton on what engineers can learn from designers, working with AI agents, and why human judgment still matters.",
-      "url": "https://newsletter.pragmaticengineer.com/p/design-engineering-with-maggie-appleton",
-      "image": null,
-      "publishedAt": "Wed, 23 Sep 2026 17:07:22 GMT",
-      "source": "The Pragmatic Engineer",
-      "category": "saas",
-      "tags": [
-        "engineering",
-        "saas",
-        "ai"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly9kZWVw",
       "title": "Advancing Private AI Compute with secure, server-side memory",
       "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
       "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
       "image": null,
       "publishedAt": "Wed, 23 Sep 2026 16:00:57 +0000",
-      "source": "Google DeepMind",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9kZWVw",
-      "title": "Gemini 3.8 text-to-speech says hello",
-      "summary": "",
-      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-      "image": null,
-      "publishedAt": "Wed, 23 Sep 2026 15:25:14 +0000",
       "source": "Google DeepMind",
       "category": "general",
       "tags": [
@@ -1736,20 +1764,6 @@
       ]
     },
     {
-      "id": "aHR0cHM6Ly9kZWVw",
-      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-      "summary": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "image": null,
-      "publishedAt": "Tue, 15 Sep 2026 17:05:57 +0000",
-      "source": "Google DeepMind",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
-      ]
-    },
-    {
       "id": "aHR0cHM6Ly93d3cu",
       "title": "The AI Industry Has Finally Discovered the Hardest Test: Politics",
       "summary": "AI CEOs want to pace the frontier. Here's what that means and why they can't do it",
@@ -1790,20 +1804,6 @@
       "tags": [
         "ai",
         "analysis"
-      ]
-    },
-    {
-      "id": "aHR0cHM6Ly9kZWVw",
-      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-      "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
-      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "image": null,
-      "publishedAt": "Tue, 08 Sep 2026 14:00:15 +0000",
-      "source": "Google DeepMind",
-      "category": "general",
-      "tags": [
-        "ai",
-        "research"
       ]
     },
     {
@@ -2310,5 +2310,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-10-12T13:12:41.802Z"
+  "lastUpdated": "2026-10-13T20:56:33.626Z"
 }
