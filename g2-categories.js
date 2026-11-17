@@ -1,6 +1,6 @@
 // G2 AI Category Intelligence
 // Auto-refreshed by scheduled task — every 2 weeks
-// Last fetched: 2026-11-01
+// Last fetched: 2026-11-17
 
 const categories = [
   {
@@ -12,10 +12,10 @@ const categories = [
     description: 'AI systems that autonomously plan, reason, and execute multi-step tasks — the defining shift from passive tools to active digital workers.',
     product_count_label: '35+ products',
     top_products: [
-      { name: 'ClickUp',    slug: 'clickup',    stars: 4.6, reviews: 15303, g2_url: 'https://www.g2.com/products/clickup/reviews' },
-      { name: 'Paylocity',  slug: 'paylocity',  stars: 4.4, reviews: 6353,  g2_url: 'https://www.g2.com/products/paylocity/reviews' },
-      { name: 'HiBob HRIS', slug: 'hibob-hris', stars: 4.5, reviews: 2725,  g2_url: 'https://www.g2.com/products/hibob-hris/reviews' },
-      { name: 'Retell AI',  slug: 'retell-ai',  stars: 4.8, reviews: 2642,  g2_url: 'https://www.g2.com/products/retell-ai/reviews' },
+      { name: 'ClickUp',    slug: 'clickup',    stars: 4.6, reviews: 15732, g2_url: 'https://www.g2.com/products/clickup/reviews' },
+      { name: 'Paylocity',  slug: 'paylocity',  stars: 4.4, reviews: 6394,  g2_url: 'https://www.g2.com/products/paylocity/reviews' },
+      { name: 'HiBob',      slug: 'hibob-hris', stars: 4.5, reviews: 2753,  g2_url: 'https://www.g2.com/products/hibob-hris/reviews' },
+      { name: 'Retell AI',  slug: 'retell-ai',  stars: 4.8, reviews: 2654,  g2_url: 'https://www.g2.com/products/retell-ai/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -28,10 +28,10 @@ const categories = [
     description: 'Foundation models and applications that generate text, images, video, and code — now powering the core of every B2B SaaS product roadmap.',
     product_count_label: '200+ products',
     top_products: [
-      { name: 'Notion',     slug: 'notion',     stars: 4.6, reviews: 13962, g2_url: 'https://www.g2.com/products/notion/reviews' },
-      { name: 'Simplified', slug: 'simplified', stars: 4.6, reviews: 5010,  g2_url: 'https://www.g2.com/products/simplified/reviews' },
-      { name: 'ChatGPT',    slug: 'chatgpt',    stars: 4.6, reviews: 3907,  g2_url: 'https://www.g2.com/products/chatgpt/reviews' },
-      { name: 'Synthesia',  slug: 'synthesia',  stars: 4.6, reviews: 2857,  g2_url: 'https://www.g2.com/products/synthesia/reviews' },
+      { name: 'Notion',     slug: 'notion',     stars: 4.6, reviews: 13987, g2_url: 'https://www.g2.com/products/notion/reviews' },
+      { name: 'ChatGPT',    slug: 'chatgpt',    stars: 4.6, reviews: 5158,  g2_url: 'https://www.g2.com/products/chatgpt/reviews' },
+      { name: 'Simplified', slug: 'simplified', stars: 4.6, reviews: 5011,  g2_url: 'https://www.g2.com/products/simplified/reviews' },
+      { name: 'Synthesia',  slug: 'synthesia',  stars: 4.6, reviews: 2862,  g2_url: 'https://www.g2.com/products/synthesia/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -44,10 +44,10 @@ const categories = [
     description: 'The stack powering enterprise AI deployment — model APIs, vector databases, MLOps, and the platforms B2B vendors build on.',
     product_count_label: '480+ products',
     top_products: [
-      { name: 'Databricks',      slug: 'databricks',      stars: 4.6, reviews: 1401, g2_url: 'https://www.g2.com/products/databricks/reviews' },
-      { name: 'Gemini platform', slug: 'gemini-platform', stars: 4.3, reviews: 753,  g2_url: 'https://www.g2.com/products/gemini-platform/reviews' },
-      { name: 'Firecrawl',       slug: 'firecrawl',       stars: 4.6, reviews: 397,  g2_url: 'https://www.g2.com/products/firecrawl/reviews' },
-      { name: 'Langchain',       slug: 'langchain',       stars: 4.5, reviews: 153,  g2_url: 'https://www.g2.com/products/langchain/reviews' },
+      { name: 'Firecrawl',       slug: 'firecrawl',       stars: 4.7, reviews: 1460, g2_url: 'https://www.g2.com/products/firecrawl/reviews' },
+      { name: 'Databricks',      slug: 'databricks',      stars: 4.6, reviews: 1419, g2_url: 'https://www.g2.com/products/databricks/reviews' },
+      { name: 'Gemini platform', slug: 'gemini-platform', stars: 4.3, reviews: 904,  g2_url: 'https://www.g2.com/products/gemini-platform/reviews' },
+      { name: 'LangChain',       slug: 'langchain',       stars: 4.5, reviews: 154,  g2_url: 'https://www.g2.com/products/langchain/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -60,10 +60,10 @@ const categories = [
     description: 'The first mass-market AI category — now table stakes for B2B SaaS. Differentiation has moved to vertical depth and workflow integration.',
     product_count_label: '1,200+ products',
     top_products: [
-      { name: 'Grammarly',  slug: 'grammarly',  stars: 4.7, reviews: 14105, g2_url: 'https://www.g2.com/products/grammarly/reviews' },
-      { name: 'Notion',     slug: 'notion',     stars: 4.6, reviews: 13962, g2_url: 'https://www.g2.com/products/notion/reviews' },
-      { name: 'Simplified', slug: 'simplified', stars: 4.6, reviews: 5010,  g2_url: 'https://www.g2.com/products/simplified/reviews' },
-      { name: 'Writesonic', slug: 'writesonic', stars: 4.7, reviews: 2147,  g2_url: 'https://www.g2.com/products/writesonic/reviews' },
+      { name: 'Grammarly',  slug: 'grammarly',  stars: 4.7, reviews: 14123, g2_url: 'https://www.g2.com/products/grammarly/reviews' },
+      { name: 'Notion',     slug: 'notion',     stars: 4.6, reviews: 13987, g2_url: 'https://www.g2.com/products/notion/reviews' },
+      { name: 'Simplified', slug: 'simplified', stars: 4.6, reviews: 5011,  g2_url: 'https://www.g2.com/products/simplified/reviews' },
+      { name: 'Writesonic', slug: 'writesonic', stars: 4.7, reviews: 2148,  g2_url: 'https://www.g2.com/products/writesonic/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -76,10 +76,10 @@ const categories = [
     description: 'Tools for auditing, monitoring, and governing AI systems in enterprise environments — demand accelerating with EU AI Act enforcement.',
     product_count_label: '600+ products',
     top_products: [
-      { name: 'JumpCloud',                          slug: 'jumpcloud', stars: 4.5, reviews: 4126, g2_url: 'https://www.g2.com/products/jumpcloud/reviews' },
-      { name: 'Drata',                              slug: 'drata',     stars: 4.7, reviews: 1399, g2_url: 'https://www.g2.com/products/drata/reviews' },
-      { name: 'Coder',                              slug: 'coder',     stars: 4.2, reviews: 222,  g2_url: 'https://www.g2.com/products/coder/reviews' },
-      { name: 'Willow AI Governance Control Plane', slug: 'willow-ai', stars: 4.9, reviews: 99,   g2_url: 'https://www.g2.com/products/willow-ai/reviews' },
+      { name: 'JumpCloud',                          slug: 'jumpcloud', stars: 4.5, reviews: 4152, g2_url: 'https://www.g2.com/products/jumpcloud/reviews' },
+      { name: 'Drata',                              slug: 'drata',     stars: 4.7, reviews: 1400, g2_url: 'https://www.g2.com/products/drata/reviews' },
+      { name: 'Willow AI Governance Control Plane', slug: 'willow-ai', stars: 4.9, reviews: 281,  g2_url: 'https://www.g2.com/products/willow-ai/reviews' },
+      { name: 'Coder',                              slug: 'coder',     stars: 4.2, reviews: 240,  g2_url: 'https://www.g2.com/products/coder/reviews' },
     ],
     updated_at: new Date().toISOString(),
   },
@@ -92,9 +92,9 @@ const categories = [
     description: 'Operationalizing machine learning at scale — model monitoring, deployment pipelines, and experiment tracking for production AI.',
     product_count_label: '360+ products',
     top_products: [
-      { name: 'Databricks',      slug: 'databricks',                stars: 4.6, reviews: 1401, g2_url: 'https://www.g2.com/products/databricks/reviews' },
-      { name: 'Snowflake',       slug: 'snowflake',                 stars: 4.6, reviews: 771,  g2_url: 'https://www.g2.com/products/snowflake/reviews' },
-      { name: 'Gemini platform', slug: 'gemini-platform',           stars: 4.3, reviews: 753,  g2_url: 'https://www.g2.com/products/gemini-platform/reviews' },
+      { name: 'Databricks',      slug: 'databricks',                stars: 4.6, reviews: 1419, g2_url: 'https://www.g2.com/products/databricks/reviews' },
+      { name: 'Gemini platform', slug: 'gemini-platform',           stars: 4.3, reviews: 904,  g2_url: 'https://www.g2.com/products/gemini-platform/reviews' },
+      { name: 'Snowflake',       slug: 'snowflake',                 stars: 4.6, reviews: 781,  g2_url: 'https://www.g2.com/products/snowflake/reviews' },
       { name: 'Saturn Cloud',    slug: 'saturn-cloud-saturn-cloud', stars: 4.8, reviews: 320,  g2_url: 'https://www.g2.com/products/saturn-cloud-saturn-cloud/reviews' },
     ],
     updated_at: new Date().toISOString(),
@@ -108,9 +108,9 @@ const categories = [
     description: 'Governed enterprise content platforms that add permission-aware AI retrieval, metadata extraction, and agentic workflows on top of documents and rich media — turning scattered files into trusted business context.',
     product_count_label: '5+ products',
     top_products: [
-      { name: 'Google Workspace', slug: 'google-workspace', stars: 4.6, reviews: 48275, g2_url: 'https://www.g2.com/products/google-workspace/reviews' },
-      { name: 'Dropbox',          slug: 'dropbox',          stars: 4.4, reviews: 31464, g2_url: 'https://www.g2.com/products/dropbox/reviews' },
-      { name: 'Box',              slug: 'box',              stars: 4.2, reviews: 5268,  g2_url: 'https://www.g2.com/products/box/reviews' },
+      { name: 'Google Workspace', slug: 'google-workspace', stars: 4.6, reviews: 48305, g2_url: 'https://www.g2.com/products/google-workspace/reviews' },
+      { name: 'Dropbox',          slug: 'dropbox',          stars: 4.4, reviews: 31482, g2_url: 'https://www.g2.com/products/dropbox/reviews' },
+      { name: 'Box',              slug: 'box',              stars: 4.2, reviews: 5379,  g2_url: 'https://www.g2.com/products/box/reviews' },
       { name: 'Laserfiche',       slug: 'laserfiche',       stars: 4.7, reviews: 1250,  g2_url: 'https://www.g2.com/products/laserfiche/reviews' },
     ],
     updated_at: new Date().toISOString(),
@@ -120,37 +120,43 @@ const categories = [
 // ── What's Changed — diff vs previous refresh ─────────────────────
 // Updated by g2-category-refresh scheduled task each cycle
 const changelog = {
-  refreshDate: '2026-11-01',
-  previousRefreshDate: '2026-10-15',
+  refreshDate: '2026-11-17',
+  previousRefreshDate: '2026-11-01',
   entries: [
     {
-      category: 'AI Content Intelligence Platforms',
-      change: 'New category debuts, replacing AI Voice Agent Platform in the watchlist',
-      detail: 'G2 launched AI Content Intelligence Platforms for governed content repositories with permission-aware AI retrieval and agentic workflows — Google Workspace (48,275 reviews), Dropbox (31,464) and Box (5,268) lead, giving B2B buyers a shortlist that separates AI-native content governance from basic file sharing.',
-      direction: 'new',
+      category: 'Generative AI Infrastructure',
+      change: 'Firecrawl surges to #1 with 1,000+ new reviews',
+      detail: 'Firecrawl jumped from 397 to 1,460 reviews (+1,063), overtaking Databricks (1,419) and Gemini platform (904, +151) — web-data infrastructure for AI agents is now the most-reviewed layer of the GenAI stack for B2B builders.',
+      direction: 'up',
     },
     {
       category: 'Generative AI',
-      change: 'ChatGPT adds 800+ reviews; top 4 unchanged',
-      detail: 'ChatGPT jumped from 3,099 to 3,907 reviews (+808) while Notion (13,962, +87), Simplified (5,010) and Synthesia (2,857) held their slots — a major surge in buyer validation for general-purpose assistants.',
+      change: 'ChatGPT passes Simplified to take #2',
+      detail: 'ChatGPT added 1,251 reviews (3,907 to 5,158) and moved ahead of Simplified (5,011) behind Notion (13,987), with Synthesia (2,862) holding #4 — general-purpose assistants are now outpacing marketing-suite AI in buyer validation.',
       direction: 'up',
     },
     {
       category: 'Agentic AI',
-      change: 'ClickUp extends lead with 340+ new reviews',
-      detail: 'ClickUp reached 15,303 reviews (+343) while Paylocity (6,353), HiBob HRIS (2,725) and Retell AI (2,642) held positions 2–4 — work-management platforms keep widening their review-volume lead for Agentic AI buyers.',
+      change: 'ClickUp adds 429 reviews, widening its lead',
+      detail: 'ClickUp reached 15,732 reviews (+429) while Paylocity (6,394), HiBob (2,753) and Retell AI (2,654) held slots 2–4 — work-management platforms keep extending their review-volume lead among Agentic AI buyers.',
       direction: 'up',
     },
     {
-      category: 'Generative AI Infrastructure',
-      change: 'Firecrawl enters top 4; Botpress drops out',
-      detail: 'Firecrawl (397 reviews, 4.6★) debuts at #3 behind Databricks (1,401) and Gemini platform (753, formerly Gemini Enterprise Agent Platform), displacing Botpress (514 last cycle) — web-data infrastructure for AI agents is gaining buyer attention over chatbot builders.',
+      category: 'AI Governance Tools',
+      change: 'Willow AI overtakes Coder for #3',
+      detail: 'Willow AI Governance Control Plane (281 reviews, 4.9★) nearly tripled from 99 reviews (+182), passing Coder (240) behind JumpCloud (4,152) and Drata (1,400) — purpose-built agent governance is gaining traction against dev-environment and identity incumbents.',
       direction: 'up',
     },
     {
-      category: 'AI Writing Assistant',
-      change: 'Notion adds 87 reviews, narrowing gap to Grammarly',
-      detail: 'Notion (13,962, +87) closed to within 143 reviews of leader Grammarly (14,105, +25), with Simplified (5,010) and Writesonic (2,147) unchanged — a signal that workspace suites are competing directly with dedicated writing tools.',
+      category: 'MLOps Platforms',
+      change: 'Gemini platform climbs past Snowflake to #2',
+      detail: 'Gemini platform gained 151 reviews (753 to 904) and moved ahead of Snowflake (781) behind Databricks (1,419), with Saturn Cloud (320) steady at #4 — hyperscaler agent platforms are reshaping the MLOps shortlist for enterprise buyers.',
+      direction: 'up',
+    },
+    {
+      category: 'AI Content Intelligence Platforms',
+      change: 'Box adds 111 reviews, closing in on 5,400',
+      detail: 'Box reached 5,379 reviews (+111) while Google Workspace (48,305) and Dropbox (31,482) held the top two slots and Laserfiche (1,250) stayed at #4 — AI-native content management is picking up buyer validation in this new category.',
       direction: 'up',
     },
   ],
